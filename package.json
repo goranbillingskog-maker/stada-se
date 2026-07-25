@@ -1,0 +1,17 @@
+{
+  "name": "stada-se",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/download-images.mjs",
+    "build": "next build",
+    "start": "next start",
+    "download-images": "node scripts/download-images.mjs"
+  },
+  "dependencies": {
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
