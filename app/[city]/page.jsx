@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getCities,
@@ -6,6 +7,7 @@ import {
   topServicesInCity,
   SITE_URL,
 } from "../../lib/data.js";
+import { SERVICES, companiesForService } from "../../lib/services.js";
 import { CompanyCard, Breadcrumbs, JsonLd } from "../../components/Ui.jsx";
 
 export const dynamicParams = false;
@@ -33,6 +35,11 @@ export default async function CityPage({ params }) {
   const companies = getCompaniesByCity(city);
   const topServices = topServicesInCity(city, 5);
   const withRut = companies.filter((c) => c.rutAvdrag === "Ja").length;
+  const photos = companies.filter((c) => c.photo).slice(0, 3);
+  const serviceChips = SERVICES.map((s) => ({
+    ...s,
+    count: companiesForService(s.slug, city).length,
+  })).filter((s) => s.count > 0);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -89,9 +96,27 @@ export default async function CityPage({ params }) {
             {withRut
               ? `${withRut} av firmorna erbjuder RUT-avdrag, vilket halverar arbetskostnaden för dig som privatperson.`
               : ""}{" "}
-            Jämför betyg och tjänster nedan och kontakta firmorna direkt – helt
-            gratis.
+            Jämför betyg och tjänster nedan och kontakta firmorna direkt – helt gratis.
           </p>
+
+          {serviceChips.length ? (
+            <div className="chip-row">
+              {serviceChips.map((s) => (
+                <Link key={s.slug} className="chip" href={`/tjanster/${s.slug}/${cityInfo.slug}/`}>
+                  {s.name} <span className="n">({s.count})</span>
+                </Link>
+              ))}
+            </div>
+          ) : null}
+
+          {photos.length >= 2 ? (
+            <div className="photo-strip">
+              {photos.map((c) => (
+                <img key={c.slug} src={c.photo} alt={`${c.name} i ${cityInfo.name}`} loading="lazy" />
+              ))}
+            </div>
+          ) : null}
+
           <div className="company-list">
             {companies.map((c) => (
               <CompanyCard key={c.slug} company={c} />

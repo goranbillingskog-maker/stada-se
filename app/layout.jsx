@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import { getCities, SITE_URL, SITE_NAME } from "../lib/data.js";
+import { SERVICES } from "../lib/services.js";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -21,6 +22,14 @@ export default function RootLayout({ children }) {
   const cities = getCities();
   return (
     <html lang="sv">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <header className="site-header">
           <div className="container">
@@ -28,9 +37,10 @@ export default function RootLayout({ children }) {
               Stada<span>.se</span>
             </Link>
             <nav className="main-nav" aria-label="Huvudmeny">
-              <Link href="/">Hem</Link>
+              <Link href="/#tjanster">Tjänster</Link>
               <Link href="/#stader">Städer</Link>
               <Link href="/om-oss/">Om oss</Link>
+              <Link href="/#stader" className="nav-cta">Hitta städfirma</Link>
             </nav>
           </div>
         </header>
@@ -48,6 +58,16 @@ export default function RootLayout({ children }) {
               <p>
                 <Link href="/om-oss/">Om oss</Link>
               </p>
+            </div>
+            <div>
+              <h3>Tjänster</h3>
+              <div className="footer-links">
+                {SERVICES.map((s) => (
+                  <Link key={s.slug} href={`/tjanster/${s.slug}/`}>
+                    {s.name}
+                  </Link>
+                ))}
+              </div>
             </div>
             <div>
               <h3>Städfirmor per stad</h3>

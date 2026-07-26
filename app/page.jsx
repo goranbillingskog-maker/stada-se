@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { getCities, getAllCompanies, getTopCompanies, SITE_URL } from "../lib/data.js";
+import { SERVICES } from "../lib/services.js";
 import { CompanyCard, JsonLd } from "../components/Ui.jsx";
+import { HeroArt, ServiceIcon } from "../components/Illustrations.jsx";
+import Search from "../components/Search.jsx";
+import GeoBanner from "../components/GeoBanner.jsx";
 
 export const metadata = {
   title: "Hitta städfirma i din stad – jämför 400+ städfirmor | Stada.se",
@@ -56,30 +60,58 @@ export default function HomePage() {
       <JsonLd data={faqJsonLd} />
 
       <section className="hero">
-        <div className="container">
-          <h1>Hitta rätt städfirma i din stad</h1>
-          <p>
-            Jämför städfirmor med riktiga omdömen – hemstädning, flyttstädning,
-            kontorsstädning och mer. Helt gratis, utan mellanhänder.
-          </p>
-          <div className="hero-stats">
-            <div className="hero-stat">
-              <strong>{companies.length}</strong>
-              <span>städfirmor</span>
+        <div className="container hero-grid">
+          <div>
+            <GeoBanner cities={cities} />
+            <h1>
+              Hitta rätt städfirma – <em>utan att leta</em>
+            </h1>
+            <p className="sub">
+              Jämför {companies.length} städfirmor i Sveriges {cities.length} största
+              städer. Riktiga omdömen, tydliga tjänster, RUT-avdrag – och du
+              kontaktar firmorna direkt, helt gratis.
+            </p>
+            <Search />
+            <div className="hero-stats">
+              <div className="hero-stat">
+                <strong>{companies.length}</strong>
+                <span>städfirmor</span>
+              </div>
+              <div className="hero-stat">
+                <strong>{cities.length}</strong>
+                <span>städer</span>
+              </div>
+              <div className="hero-stat">
+                <strong>100 %</strong>
+                <span>gratis, inga mellanhänder</span>
+              </div>
             </div>
-            <div className="hero-stat">
-              <strong>{cities.length}</strong>
-              <span>städer</span>
-            </div>
-            <div className="hero-stat">
-              <strong>100 %</strong>
-              <span>gratis att använda</span>
-            </div>
+          </div>
+          <div className="hero-art">
+            <HeroArt />
           </div>
         </div>
       </section>
 
-      <section className="section" id="stader">
+      <section className="section" id="tjanster">
+        <div className="container">
+          <h2>Vad behöver du hjälp med?</h2>
+          <p className="lead">
+            Välj tjänst för att se firmor, priser och vad som ingår – i just din stad.
+          </p>
+          <div className="service-grid">
+            {SERVICES.map((s) => (
+              <Link key={s.slug} href={`/tjanster/${s.slug}/`} className="service-card">
+                <div className="icon"><ServiceIcon icon={s.icon} /></div>
+                <h3>{s.name}</h3>
+                <p>Jämför firmor & priser →</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt" id="stader">
         <div className="container">
           <h2>Städfirmor per stad</h2>
           <p className="lead">
@@ -101,7 +133,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section section-alt">
+      <section className="section">
         <div className="container">
           <h2>Högst betyg just nu</h2>
           <p className="lead">
@@ -111,6 +143,39 @@ export default function HomePage() {
             {top.map((c) => (
               <CompanyCard key={`${c.citySlug}/${c.slug}`} company={c} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <h2>Så funkar det</h2>
+          <p className="lead">Tre steg till ett rent hem – utan formulär och säljsamtal.</p>
+          <div className="steps">
+            <div className="step">
+              <div className="num">1</div>
+              <h3>Välj stad eller tjänst</h3>
+              <p>
+                Börja med din stad eller det du behöver hjälp med – hemstädning,
+                flyttstädning, fönsterputs och mer.
+              </p>
+            </div>
+            <div className="step">
+              <div className="num">2</div>
+              <h3>Jämför omdömen</h3>
+              <p>
+                Se Google-betyg, tjänster, certifieringar och om firman erbjuder
+                RUT-avdrag – allt samlat på ett ställe.
+              </p>
+            </div>
+            <div className="step">
+              <div className="num">3</div>
+              <h3>Kontakta direkt</h3>
+              <p>
+                Ring eller mejla firmorna du gillar och jämför offerter. Inga
+                mellanhänder, inga dolda avgifter.
+              </p>
+            </div>
           </div>
         </div>
       </section>

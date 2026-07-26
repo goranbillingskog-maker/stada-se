@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { initials } from "../lib/data.js";
 
-export function Avatar({ company, size = "" }) {
+export function Avatar({ company }) {
   const src = company.logo || company.favicon;
   if (src) {
     return (
@@ -10,12 +10,28 @@ export function Avatar({ company, size = "" }) {
         src={src}
         alt={`${company.name} logotyp`}
         loading="lazy"
-        width="64"
-        height="64"
+        width="96"
+        height="96"
       />
     );
   }
   return <div className="avatar-fallback" aria-hidden="true">{initials(company.name)}</div>;
+}
+
+export function CompanyVisual({ company }) {
+  if (company.photo) {
+    return (
+      <img
+        className="company-photo"
+        src={company.photo}
+        alt={`${company.name} i ${company.city}`}
+        loading="lazy"
+        width="96"
+        height="96"
+      />
+    );
+  }
+  return <Avatar company={company} />;
 }
 
 export function Stars({ rating }) {
@@ -45,8 +61,8 @@ export function CompanyCard({ company, headingLevel = "h3" }) {
   const href = `/${company.citySlug}/${company.slug}/`;
   return (
     <article className="company-card">
-      <Link href={href} aria-hidden="true" tabIndex={-1}>
-        <Avatar company={company} />
+      <Link href={href} aria-hidden="true" tabIndex={-1} className="company-visual">
+        <CompanyVisual company={company} />
       </Link>
       <div>
         <H>
@@ -55,13 +71,12 @@ export function CompanyCard({ company, headingLevel = "h3" }) {
         <div className="company-meta">
           {company.area ? `${company.area}, ` : ""}
           {company.city}
-          {company.rutAvdrag === "Ja" ? " · RUT-avdrag" : ""}
         </div>
         <div className="badges">
           {company.services.slice(0, 4).map((s) => (
             <span className="badge" key={s}>{s}</span>
           ))}
-          {company.rutAvdrag === "Ja" ? <span className="badge badge-rut">RUT</span> : null}
+          {company.rutAvdrag === "Ja" ? <span className="badge badge-rut">RUT-avdrag</span> : null}
         </div>
       </div>
       <Rating company={company} />
