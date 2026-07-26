@@ -7,7 +7,7 @@ import Search from "../components/Search.jsx";
 import GeoBanner from "../components/GeoBanner.jsx";
 
 export const metadata = {
-  title: "Hitta städfirma i din stad – jämför 400+ städfirmor | Stada.se",
+  title: "Hitta städfirma i din stad – jämför 400+ städfirmor | Städtorget",
   description:
     "Jämför städfirmor i Sveriges 20 största städer. Se Google-omdömen, tjänster, priser och RUT-avdrag. Hitta rätt städhjälp – hemstädning, flyttstädning och kontorsstädning.",
   alternates: { canonical: "/" },
@@ -24,11 +24,11 @@ const FAQ = [
   },
   {
     q: "Hur väljer jag rätt städfirma?",
-    a: "Titta på omdömen från tidigare kunder, kontrollera att företaget har organisationsnummer och F-skatt, fråga om försäkring och kollektivavtal, och jämför alltid minst två offerter. På Stada.se ser du betyg och företagsuppgifter samlade på ett ställe.",
+    a: "Titta på omdömen från tidigare kunder, kontrollera att företaget har organisationsnummer och F-skatt, fråga om försäkring och kollektivavtal, och jämför alltid minst två offerter. På Städtorget ser du betyg och företagsuppgifter samlade på ett ställe.",
   },
   {
-    q: "Är det gratis att använda Stada.se?",
-    a: "Ja. Stada.se är en fri katalog – du kontaktar städfirmorna direkt utan mellanhänder, förbindelser eller dolda avgifter.",
+    q: "Är det gratis att använda Städtorget?",
+    a: "Ja. Städtorget är en fri katalog – du kontaktar städfirmorna direkt utan mellanhänder, förbindelser eller dolda avgifter.",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function HomePage() {
   const siteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Stada.se",
+    name: "Städtorget",
     url: SITE_URL,
   };
 

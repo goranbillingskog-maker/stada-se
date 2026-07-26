@@ -240,7 +240,7 @@ export default async function CompanyPage({ params }) {
                 ) : null}
               </div>
               <p className="small-print">
-                Du kontaktar företaget direkt – Stada.se är en oberoende katalog
+                Du kontaktar företaget direkt – Städtorget är en oberoende katalog
                 och tar inte emot din förfrågan.
               </p>
             </section>

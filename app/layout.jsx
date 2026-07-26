@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         <header className="site-header">
           <div className="container">
             <Link href="/" className="logo">
-              Stada<span>.se</span>
+              Städ<span>torget</span>
             </Link>
             <nav className="main-nav" aria-label="Huvudmeny">
               <Link href="/#tjanster">Tjänster</Link>
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         <footer className="site-footer">
           <div className="container footer-grid">
             <div>
-              <h3>Stada.se</h3>
+              <h3>Städtorget</h3>
               <p>
                 Sveriges katalog över städfirmor. Vi samlar omdömen, tjänster och
                 kontaktuppgifter så att du enkelt hittar rätt städhjälp där du bor.
@@ -81,8 +81,8 @@ export default function RootLayout({ children }) {
             </div>
           </div>
           <div className="container footer-bottom">
-            © {new Date().getFullYear()} Stada.se. Uppgifterna kommer från offentliga
-            källor och företagens egna webbplatser och kan innehålla fel. Stada.se är en
+            © {new Date().getFullYear()} Städtorget. Uppgifterna kommer från offentliga
+            källor och företagens egna webbplatser och kan innehålla fel. Städtorget är en
             oberoende katalog och har inget samröre med de listade företagen.
           </div>
         </footer>
