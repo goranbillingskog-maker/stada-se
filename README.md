@@ -47,6 +47,37 @@ ersätts automatiskt med företagets favicon eller en snygg initial-avatar.
 2. Under **Sitemaps**, skicka in: `https://stada.se/sitemap.xml`.
 3. Klart – Google börjar indexera stads- och företagssidorna.
 
+## Adminpanel (lägg till / redigera / dölj / ta bort företag)
+
+Gå till `https://stadtorget.se/admin` för att hantera företag via ett formulär
+i stället för att redigera JSON-filen direkt. Ändringar sparas automatiskt som
+en commit på GitHub, och Vercel bygger om sajten inom 1–3 minuter.
+
+**Så aktiverar du admin (görs en gång):**
+
+1. Skapa en ny GitHub-token med skrivbehörighet: gå till
+   [github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+   (inloggad som `goranbillingskog-maker`) → Note: `stadtorget-admin` →
+   Expiration: **No expiration** (eller så lång tid som känns rimligt) →
+   bocka i **repo** → **Generate token** → kopiera koden (`ghp_...`).
+2. I Vercel: öppna projektet → **Settings → Environment Variables** och lägg
+   till följande (miljö: Production, gärna även Preview):
+
+   | Namn | Värde |
+   |---|---|
+   | `GITHUB_TOKEN` | token du just skapade |
+   | `GITHUB_OWNER` | `goranbillingskog-maker` |
+   | `GITHUB_REPO` | `stada-se` |
+   | `GITHUB_BRANCH` | `main` |
+   | `ADMIN_PASSWORD` | ett lösenord du väljer själv |
+   | `ADMIN_SESSION_SECRET` | en lång slumpad textsträng (bara du behöver veta den) |
+
+3. Klicka **Redeploy** på senaste deployen så att miljövariablerna aktiveras.
+4. Gå till `/admin`, logga in med ditt lösenord.
+
+Kom ihåg att radera token-koden i det här dokumentet innan du delar filen med
+någon annan.
+
 ## Uppdatera företagsdatan
 
 All data ligger i **`data/companies.json`**. Byt ut filen mot en ny version
