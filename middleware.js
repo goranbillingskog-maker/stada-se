@@ -2,13 +2,17 @@ import { NextResponse } from "next/server";
 
 const COOKIE_NAME = "stadtorget_admin";
 
-export function middleware(request) {
-  const { pathname } = request.nextUrl;
+function stripTrailingSlash(p) {
+  return p.length > 1 && p.endsWith("/") ? p.slice(0, -1) : p;
+}
 
-  const isProtectedPage =
-    pathname.startsWith("/admin") && pathname !== "/admin/login";
-  const isProtectedApi =
-    pathname.startsWith("/api/admin") && pathname !== "/api/admin/login";
+export function middleware(request) {
+  const pathname = stripTrailingSlash(request.nextUrl.pathname);
+
+  const isLoginPage = pathname === "/admin/login";
+  const isLoginApi = pathname === "/api/admin/login";
+  const isProtectedPage = pathname.startsWith("/admin") && !isLoginPage;
+  const isProtectedApi = pathname.startsWith("/api/admin") && !isLoginApi;
 
   if (!isProtectedPage && !isProtectedApi) {
     return NextResponse.next();
@@ -24,6 +28,10 @@ export function middleware(request) {
 
   if (isProtectedApi) {
     return NextResponse.json({ error: "Ej inloggad" }, { status: 401 });
+  }
+
+  if (isLoginPage) {
+    return NextResponse.next();
   }
 
   const loginUrl = new URL("/admin/login", request.url);
