@@ -312,3 +312,24 @@ img { max-width: 100%; }
 }
 
 .small-print { font-size: 0.8rem; color: var(--ink-soft); margin-top: 16px; }
+
+/* ===== Admin ===== */
+.admin-bar { display: flex; justify-content: space-between; align-items: center; padding: 4px 0 24px; flex-wrap: wrap; gap: 12px; }
+.admin-toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; }
+.admin-toolbar input, .admin-toolbar select { max-width: 240px; }
+.admin-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; background: var(--card); }
+.admin-table th { text-align: left; color: var(--ink-soft); font-weight: 600; padding: 10px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.admin-table td { padding: 10px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.admin-table tr:hover { background: var(--paper-2); }
+.status-pill { font-size: 0.76rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+.status-visible { background: var(--teal-light); color: var(--teal); }
+.status-hidden { background: var(--paper-2); color: var(--ink-soft); border: 1px solid var(--line); }
+.admin-actions button {
+  margin-left: 6px; font-size: 0.8rem; padding: 6px 10px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--card); cursor: pointer;
+}
+.admin-actions button:hover { background: var(--paper-2); }
+.admin-form { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+.admin-form .full { grid-column: 1 / -1; }
+.admin-form label { font-size: 0.82rem; color: var(--ink-soft); display: block; margin-bottom: 4px; }
+@media (max-width: 640px) { .admin-form { grid-template-columns: 1fr; } }
