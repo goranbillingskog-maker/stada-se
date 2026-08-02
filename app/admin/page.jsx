@@ -45,7 +45,7 @@ export default function AdminPage() {
   async function load() {
     setError("");
     try {
-      const res = await fetch("/api/admin/companies", { cache: "no-store" });
+      const res = await fetch("/api/admin/companies/", { cache: "no-store" });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Kunde inte ladda företag.");
       setCompanies(data.companies);
@@ -82,7 +82,7 @@ export default function AdminPage() {
     setError("");
     setNotice("");
     try {
-      const res = await fetch("/api/admin/companies", {
+      const res = await fetch("/api/admin/companies/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ companies: nextCompanies, sha, message }),
@@ -158,7 +158,7 @@ export default function AdminPage() {
   }
 
   async function logout() {
-    await fetch("/api/admin/logout", { method: "POST" });
+    await fetch("/api/admin/logout/", { method: "POST" });
     router.push("/admin/login");
   }
 

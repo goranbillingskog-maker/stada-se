@@ -13,7 +13,7 @@ export default function GeoBanner({ cities }) {
       setCitySlug(saved);
       return;
     }
-    fetch("/api/geo")
+    fetch("/api/geo/")
       .then((r) => r.json())
       .then((d) => {
         if (d.city && cities.some((c) => c.slug === d.city)) setCitySlug(d.city);

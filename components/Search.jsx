@@ -12,7 +12,7 @@ export default function Search() {
   async function loadIndex() {
     if (index) return;
     try {
-      const res = await fetch("/api/search-index");
+      const res = await fetch("/api/search-index/");
       setIndex(await res.json());
     } catch {
       setIndex({ cities: [], companies: [] });
