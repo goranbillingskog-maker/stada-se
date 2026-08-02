@@ -90,6 +90,11 @@ export default function AdminPage() {
   const [cityFilter, setCityFilter] = useState("");
   const [editing, setEditing] = useState(null); // {index, data, serviceChecks, serviceExtra} eller {index: -1, ...} för ny
   const [confirmDelete, setConfirmDelete] = useState(null); // index
+  const [autofillName, setAutofillName] = useState("");
+  const [autofillCity, setAutofillCity] = useState("");
+  const [autofillLoading, setAutofillLoading] = useState(false);
+  const [autofillError, setAutofillError] = useState("");
+  const [autofillNotice, setAutofillNotice] = useState("");
 
   async function load() {
     setError("");
@@ -177,6 +182,41 @@ export default function AdminPage() {
       else next.add(name);
       return { ...prev, serviceChecks: next };
     });
+  }
+
+  async function runAutofill() {
+    if (!autofillName.trim() || !autofillCity.trim()) {
+      setAutofillError("Ange både företagsnamn och stad.");
+      return;
+    }
+    setAutofillLoading(true);
+    setAutofillError("");
+    setAutofillNotice("");
+    try {
+      const res = await fetch("/api/admin/autofill/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ company_name: autofillName.trim(), city: autofillCity.trim() }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Kunde inte hämta data automatiskt.");
+      const { checked, extraText } = splitServices(data.draft.services);
+      setEditing((prev) => ({
+        ...prev,
+        data: { ...prev.data, ...data.draft },
+        serviceChecks: checked,
+        serviceExtra: extraText,
+      }));
+      setAutofillNotice(
+        data.siteExtractionSkipped
+          ? "Grunddata hämtad från Google Maps. Ingen hemsida hittades, så organisationsnummer/prisinfo/bokning fick fyllas i manuellt."
+          : "Utkast ifyllt nedan – granska och rätta innan du sparar."
+      );
+    } catch (e) {
+      setAutofillError(e.message);
+    } finally {
+      setAutofillLoading(false);
+    }
   }
 
   function saveEdit(e) {
@@ -295,6 +335,45 @@ export default function AdminPage() {
         {editing ? (
           <div className="panel">
             <h2>{editing.index === -1 ? "Lägg till företag" : "Redigera företag"}</h2>
+            {editing.index === -1 ? (
+              <div className="panel" style={{ background: "var(--teal-light)", marginBottom: 16 }}>
+                <p style={{ margin: "0 0 8px", fontWeight: 600 }}>Hämta automatiskt (BrowserAct)</p>
+                <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "flex-end" }}>
+                  <div>
+                    <label>Företagsnamn</label>
+                    <input
+                      type="text"
+                      value={autofillName}
+                      onChange={(e) => setAutofillName(e.target.value)}
+                      placeholder="T.ex. Ren Städ AB"
+                    />
+                  </div>
+                  <div>
+                    <label>Stad</label>
+                    <input
+                      type="text"
+                      value={autofillCity}
+                      onChange={(e) => setAutofillCity(e.target.value)}
+                      placeholder="T.ex. Göteborg"
+                    />
+                  </div>
+                  <button
+                    className="btn btn-primary"
+                    type="button"
+                    onClick={runAutofill}
+                    disabled={autofillLoading}
+                  >
+                    {autofillLoading ? "Hämtar…" : "Hämta automatiskt"}
+                  </button>
+                </div>
+                {autofillError ? (
+                  <p style={{ color: "#a32d2d", marginTop: 8, marginBottom: 0 }}>{autofillError}</p>
+                ) : null}
+                {autofillNotice ? (
+                  <p style={{ color: "var(--teal)", marginTop: 8, marginBottom: 0 }}>{autofillNotice}</p>
+                ) : null}
+              </div>
+            ) : null}
             <form onSubmit={saveEdit} className="admin-form">
               <h3 className="full" style={{ margin: "4px 0 -4px" }}>Grunduppgifter</h3>
               {field("Företagsnamn *", "company_name", { required: true })}
