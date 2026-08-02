@@ -3,10 +3,23 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
+// Samma tjänster som visas som egna SEO-sidor på sajten (lib/services.js).
+// Kryssrutorna nedan matchar dessa namn exakt.
+const KNOWN_SERVICES = [
+  "Hemstädning",
+  "Flyttstädning",
+  "Kontorsstädning",
+  "Storstädning",
+  "Fönsterputs",
+  "Byggstädning",
+  "Trappstädning",
+];
+
 const EMPTY_COMPANY = {
   company_name: "",
   legal_name: "",
   org_number: "",
+  legal_form: "",
   street_address: "",
   postal_code: "",
   city: "",
@@ -23,12 +36,48 @@ const EMPTY_COMPANY = {
   founded_year: "",
   founder: "",
   employees: "",
-  legal_form: "",
   rut_avdrag: "Okänt",
+  pricing_info: "",
+  booking_method: "",
   google_rating: "",
   google_reviews: "",
+  google_maps_url: "",
+  review_snippets: "",
+  other_ratings: "",
+  certifications: "",
+  languages: "",
+  social_links: "",
+  last_verified: "",
   hidden: false,
 };
+
+// Tjänster lagras som en "|"-separerad textsträng i data-filen (t.ex.
+// "Hemstädning|Flyttstädning|Balkongstädning"). Vi delar upp det i dels de
+// kända tjänsterna (kryssrutor) och dels resten (fritext).
+function splitServices(servicesValue) {
+  const list = Array.isArray(servicesValue)
+    ? servicesValue
+    : String(servicesValue || "")
+        .split("|")
+        .map((s) => s.trim())
+        .filter(Boolean);
+  const checked = new Set();
+  const extra = [];
+  for (const s of list) {
+    const match = KNOWN_SERVICES.find((k) => k.toLowerCase() === s.toLowerCase());
+    if (match) checked.add(match);
+    else extra.push(s);
+  }
+  return { checked, extraText: extra.join(", ") };
+}
+
+function joinServices(checkedSet, extraText) {
+  const extra = extraText
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  return [...KNOWN_SERVICES.filter((s) => checkedSet.has(s)), ...extra].join("|");
+}
 
 export default function AdminPage() {
   const router = useRouter();
@@ -39,7 +88,7 @@ export default function AdminPage() {
   const [saving, setSaving] = useState(false);
   const [search, setSearch] = useState("");
   const [cityFilter, setCityFilter] = useState("");
-  const [editing, setEditing] = useState(null); // {index, data} eller {index: -1, data} för ny
+  const [editing, setEditing] = useState(null); // {index, data, serviceChecks, serviceExtra} eller {index: -1, ...} för ny
   const [confirmDelete, setConfirmDelete] = useState(null); // index
 
   async function load() {
@@ -103,30 +152,39 @@ export default function AdminPage() {
 
   function startEdit(index) {
     const c = companies[index];
+    const { checked, extraText } = splitServices(c.services);
     setEditing({
       index,
-      data: {
-        ...EMPTY_COMPANY,
-        ...c,
-        services: Array.isArray(c.services) ? c.services.join(", ") : c.services || "",
-      },
+      data: { ...EMPTY_COMPANY, ...c },
+      serviceChecks: checked,
+      serviceExtra: extraText,
     });
   }
 
   function startNew() {
-    setEditing({ index: -1, data: { ...EMPTY_COMPANY } });
+    setEditing({
+      index: -1,
+      data: { ...EMPTY_COMPANY },
+      serviceChecks: new Set(),
+      serviceExtra: "",
+    });
+  }
+
+  function toggleServiceCheck(name) {
+    setEditing((prev) => {
+      const next = new Set(prev.serviceChecks);
+      if (next.has(name)) next.delete(name);
+      else next.add(name);
+      return { ...prev, serviceChecks: next };
+    });
   }
 
   function saveEdit(e) {
     e.preventDefault();
-    const { index, data } = editing;
+    const { index, data, serviceChecks, serviceExtra } = editing;
     const cleaned = {
       ...data,
-      services: data.services
-        .split(",")
-        .map((s) => s.trim())
-        .filter(Boolean)
-        .join("|"),
+      services: joinServices(serviceChecks, serviceExtra),
     };
     let next;
     if (index === -1) {
@@ -182,6 +240,32 @@ export default function AdminPage() {
     );
   }
 
+  function field(label, key, props = {}) {
+    return (
+      <div className={props.full ? "full" : undefined}>
+        <label>{label}</label>
+        {props.textarea ? (
+          <textarea
+            rows={props.rows || 3}
+            value={editing.data[key]}
+            onChange={(e) => setEditing({ ...editing, data: { ...editing.data, [key]: e.target.value } })}
+          />
+        ) : (
+          <input
+            type={props.type || "text"}
+            min={props.min}
+            max={props.max}
+            step={props.step}
+            placeholder={props.placeholder}
+            required={props.required}
+            value={editing.data[key]}
+            onChange={(e) => setEditing({ ...editing, data: { ...editing.data, [key]: e.target.value } })}
+          />
+        )}
+      </div>
+    );
+  }
+
   return (
     <section className="section" style={{ paddingTop: 32 }}>
       <div className="container">
@@ -212,73 +296,60 @@ export default function AdminPage() {
           <div className="panel">
             <h2>{editing.index === -1 ? "Lägg till företag" : "Redigera företag"}</h2>
             <form onSubmit={saveEdit} className="admin-form">
-              <div>
-                <label>Företagsnamn *</label>
-                <input
-                  required
-                  value={editing.data.company_name}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, company_name: e.target.value } })}
-                />
-              </div>
-              <div>
-                <label>Stad *</label>
-                <input
-                  required
-                  value={editing.data.city}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, city: e.target.value } })}
-                />
-              </div>
-              <div>
-                <label>Område</label>
-                <input
-                  value={editing.data.area}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, area: e.target.value } })}
-                />
-              </div>
-              <div>
-                <label>Adress</label>
-                <input
-                  value={editing.data.street_address}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, street_address: e.target.value } })}
-                />
-              </div>
-              <div>
-                <label>Telefon</label>
-                <input
-                  value={editing.data.phone}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, phone: e.target.value } })}
-                />
-              </div>
-              <div>
-                <label>E-post</label>
-                <input
-                  value={editing.data.email}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, email: e.target.value } })}
-                />
+              <h3 className="full" style={{ margin: "4px 0 -4px" }}>Grunduppgifter</h3>
+              {field("Företagsnamn *", "company_name", { required: true })}
+              {field("Juridiskt namn", "legal_name")}
+              {field("Organisationsnummer", "org_number", { placeholder: "556677-8899" })}
+              {field("Bolagsform", "legal_form", { placeholder: "Aktiebolag, Enskild firma…" })}
+              {field("Grundat år", "founded_year", { placeholder: "2015" })}
+              {field("Grundare", "founder")}
+              {field("Antal anställda", "employees", { placeholder: "1-5" })}
+
+              <h3 className="full" style={{ margin: "4px 0 -4px" }}>Adress</h3>
+              {field("Adress", "street_address")}
+              {field("Postnummer", "postal_code")}
+              {field("Stad *", "city", { required: true })}
+              {field("Område", "area")}
+
+              <h3 className="full" style={{ margin: "4px 0 -4px" }}>Kontakt</h3>
+              {field("Telefon", "phone")}
+              {field("E-post", "email")}
+              {field("Webbplats", "website", { full: true })}
+              {field("Google Maps-länk", "google_maps_url", { full: true })}
+              {field("Sociala medier-länkar (kommaseparerat)", "social_links", { full: true, placeholder: "https://facebook.com/..., https://instagram.com/..." })}
+
+              <h3 className="full" style={{ margin: "4px 0 -4px" }}>Tjänster</h3>
+              <div className="full">
+                <label>Tjänster som erbjuds</label>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 20px", marginTop: 4 }}>
+                  {KNOWN_SERVICES.map((name) => (
+                    <label key={name} style={{ display: "flex", alignItems: "center", gap: 6, fontWeight: 400 }}>
+                      <input
+                        type="checkbox"
+                        style={{ width: "auto" }}
+                        checked={editing.serviceChecks.has(name)}
+                        onChange={() => toggleServiceCheck(name)}
+                      />
+                      {name}
+                    </label>
+                  ))}
+                </div>
               </div>
               <div className="full">
-                <label>Webbplats</label>
+                <label>Övriga tjänster (kommaseparerat)</label>
                 <input
-                  value={editing.data.website}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, website: e.target.value } })}
+                  placeholder="Balkongstädning, Fordonstvätt…"
+                  value={editing.serviceExtra}
+                  onChange={(e) => setEditing({ ...editing, serviceExtra: e.target.value })}
                 />
               </div>
-              <div className="full">
-                <label>Tjänster (kommaseparerat)</label>
-                <input
-                  placeholder="Hemstädning, Flyttstädning, Fönsterputs"
-                  value={editing.data.services}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, services: e.target.value } })}
-                />
-              </div>
-              <div className="full">
-                <label>Om företaget</label>
-                <textarea
-                  rows={3}
-                  value={editing.data.about}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, about: e.target.value } })}
-                />
-              </div>
+              {field("Beskrivning av tjänster", "service_descriptions", { full: true, textarea: true, rows: 2 })}
+              {field("Verksamhetsområde (t.ex. städer/kommuner)", "service_areas", { full: true })}
+
+              <h3 className="full" style={{ margin: "4px 0 -4px" }}>Om företaget</h3>
+              {field("Om företaget", "about", { full: true, textarea: true })}
+
+              <h3 className="full" style={{ margin: "4px 0 -4px" }}>Pris & bokning</h3>
               <div>
                 <label>RUT-avdrag</label>
                 <select
@@ -290,26 +361,25 @@ export default function AdminPage() {
                   <option value="Nej">Nej</option>
                 </select>
               </div>
-              <div>
-                <label>Google-betyg (0–5)</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="5"
-                  step="0.1"
-                  value={editing.data.google_rating}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, google_rating: e.target.value } })}
-                />
-              </div>
-              <div>
-                <label>Antal omdömen</label>
-                <input
-                  type="number"
-                  min="0"
-                  value={editing.data.google_reviews}
-                  onChange={(e) => setEditing({ ...editing, data: { ...editing.data, google_reviews: e.target.value } })}
-                />
-              </div>
+              {field("Bokningssätt", "booking_method", { placeholder: "Telefon, hemsida, e-post…" })}
+              {field("Prisinformation", "pricing_info", { full: true, textarea: true, rows: 2, placeholder: "T.ex. 350 kr/timme efter RUT-avdrag" })}
+
+              <h3 className="full" style={{ margin: "4px 0 -4px" }}>Betyg & recensioner</h3>
+              {field("Google-betyg (0–5)", "google_rating", { type: "number", min: "0", max: "5", step: "0.1" })}
+              {field("Antal omdömen", "google_reviews", { type: "number", min: "0" })}
+              {field("Övriga betyg", "other_ratings", { placeholder: "Trustpilot 4,5 (12 omdömen)" })}
+              {field("Certifieringar (kommaseparerat)", "certifications", { placeholder: "F-skatt, ISO 9001…" })}
+              {field("Språk som talas (kommaseparerat)", "languages", { placeholder: "Svenska, Engelska" })}
+              {field("Citat från recensioner (kommaseparerat)", "review_snippets", { full: true, textarea: true, rows: 2, placeholder: "Jättenöjd med städningen!, Alltid punktliga…" })}
+              {field("Senast verifierad", "last_verified", { placeholder: "2026-08-01" })}
+
+              <h3 className="full" style={{ margin: "4px 0 -4px" }}>Bilder</h3>
+              {field("Logotyp-URL", "logo_url", { full: true, placeholder: "https://exempel.se/logo.png" })}
+              {field("Bild-URL:er (kommaseparerat, första används som foto)", "image_urls", { full: true, placeholder: "https://exempel.se/foto1.jpg, https://exempel.se/foto2.jpg" })}
+              <p className="full" style={{ fontSize: "0.85rem", color: "var(--ink-soft)", margin: "-6px 0 0" }}>
+                Bilder laddas ner automatiskt till Vercels CDN nästa gång sajten byggs om (kan ta någon minut extra efter sparande).
+              </p>
+
               <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <input
                   type="checkbox"

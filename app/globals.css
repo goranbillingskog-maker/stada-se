@@ -332,4 +332,6 @@ img { max-width: 100%; }
 .admin-form { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
 .admin-form .full { grid-column: 1 / -1; }
 .admin-form label { font-size: 0.82rem; color: var(--ink-soft); display: block; margin-bottom: 4px; }
+.admin-form h3 { font-size: 0.95rem; color: var(--coral-dark, var(--coral)); border-top: 1px solid #eee; padding-top: 16px; }
+.admin-form h3:first-child { border-top: none; padding-top: 0; }
 @media (max-width: 640px) { .admin-form { grid-template-columns: 1fr; } }
