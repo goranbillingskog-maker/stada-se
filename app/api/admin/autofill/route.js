@@ -10,7 +10,7 @@ export const maxDuration = 300; // tillåt upp till 5 minuter (BrowserAct-anrop 
 // du själv granskar och klickar "Spara" på.
 export async function POST(request) {
   try {
-    const { company_name, city } = await request.json();
+    const { company_name, city, website: providedWebsite } = await request.json();
     if (!company_name || !city) {
       return NextResponse.json(
         { error: "Ange både företagsnamn och stad." },
@@ -26,7 +26,10 @@ export async function POST(request) {
       );
     }
 
-    const website = best.website || best.website_url || "";
+    // Om du redan vet webbadressen används den direkt för att läsa hemsidan
+    // (org.nr, prisinfo, bokning) istället för att förlita sig på vad
+    // Google Maps-sökningen råkar hitta.
+    const website = (providedWebsite || "").trim() || best.website || best.website_url || "";
     let siteData = null;
     try {
       siteData = website ? await extractFromWebsite(website) : null;

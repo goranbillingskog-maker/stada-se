@@ -92,6 +92,7 @@ export default function AdminPage() {
   const [confirmDelete, setConfirmDelete] = useState(null); // index
   const [autofillName, setAutofillName] = useState("");
   const [autofillCity, setAutofillCity] = useState("");
+  const [autofillWebsite, setAutofillWebsite] = useState("");
   const [autofillLoading, setAutofillLoading] = useState(false);
   const [autofillError, setAutofillError] = useState("");
   const [autofillNotice, setAutofillNotice] = useState("");
@@ -196,7 +197,11 @@ export default function AdminPage() {
       const res = await fetch("/api/admin/autofill/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ company_name: autofillName.trim(), city: autofillCity.trim() }),
+        body: JSON.stringify({
+          company_name: autofillName.trim(),
+          city: autofillCity.trim(),
+          website: autofillWebsite.trim(),
+        }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Kunde inte hämta data automatiskt.");
@@ -355,6 +360,15 @@ export default function AdminPage() {
                       value={autofillCity}
                       onChange={(e) => setAutofillCity(e.target.value)}
                       placeholder="T.ex. Göteborg"
+                    />
+                  </div>
+                  <div>
+                    <label>Hemsida (valfritt, om du redan vet den)</label>
+                    <input
+                      type="text"
+                      value={autofillWebsite}
+                      onChange={(e) => setAutofillWebsite(e.target.value)}
+                      placeholder="https://exempel.se"
                     />
                   </div>
                   <button
