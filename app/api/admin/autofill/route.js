@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { lookupGoogleMaps, extractFromWebsite } from "../../../../lib/browseract.js";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 300; // tillåt upp till 5 minuter (BrowserAct-anrop kan ta tid)
 
 // Tar ett företagsnamn + stad, hämtar data via BrowserAct, och lämnar
 // tillbaka ett objekt med samma fältnamn som companies.json/admin-formuläret.
