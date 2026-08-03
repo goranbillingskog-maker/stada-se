@@ -186,8 +186,8 @@ export default function AdminPage() {
   }
 
   async function runAutofill() {
-    if (!autofillName.trim() || !autofillCity.trim()) {
-      setAutofillError("Ange både företagsnamn och stad.");
+    if (!autofillName.trim() && !autofillWebsite.trim()) {
+      setAutofillError("Ange minst företagsnamn eller webbplats.");
       return;
     }
     setAutofillLoading(true);
@@ -345,7 +345,7 @@ export default function AdminPage() {
                 <p style={{ margin: "0 0 8px", fontWeight: 600 }}>Hämta automatiskt (BrowserAct)</p>
                 <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "flex-end" }}>
                   <div>
-                    <label>Företagsnamn</label>
+                    <label>Företagsnamn (eller lämna tomt om du fyller i webbplats)</label>
                     <input
                       type="text"
                       value={autofillName}
@@ -354,7 +354,7 @@ export default function AdminPage() {
                     />
                   </div>
                   <div>
-                    <label>Stad</label>
+                    <label>Stad (valfritt, men ger bättre Google Maps-träff)</label>
                     <input
                       type="text"
                       value={autofillCity}
