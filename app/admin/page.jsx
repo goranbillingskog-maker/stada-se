@@ -209,6 +209,11 @@ export default function AdminPage() {
       setAutofillDebug({
         rawBest: data._debugRawBest,
         rawSiteData: data._debugRawSiteData,
+        mapsError: data.mapsError,
+        mapsSkippedOrFailed: data.mapsSkippedOrFailed,
+        siteExtractionSkipped: data.siteExtractionSkipped,
+        siteExtractionError: data.siteExtractionError,
+        matchCount: data.matchCount,
       });
       const { checked, extraText } = splitServices(data.draft.services);
       setEditing((prev) => ({
