@@ -38,40 +38,64 @@ export async function POST(request) {
       companyName = nameFromWebsite(providedWebsite) || providedWebsite;
     }
 
-    // Google Maps-sökningen är bäst med namn (+ gärna stad), men vi kör den
-    // ändå om vi bara har ett härlett namn från webbadressen – det ger oss då
-    // ändå en chans till adress/telefon/betyg om Maps hittar rätt träff.
     let best = null;
     let allResults = [];
     let mapsError = null;
-    try {
-      const result = await lookupGoogleMaps(companyName, city);
-      best = result.best;
-      allResults = result.allResults;
-    } catch (e) {
-      mapsError = e.message;
+    let siteData = null;
+
+    if (providedWebsite) {
+      // Vi vet redan webbadressen – kör Google Maps-sökningen (för
+      // adress/telefon/betyg) och hemsidesläsningen (för org.nr/prisinfo/
+      // bokning) SAMTIDIGT istället för i tur och ordning. Det halverar
+      // väntetiden och håller oss inom Vercels 5-minutersgräns.
+      const [mapsResult, siteResult] = await Promise.allSettled([
+        lookupGoogleMaps(companyName, city),
+        extractFromWebsite(providedWebsite),
+      ]);
+      if (mapsResult.status === "fulfilled") {
+        best = mapsResult.value.best;
+        allResults = mapsResult.value.allResults;
+      } else {
+        mapsError = mapsResult.reason?.message || String(mapsResult.reason);
+      }
+      if (siteResult.status === "fulfilled") {
+        siteData = siteResult.value;
+      } else {
+        siteData = { _error: siteResult.reason?.message || String(siteResult.reason) };
+      }
+    } else {
+      // Ingen webbadress angiven – vi måste först hitta den via Google Maps
+      // innan vi kan läsa hemsidan, så de här stegen körs i tur och ordning.
+      try {
+        const result = await lookupGoogleMaps(companyName, city);
+        best = result.best;
+        allResults = result.allResults;
+      } catch (e) {
+        mapsError = e.message;
+      }
+      if (!best) {
+        return NextResponse.json(
+          {
+            error: `Hittade inget på Google Maps för "${companyName}"${city ? ` i ${city}` : ""}. Prova ett annat sökord, lägg till stad, eller fyll i webbplats direkt.`,
+          },
+          { status: 404 }
+        );
+      }
+      const foundWebsite = best?.website || best?.website_url || "";
+      try {
+        siteData = foundWebsite ? await extractFromWebsite(foundWebsite) : null;
+      } catch (e) {
+        siteData = { _error: e.message };
+      }
     }
 
-    if (!best && !providedWebsite) {
+    const website = providedWebsite || best?.website || best?.website_url || "";
+
+    if (!best && !website) {
       return NextResponse.json(
-        {
-          error: `Hittade inget på Google Maps för "${companyName}"${city ? ` i ${city}` : ""}. Prova ett annat sökord, lägg till stad, eller fyll i webbplats direkt.`,
-        },
+        { error: "Hittade varken Google Maps-data eller kunde läsa någon hemsida. Fyll i manuellt." },
         { status: 404 }
       );
-    }
-
-    // Om du redan vet webbadressen används den direkt för att läsa hemsidan
-    // (org.nr, prisinfo, bokning) istället för att förlita sig på vad
-    // Google Maps-sökningen råkar hitta.
-    const website = providedWebsite || best?.website || best?.website_url || "";
-    let siteData = null;
-    try {
-      siteData = website ? await extractFromWebsite(website) : null;
-    } catch (e) {
-      // Misslyckas hemsidesextraktionen (t.ex. sidan blockerar botar) fortsätter
-      // vi ändå med det vi har – bättre ett halvfyllt utkast än inget alls.
-      siteData = { _error: e.message };
     }
 
     const draft = {
