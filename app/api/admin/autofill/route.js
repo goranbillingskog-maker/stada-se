@@ -129,6 +129,10 @@ export async function POST(request) {
       mapsError,
       siteExtractionSkipped: !website,
       siteExtractionError: siteData?._error || null,
+      // TILLFÄLLIGT: rådata för felsökning av fältmappningen mot BrowserActs
+      // faktiska svarsformat - tas bort igen när mappningen är verifierad.
+      _debugRawBest: best,
+      _debugRawSiteData: siteData,
     });
   } catch (e) {
     return NextResponse.json({ error: e.message }, { status: 500 });

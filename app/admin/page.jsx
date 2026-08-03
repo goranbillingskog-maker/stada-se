@@ -96,6 +96,7 @@ export default function AdminPage() {
   const [autofillLoading, setAutofillLoading] = useState(false);
   const [autofillError, setAutofillError] = useState("");
   const [autofillNotice, setAutofillNotice] = useState("");
+  const [autofillDebug, setAutofillDebug] = useState(null);
 
   async function load() {
     setError("");
@@ -205,6 +206,10 @@ export default function AdminPage() {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Kunde inte hämta data automatiskt.");
+      setAutofillDebug({
+        rawBest: data._debugRawBest,
+        rawSiteData: data._debugRawSiteData,
+      });
       const { checked, extraText } = splitServices(data.draft.services);
       setEditing((prev) => ({
         ...prev,
@@ -385,6 +390,14 @@ export default function AdminPage() {
                 ) : null}
                 {autofillNotice ? (
                   <p style={{ color: "var(--teal)", marginTop: 8, marginBottom: 0 }}>{autofillNotice}</p>
+                ) : null}
+                {autofillDebug ? (
+                  <details style={{ marginTop: 10 }}>
+                    <summary style={{ cursor: "pointer" }}>Rådata (för felsökning – skicka till Claude om fält saknas)</summary>
+                    <pre style={{ fontSize: "0.75rem", whiteSpace: "pre-wrap", background: "#fff", padding: 10, borderRadius: 8, marginTop: 6, maxHeight: 300, overflow: "auto" }}>
+{JSON.stringify(autofillDebug, null, 2)}
+                    </pre>
+                  </details>
                 ) : null}
               </div>
             ) : null}
