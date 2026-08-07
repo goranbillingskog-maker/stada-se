@@ -1,4 +1,4 @@
-# Stada.se – katalog över städfirmor i Sverige
+# Städtorget.se – katalog över städfirmor i Sverige
 
 En SEO-optimerad Next.js-sajt med 423 städfirmor i Sveriges 20 största städer.
 Varje stad och varje företag har en egen sida med metadata, schema.org-markup,
@@ -31,20 +31,20 @@ lägger dem i `public/images/` – de serveras sedan från **Vercels globala CDN
 Ingen separat bildtjänst eller databas behövs. Bilder som inte går att hämta
 ersätts automatiskt med företagets favicon eller en snygg initial-avatar.
 
-### Steg 3: Koppla domänen stada.se
+### Steg 3: Koppla domänen stadtorget.se
 
-1. I Vercel: öppna projektet → **Settings → Domains** → skriv `stada.se` → **Add**.
+1. I Vercel: öppna projektet → **Settings → Domains** → skriv `stadtorget.se` → **Add**.
 2. Vercel visar då vilka DNS-poster du ska lägga in (vanligen en **A-post** till
    `76.76.21.21` och en **CNAME** för `www`).
 3. Logga in hos din domänleverantör (t.ex. Loopia, One.com, Namecheap) och lägg
-   in posterna under DNS-inställningarna för stada.se.
+   in posterna under DNS-inställningarna för stadtorget.se.
 4. Vänta upp till någon timme – Vercel ordnar HTTPS-certifikat automatiskt.
 
 ### Steg 4: Berätta för Google att sajten finns
 
 1. Gå till [Google Search Console](https://search.google.com/search-console)
-   och lägg till `stada.se` (välj "Domän", verifiera via DNS enligt instruktionerna).
-2. Under **Sitemaps**, skicka in: `https://stada.se/sitemap.xml`.
+   och lägg till `stadtorget.se` (välj "Domän", verifiera via DNS enligt instruktionerna).
+2. Under **Sitemaps**, skicka in: `https://stadtorget.se/sitemap.xml`.
 3. Klart – Google börjar indexera stads- och företagssidorna.
 
 ## Adminpanel (lägg till / redigera / dölj / ta bort företag)
@@ -89,7 +89,7 @@ automatiskt inom några minuter.
 
 | Variabel | Vad den gör | Standard |
 |---|---|---|
-| `SITE_URL` | Sajtens adress i sitemap/metadata | `https://stada.se` |
+| `SITE_URL` | Sajtens adress i sitemap/metadata | `https://stadtorget.se` |
 | `SKIP_IMAGES` | Sätt till `1` för att hoppa över bildnedladdning vid bygge | av |
 
 Sätts i Vercel under **Settings → Environment Variables**.
