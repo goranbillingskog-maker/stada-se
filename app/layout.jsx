@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         <header className="site-header">
           <div className="container">
             <Link href="/" className="logo" aria-label="Städtorget">
-              <img src="/stadtorgetLogo.svg" alt="Städtorget" width="130" height="40" className="logo-img" />
+              <img src="/stadtorgetLogo.svg" alt="Städtorget" width="170" height="53" className="logo-img" />
             </Link>
             <nav className="main-nav" aria-label="Huvudmeny">
               <Link href="/#tjanster">Tjänster</Link>
