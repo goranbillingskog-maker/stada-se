@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getCities, getAllCompanies, getTopCompanies, SITE_URL } from "../lib/data.js";
 import { SERVICES } from "../lib/services.js";
 import { CompanyCard, JsonLd } from "../components/Ui.jsx";
-import { HeroArt, ServiceIcon } from "../components/Illustrations.jsx";
+import { ServiceIcon } from "../components/Illustrations.jsx";
 import Search from "../components/Search.jsx";
 import GeoBanner from "../components/GeoBanner.jsx";
 
@@ -88,7 +88,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-art">
-            <HeroArt />
+            <img src="/images/home-hero.jpg" alt="Städtorget illustration" style={{ width: "100%", height: "auto", borderRadius: "var(--radius)" }} />
           </div>
         </div>
       </section>

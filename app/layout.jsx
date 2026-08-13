@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
             <nav className="main-nav" aria-label="Huvudmeny">
               <Link href="/#tjanster">Tjänster</Link>
               <Link href="/#stader">Städer</Link>
+              <Link href="/blogg/">Blogg</Link>
               <Link href="/om-oss/">Om oss</Link>
               <Link href="/#stader" className="nav-cta">Hitta städfirma</Link>
             </nav>
@@ -55,8 +56,9 @@ export default function RootLayout({ children }) {
                 Sveriges katalog över städfirmor. Vi samlar omdömen, tjänster och
                 kontaktuppgifter så att du enkelt hittar rätt städhjälp där du bor.
               </p>
-              <p>
+              <p style={{ display: "flex", gap: "16px" }}>
                 <Link href="/om-oss/">Om oss</Link>
+                <Link href="/blogg/">Blogg</Link>
               </p>
             </div>
             <div>

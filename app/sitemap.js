@@ -1,12 +1,21 @@
 import { getCities, getAllCompanies, SITE_URL } from "../lib/data.js";
 import { SERVICES, serviceCityCombos } from "../lib/services.js";
+import { ARTICLES } from "../data/articles.js";
 
 export default function sitemap() {
   const now = new Date();
   const entries = [
     { url: `${SITE_URL}/`, lastModified: now, priority: 1 },
     { url: `${SITE_URL}/om-oss/`, lastModified: now, priority: 0.3 },
+    { url: `${SITE_URL}/blogg/`, lastModified: now, priority: 0.6 },
   ];
+  for (const article of ARTICLES) {
+    entries.push({
+      url: `${SITE_URL}/blogg/${article.slug}/`,
+      lastModified: now,
+      priority: 0.6,
+    });
+  }
   for (const c of getCities()) {
     entries.push({ url: `${SITE_URL}/${c.slug}/`, lastModified: now, priority: 0.9 });
   }
