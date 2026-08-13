@@ -4,7 +4,7 @@ export const ARTICLES = [
     title: "Flyttstädning gjort rätt: din kompletta checklista för ett tryggt avslut",
     description: "Flyttstädning i rätt ordning – en varm och konkret checklista för kök, badrum och vardagsrum, plus tips för när det är dags att ta in ett proffs.",
     publishedAt: "2026-08-13",
-    author: "Städtorget Redaktionen",
+    author: "redaktionen på Städtorget",
     readTime: "ca 5 minuter",
     image: "/images/flyttstadning-checklista.jpg",
     content: `
