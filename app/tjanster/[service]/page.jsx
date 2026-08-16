@@ -21,9 +21,13 @@ export async function generateMetadata({ params }) {
   const s = getService(service);
   if (!s) return {};
   const total = companiesForService(s.slug).length;
+  const isB2B = ["kontorsstadning", "byggstadning"].includes(service);
+  const description = isB2B
+    ? `${s.name}: jämför ${total} städfirmor med omdömen i Sveriges största städer. ${s.intro}`
+    : `${s.name}: jämför ${total} städfirmor med omdömen och RUT-avdrag i Sveriges största städer. ${s.intro}`;
   return {
     title: `${s.name} – jämför ${total} städfirmor i 20 städer`,
-    description: `${s.name}: jämför ${total} städfirmor med omdömen och RUT-avdrag i Sveriges största städer. ${s.intro}`,
+    description,
     alternates: { canonical: `/tjanster/${s.slug}/` },
   };
 }
