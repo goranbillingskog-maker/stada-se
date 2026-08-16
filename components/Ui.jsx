@@ -73,10 +73,9 @@ export function CompanyCard({ company, headingLevel = "h3", hideRut = false }) {
           {company.city}
         </div>
         <div className="badges">
-          {company.services.slice(0, 4).map((s) => (
+          {company.services.map((s) => (
             <span className="badge" key={s}>{s}</span>
           ))}
-          {company.rutAvdrag === "Ja" && !hideRut ? <span className="badge badge-rut">RUT-avdrag</span> : null}
         </div>
       </div>
       <Rating company={company} />

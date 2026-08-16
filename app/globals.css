@@ -78,7 +78,7 @@ img { max-width: 100%; }
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 10px);
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--card);
@@ -88,7 +88,15 @@ img { max-width: 100%; }
   padding: 8px 0;
   min-width: 180px;
   z-index: 100;
-  margin-top: 8px;
+}
+/* Invisible hover bridge to prevent menu from closing when crossing the gap */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
 }
 .dropdown-menu a {
   display: block;
