@@ -56,7 +56,7 @@ export function Rating({ company }) {
   );
 }
 
-export function CompanyCard({ company, headingLevel = "h3" }) {
+export function CompanyCard({ company, headingLevel = "h3", hideRut = false }) {
   const H = headingLevel;
   const href = `/${company.citySlug}/${company.slug}/`;
   return (
@@ -76,7 +76,7 @@ export function CompanyCard({ company, headingLevel = "h3" }) {
           {company.services.slice(0, 4).map((s) => (
             <span className="badge" key={s}>{s}</span>
           ))}
-          {company.rutAvdrag === "Ja" ? <span className="badge badge-rut">RUT-avdrag</span> : null}
+          {company.rutAvdrag === "Ja" && !hideRut ? <span className="badge badge-rut">RUT-avdrag</span> : null}
         </div>
       </div>
       <Rating company={company} />

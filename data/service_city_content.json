@@ -1,0 +1,155 @@
+{
+  "hemstadning/stockholm": {
+    "introtext": "Stockholm är en stad av lägenheter, bostadsrätter och pressade scheman — och det märks i efterfrågan på återkommande hemstädning. Många stockholmare väljer en fast städdag varannan eller var fjärde vecka snarare än storstädning några gånger om året, eftersom det håller hemmet rent utan att det tar tid från jobb och familj. På Städtorget hittar du [ANTAL FÖRETAG] granskade städfirmor som är aktiva i Stockholms län, med snittbetyg [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning",
+      "text": "Hemstädning i din bostad är en av de vanligaste RUT-berättigade tjänsterna. Du drar av 50 % av arbetskostnaden direkt på fakturan, upp till ett tak på 75 000 kr per person och år (delas med ROT-avdraget). Ett vanligt timpris innan avdrag ligger på ca 440–650 kr/timme, vilket landar på ungefär 220–325 kr/timme efter RUT."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i en lägenhet i Stockholm?",
+        "a": "De flesta väljer varannan vecka för en normalstor lägenhet, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Gäller RUT-avdraget även för bostadsrätt och hyresrätt?",
+        "a": "Ja, RUT gäller alla boendeformer så länge städningen sker i din egen bostad."
+      }
+    ]
+  },
+  "hemstadning/malmo": {
+    "introtext": "Malmö har en av landets mest internationella befolkningar och en bostadsmarknad som domineras av hyresrätter och studentbostäder, med närhet till Köpenhamn som gör vardagen extra tidspressad för många. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i staden. På Städtorget listar vi [ANTAL FÖRETAG] granskade städfirmor i Malmö med kunder som ger snittbetyget [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning",
+      "text": "Precis som i övriga Sverige är hemstädning RUT-berättigat i Malmö: 50 % av arbetskostnaden dras av direkt på fakturan, upp till 75 000 kr per person och år. Räkna med ett timpris runt 220–325 kr efter avdrag, beroende på städfirma och bostadens storlek."
+    },
+    "faq": [
+      {
+        "q": "Kan jag boka hemstädning på engelska i Malmö?",
+        "a": "Flera av städfirmorna i vår lista har personal som talar engelska — kontrollera respektive företagsprofil."
+      },
+      {
+        "q": "Vad ingår i en standardstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "flyttstadning/stockholm": {
+    "introtext": "På en bostadsmarknad så het som Stockholms är det få saker som stressar en flytt mer än en godkänd besiktning. Bostadsrättsföreningar och hyresvärdar i Stockholm har ofta höga krav på flyttstädningen, och många köpare och hyresgäster begär en flyttstädningsgaranti innan tillträdet. På Städtorget hittar du [ANTAL FÖRETAG] granskade flyttstädfirmor i Stockholm som arbetar med garanti och efterbesiktning.",
+    "faktaruta": {
+      "title": "RUT-avdrag för flyttstädning",
+      "text": "Flyttstädning är RUT-berättigat på samma sätt som hemstädning, så länge städningen sker i din egen bostad (inte i en lokal du bara ska sälja/förmedla). Fråga alltid företaget om priset redan är angivet efter avdrag."
+    },
+    "faq": [
+      {
+        "q": "Vad händer om städfirman missar besiktningen?",
+        "a": "De flesta seriösa firmor erbjuder en garanti där de återkommer och åtgärdar brister kostnadsfritt inom en viss tid."
+      },
+      {
+        "q": "Bör jag boka flyttstädning i god tid i Stockholm?",
+        "a": "Ja — under högsäsong (maj–augusti och kring månadsskiften) är det klokt att boka minst 1–2 veckor i förväg."
+      }
+    ]
+  },
+  "flyttstadning/goteborg": {
+    "introtext": "Göteborg är en stad av kontraster — allt från villor i Örgryte till lägenheter på Hisingen och radhus i ytterområdena. Det gör att flyttstädningens omfattning varierar mer än i en typisk innerstadsflytt, och det är extra viktigt att välja en firma som är van vid både stora och små objekt. På Städtorget listar vi [ANTAL FÖRETAG] granskade flyttstädfirmor som är aktiva i hela Göteborgsområdet.",
+    "faktaruta": {
+      "title": "RUT-avdrag för flyttstädning",
+      "text": "Flyttstädning i din bostad omfattas av RUT-avdraget: 50 % av arbetskostnaden dras direkt på fakturan, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i flyttstädningen i Göteborg?",
+        "a": "Hos de flesta firmor ingår invändig fönsterputs som standard vid flyttstädning — bekräfta alltid med företaget."
+      },
+      {
+        "q": "Kostar det mer att flyttstäda en villa än en lägenhet?",
+        "a": "Ja, priset sätts oftast efter kvadratmeter och antal rum/våningar, så villor och radhus kostar generellt mer än en motsvarande lägenhet."
+      }
+    ]
+  },
+  "flyttstadning/malmo": {
+    "introtext": "Med sitt läge nära Öresundsbron har Malmö en ovanligt rörlig bostadsmarknad — många flyttar in och ut ur staden, ofta i samband med studier eller jobb på andra sidan sundet. Det ställer krav på flyttstädfirmor som kan hålla snäva tidsramar och garantera godkänd besiktning även med kort varsel. Vi listar [ANTAL FÖRETAG] granskade flyttstädfirmor i Malmö.",
+    "faktaruta": {
+      "title": "RUT-avdrag för flyttstädning",
+      "text": "RUT-avdraget gäller flyttstädning i Malmö precis som i övriga landet — 50 % av arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag boka flyttstädning i Malmö med kort varsel?",
+        "a": "Flera av de listade firmorna erbjuder akutbokning, men tillgängligheten varierar — kontakta gärna flera samtidigt vid tidsbrist."
+      },
+      {
+        "q": "Behöver jag vara hemma under städningen?",
+        "a": "Nej, de flesta firmor kan städa med nyckelöverlämning eller kod, så länge ni kommer överens om det i förväg."
+      }
+    ]
+  },
+  "fonsterputs/stockholm": {
+    "introtext": "Stockholms läge vid vatten innebär salthaltig luft och täta regnskurar, vilket gör datan att fönster smutsas ner snabbare än i inlandsstäder. I kombination med att många bor högt upp i flerbostadshus — där egen fönsterputsning både är opraktisk och riskfylld — är återkommande professionell fönsterputs extra efterfrågat i huvudstaden. Vi listar [ANTAL FÖRETAG] granskade fönsterputsfirmor i Stockholm.",
+    "faktaruta": {
+      "title": "RUT-avdrag för fönsterputs",
+      "text": "Fönsterputs är RUT-berättigat på samma villkor som hemstädning: 50 % av arbetskostnaden dras av direkt på fakturan."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör man putsa fönster i en lägenhet i Stockholm?",
+        "a": "2–4 gånger per år är vanligt, oftare om lägenheten ligger nära en trafikerad gata."
+      },
+      {
+        "q": "Putsar firmorna fönster på höga hus?",
+        "a": "Ja, flera av de listade firmorna har utrustning och certifiering för fönsterputs på högre höjder — fråga specifikt om detta vid bokning."
+      }
+    ]
+  },
+  "fonsterputs/goteborg": {
+    "introtext": "Västkustklimatet gör Göteborg till en av landets mest krävande städer för fönster — blåst, regn och havsnära luft sliter snabbt på glasytorna. Många göteborgare väljer därför ett återkommande abonnemang istället for att boka fönsterputs enstaka gånger om året. Vi listar [ANTAL FÖRETAG] granskade fönsterputsfirmor som är aktiva i Göteborg med omnejd.",
+    "faktaruta": {
+      "title": "RUT-avdrag för fönsterputs",
+      "text": "Fönsterputs i din bostad omfattas av RUT-avdraget — 50 % av arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag teckna ett abonnemang for fönsterputs i Göteborg?",
+        "a": "Ja, de flesta firmor i listan erbjuder återkommande putsning kvartalsvis eller halvårsvis."
+      },
+      {
+        "q": "Putsar de även altandörrar och uterum?",
+        "a": "Vanligtvis ja — fråga företaget om exakt vad som ingår i offerten."
+      }
+    ]
+  },
+  "fonsterputs/malmo": {
+    "introtext": "Malmös platta landskap gör staden extra utsatt för blåst året runt, vilket i kombination med stora fönsterpartier i nyare områden som Västra Hamnen skapar ett kontinuerligt behov av professionell fönsterputs. Vi listar [ANTAL FÖRETAG] granskade fönsterputsfirmor som är aktiva i Malmö.",
+    "faktaruta": {
+      "title": "RUT-avdrag för fönsterputs",
+      "text": "Fönsterputs är RUT-berättigat: 50 % av arbetskostnaden dras av direkt på fakturan, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Är fönsterputs dyrare i lägenheter med stora glaspartier?",
+        "a": "Ja, priset sätts oftast per fönster eller kvadratmeter glas, så moderna lägenheter med stora fönster kan kosta mer per tillfälle."
+      },
+      {
+        "q": "Kan jag boka fönsterputs tillsammans med hemstädning?",
+        "a": "Många firmor erbjuder kombinerade paket — kontrollera respektive företags erbjudande."
+      }
+    ]
+  },
+  "kontorsstadning/stockholm": {
+    "introtext": "Stockholm har landets tätaste koncentration av kontorshotell, coworking-ytor och företagslokaler i city-läge, vilket ställer höga krav på flexibla städtider utanför ordinarie kontorstid. På Städtorget listar vi [ANTAL FÖRETAG] granskade städfirmor som är specialiserade på kontorsstädning i Stockholmsområdet, med avtal anpassade för allt från enskilda kontorsrum till hela våningsplan.",
+    "faktaruta": {
+      "title": "Driftskostnad för företag",
+      "text": "Till skillnad från hemstädning omfattas kontorsstädning inte av RUT-avdraget, eftersom avdraget bara gäller arbete i privatbostäder. Däremot är kostnaden för företag helt avdragsgill som en driftskostnad och moms kan lyftas för momsregistrerade verksamheter."
+    },
+    "faq": [
+      {
+        "q": "Kan städningen ske kvällar och helger?",
+        "a": "Ja, de flesta kontorsstädfirmor i Stockholm erbjuder städning utanför kontorstid för att inte störa verksamheten."
+      },
+      {
+        "q": "Går det att teckna löpande avtal istället för enstaka bokningar?",
+        "a": "Ja, de flesta firmor i listan erbjuder månads- eller årsavtal med fast pris."
+      }
+    ]
+  }
+}

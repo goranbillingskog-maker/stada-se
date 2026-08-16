@@ -37,7 +37,16 @@ export default function RootLayout({ children }) {
               <img src="/stadtorgetLogo.svg" alt="Städtorget" width="170" height="53" className="logo-img" />
             </Link>
             <nav className="main-nav" aria-label="Huvudmeny">
-              <Link href="/#tjanster">Tjänster</Link>
+              <div className="nav-dropdown">
+                <Link href="/#tjanster" className="dropdown-trigger">Tjänster</Link>
+                <div className="dropdown-menu">
+                  {SERVICES.map((s) => (
+                    <Link key={s.slug} href={`/tjanster/${s.slug}/`}>
+                      {s.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
               <Link href="/#stader">Städer</Link>
               <Link href="/blogg/">Blogg</Link>
               <Link href="/om-oss/">Om oss</Link>
