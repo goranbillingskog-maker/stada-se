@@ -151,5 +151,1433 @@
         "a": "Ja, de flesta firmor i listan erbjuder månads- eller årsavtal med fast pris."
       }
     ]
+  },
+  "byggstadning/eskilstuna": {
+    "introtext": "Eskilstuna är en historisk industristad i Mälardalen, känd för sitt smidesarv och en växande logistik- och tjänstesektor. Efter en renovering eller nybyggnation i Eskilstuna behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Eskilstuna?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Eskilstuna?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/gavle": {
+    "introtext": "Gävle är en kuststad i Gästrikland med anor från 1400-talet, där salt havsluft och ett kärvt vinterklimat sliter på både hus och fönster. Efter en renovering eller nybyggnation i Gävle behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Gävle?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Gävle?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/goteborg": {
+    "introtext": "Göteborg är en stad av kontraster, från villor i ytterområdena till lägenheter nära älven, med ett väderklimat som präglas av västkustens blåst och regn. Efter en renovering eller nybyggnation i Göteborg behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Göteborg?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Göteborg?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/halmstad": {
+    "introtext": "Halmstad är en kuststad på västkusten med populära stränder och ett studentliv kring Högskolan i Halmstad. Efter en renovering eller nybyggnation i Halmstad behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Halmstad?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Halmstad?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/helsingborg": {
+    "introtext": "Helsingborg ligger vid det smalaste stället av Öresund, med ständig färjetrafik till danska Helsingör och en tät stadskärna. Efter en renovering eller nybyggnation i Helsingborg behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Helsingborg?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Helsingborg?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/jonkoping": {
+    "introtext": "Jönköping ligger vid södra Vätterns strand och har vuxit från tändsticksindustrins storhetstid till att bli ett av landets viktigaste logistiknav. Efter en renovering eller nybyggnation i Jönköping behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Jönköping?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Jönköping?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/linkoping": {
+    "introtext": "Linköping är en universitets- och flygindustristad där Saab och Mjärdevi Science Park sätter sin prägel på arbetsmarknaden. Efter en renovering eller nybyggnation i Linköping behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Linköping?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Linköping?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/malmo": {
+    "introtext": "Malmö har en av landets mest internationella befolkningar och ett läge nära Öresundsbron som gör staden extra rörlig. Efter en renovering eller nybyggnation i Malmö behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Malmö?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Malmö?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/sodertalje": {
+    "introtext": "Södertälje strax söder om Stockholm är en av landets mest internationella orter, präglad av storföretag som Scania och AstraZeneca. Efter en renovering eller nybyggnation i Södertälje behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Södertälje?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Södertälje?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/stockholm": {
+    "introtext": "Stockholm är landets största stad, med en bostadsmarknad dominerad av lägenheter och bostadsrätter samt ett högt tempo i vardagen. Efter en renovering eller nybyggnation i Stockholm behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Stockholm?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Stockholm?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/umea": {
+    "introtext": "Umeå är Norrlands studentstad, med en ung befolkning och snabb tillväxt kring universitetet och kulturlivet. Efter en renovering eller nybyggnation i Umeå behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Umeå?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Umeå?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/uppsala": {
+    "introtext": "Uppsala är en av landets äldsta universitetsstäder, med tät pendling till Stockholm och en bostadsmarknad som präglas av student- och forskarliv. Efter en renovering eller nybyggnation i Uppsala behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Uppsala?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Uppsala?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "byggstadning/vasteras": {
+    "introtext": "Västerås vid Mälarens strand är en industristad med rötter i kraft- och verkstadsindustrin, och en av landets snabbast växande medelstora städer. Efter en renovering eller nybyggnation i Västerås behövs ofta en grundlig byggstädning för att få bort byggdamm och rester innan lokalen eller bostaden kan tas i bruk.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för byggstädning. Skatteverket undantar uttryckligen byggstädning och sanering från RUT, oavsett var arbetet utförs."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en byggstädning i Västerås?",
+        "a": "Vanligtvis grovstädning av byggdamm, borttagning av byggrester, samt en avslutande finstädning innan inflyttning."
+      },
+      {
+        "q": "Är byggstädning RUT-berättigat i Västerås?",
+        "a": "Nej, Skatteverket undantar byggstädning från RUT-avdraget oavsett var arbetet utförs."
+      }
+    ]
+  },
+  "flyttstadning/eskilstuna": {
+    "introtext": "Eskilstuna är en historisk industristad i Mälardalen, känd för sitt smidesarv och en växande logistik- och tjänstesektor. I Eskilstuna är det vanligt att hyresvärdar och bostadsrättsföreningar kräver en noggrant utförd flyttstädning innan tillträdet godkänns, vilket gör valet av städfirma extra viktigt.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i flyttstädningen i Eskilstuna?",
+        "a": "Hos de flesta firmor ingår invändig fönsterputs som standard vid flyttstädning — bekräfta alltid med företaget."
+      },
+      {
+        "q": "Kostar det mer att flyttstäda en villa än en lägenhet i Eskilstuna?",
+        "a": "Ja, priset sätts oftast efter kvadratmeter och antal rum, så villor kostar generellt mer än en motsvarande lägenhet."
+      }
+    ]
+  },
+  "flyttstadning/helsingborg": {
+    "introtext": "Helsingborg ligger vid det smalaste stället av Öresund, med ständig färjetrafik till danska Helsingör och en tät stadskärna. I Helsingborg är det vanligt att hyresvärdar och bostadsrättsföreningar kräver en noggrant utförd flyttstädning innan tillträdet godkänns, vilket gör valet av städfirma extra viktigt.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i flyttstädningen i Helsingborg?",
+        "a": "Hos de flesta firmor ingår invändig fönsterputs som standard vid flyttstädning — bekräfta alltid med företaget."
+      },
+      {
+        "q": "Kostar det mer att flyttstäda en villa än en lägenhet i Helsingborg?",
+        "a": "Ja, priset sätts oftast efter kvadratmeter och antal rum, så villor kostar generellt mer än en motsvarande lägenhet."
+      }
+    ]
+  },
+  "flyttstadning/jonkoping": {
+    "introtext": "Jönköping ligger vid södra Vätterns strand och har vuxit från tändsticksindustrins storhetstid till att bli ett av landets viktigaste logistiknav. I Jönköping är det vanligt att hyresvärdar och bostadsrättsföreningar kräver en noggrant utförd flyttstädning innan tillträdet godkänns, vilket gör valet av städfirma extra viktigt.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i flyttstädningen i Jönköping?",
+        "a": "Hos de flesta firmor ingår invändig fönsterputs som standard vid flyttstädning — bekräfta alltid med företaget."
+      },
+      {
+        "q": "Kostar det mer att flyttstäda en villa än en lägenhet i Jönköping?",
+        "a": "Ja, priset sätts oftast efter kvadratmeter och antal rum, så villor kostar generellt mer än en motsvarande lägenhet."
+      }
+    ]
+  },
+  "flyttstadning/linkoping": {
+    "introtext": "Linköping är en universitets- och flygindustristad där Saab och Mjärdevi Science Park sätter sin prägel på arbetsmarknaden. I Linköping är det vanligt att hyresvärdar och bostadsrättsföreningar kräver en noggrant utförd flyttstädning innan tillträdet godkänns, vilket gör valet av städfirma extra viktigt.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i flyttstädningen i Linköping?",
+        "a": "Hos de flesta firmor ingår invändig fönsterputs som standard vid flyttstädning — bekräfta alltid med företaget."
+      },
+      {
+        "q": "Kostar det mer att flyttstäda en villa än en lägenhet i Linköping?",
+        "a": "Ja, priset sätts oftast efter kvadratmeter och antal rum, så villor kostar generellt mer än en motsvarande lägenhet."
+      }
+    ]
+  },
+  "flyttstadning/orebro": {
+    "introtext": "Örebro ligger centralt i Sverige med ett medeltida slott mitt i stadskärnan och fungerar som ett viktigt nav för handel och logistik. Det gör flyttstädning med besiktningsgaranti extra viktigt i Örebro, där både köpare, hyresgäster och bostadsrättsföreningar ofta ställer höga krav på en godkänd slutstädning.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Vad händer om städfirman missar besiktningen i Örebro?",
+        "a": "De flesta seriösa firmor erbjuder en garanti där de återkommer och åtgärdar brister kostnadsfritt inom en viss tid."
+      },
+      {
+        "q": "Bör jag boka flyttstädning i god tid i Örebro?",
+        "a": "Ja, särskilt under högsäsong (maj–augusti och kring månadsskiften) är det klokt att boka minst 1–2 veckor i förväg."
+      }
+    ]
+  },
+  "flyttstadning/sundsvall": {
+    "introtext": "Sundsvall i Västernorrland kallas 'Stenstaden' efter att ha byggts upp i sten efter den stora branden 1888, med ett kustklimat som kräver regelbundet underhåll av fasader och fönster. Det gör flyttstädning med besiktningsgaranti extra viktigt i Sundsvall, där både köpare, hyresgäster och bostadsrättsföreningar ofta ställer höga krav på en godkänd slutstädning.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Vad händer om städfirman missar besiktningen i Sundsvall?",
+        "a": "De flesta seriösa firmor erbjuder en garanti där de återkommer och åtgärdar brister kostnadsfritt inom en viss tid."
+      },
+      {
+        "q": "Bör jag boka flyttstädning i god tid i Sundsvall?",
+        "a": "Ja, särskilt under högsäsong (maj–augusti och kring månadsskiften) är det klokt att boka minst 1–2 veckor i förväg."
+      }
+    ]
+  },
+  "flyttstadning/umea": {
+    "introtext": "Umeå är Norrlands studentstad, med en ung befolkning och snabb tillväxt kring universitetet och kulturlivet. I Umeå är det vanligt att hyresvärdar och bostadsrättsföreningar kräver en noggrant utförd flyttstädning innan tillträdet godkänns, vilket gör valet av städfirma extra viktigt.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i flyttstädningen i Umeå?",
+        "a": "Hos de flesta firmor ingår invändig fönsterputs som standard vid flyttstädning — bekräfta alltid med företaget."
+      },
+      {
+        "q": "Kostar det mer att flyttstäda en villa än en lägenhet i Umeå?",
+        "a": "Ja, priset sätts oftast efter kvadratmeter och antal rum, så villor kostar generellt mer än en motsvarande lägenhet."
+      }
+    ]
+  },
+  "flyttstadning/uppsala": {
+    "introtext": "Uppsala är en av landets äldsta universitetsstäder, med tät pendling till Stockholm och en bostadsmarknad som präglas av student- och forskarliv. I Uppsala är det vanligt att hyresvärdar och bostadsrättsföreningar kräver en noggrant utförd flyttstädning innan tillträdet godkänns, vilket gör valet av städfirma extra viktigt.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i flyttstädningen i Uppsala?",
+        "a": "Hos de flesta firmor ingår invändig fönsterputs som standard vid flyttstädning — bekräfta alltid med företaget."
+      },
+      {
+        "q": "Kostar det mer att flyttstäda en villa än en lägenhet i Uppsala?",
+        "a": "Ja, priset sätts oftast efter kvadratmeter och antal rum, så villor kostar generellt mer än en motsvarande lägenhet."
+      }
+    ]
+  },
+  "flyttstadning/vasteras": {
+    "introtext": "Västerås vid Mälarens strand är en industristad med rötter i kraft- och verkstadsindustrin, och en av landets snabbast växande medelstora städer. I Västerås är det vanligt att hyresvärdar och bostadsrättsföreningar kräver en noggrant utförd flyttstädning innan tillträdet godkänns, vilket gör valet av städfirma extra viktigt.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i flyttstädningen i Västerås?",
+        "a": "Hos de flesta firmor ingår invändig fönsterputs som standard vid flyttstädning — bekräfta alltid med företaget."
+      },
+      {
+        "q": "Kostar det mer att flyttstäda en villa än en lägenhet i Västerås?",
+        "a": "Ja, priset sätts oftast efter kvadratmeter och antal rum, så villor kostar generellt mer än en motsvarande lägenhet."
+      }
+    ]
+  },
+  "flyttstadning/vaxjo": {
+    "introtext": "Växjö i Småland marknadsför sig som Europas grönaste stad och ligger nära Glasriket, med ett växande näringsliv inom både industri och tjänster. Det gör flyttstädning med besiktningsgaranti extra viktigt i Växjö, där både köpare, hyresgäster och bostadsrättsföreningar ofta ställer höga krav på en godkänd slutstädning.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för flyttstädning i din bostad på samma sätt som hemstädning: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Vad händer om städfirman missar besiktningen i Växjö?",
+        "a": "De flesta seriösa firmor erbjuder en garanti där de återkommer och åtgärdar brister kostnadsfritt inom en viss tid."
+      },
+      {
+        "q": "Bör jag boka flyttstädning i god tid i Växjö?",
+        "a": "Ja, särskilt under högsäsong (maj–augusti och kring månadsskiften) är det klokt att boka minst 1–2 veckor i förväg."
+      }
+    ]
+  },
+  "fonsterputs/eskilstuna": {
+    "introtext": "Eskilstuna är en historisk industristad i Mälardalen, känd för sitt smidesarv och en växande logistik- och tjänstesektor. Fönsterputs efterfrågas året runt i Eskilstuna, och flera företag erbjuder abonnemang två till fyra gånger per år.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag boka fönsterputs tillsammans med hemstädning i Eskilstuna?",
+        "a": "Många firmor erbjuder kombinerade paket — kontrollera respektive företags erbjudande."
+      },
+      {
+        "q": "Är fönsterputs dyrare i lägenheter med stora glaspartier?",
+        "a": "Ja, priset sätts oftast per fönster eller kvadratmeter glas, så moderna lägenheter med stora fönster kan kosta mer per tillfälle."
+      }
+    ]
+  },
+  "fonsterputs/gavle": {
+    "introtext": "Gävle är en kuststad i Gästrikland med anor från 1400-talet, där salt havsluft och ett kärvt vinterklimat sliter på både hus och fönster. Många i Gävle väljer ett återkommande abonnemang för fönsterputs istället för att klättra i egna stegar, särskilt i lägenhetshus.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag teckna ett abonnemang för fönsterputs i Gävle?",
+        "a": "Ja, de flesta firmor i listan erbjuder återkommande putsning kvartalsvis eller halvårsvis."
+      },
+      {
+        "q": "Putsar de även altandörrar och uterum i Gävle?",
+        "a": "Vanligtvis ja — fråga företaget om exakt vad som ingår i offerten."
+      }
+    ]
+  },
+  "fonsterputs/helsingborg": {
+    "introtext": "Helsingborg ligger vid det smalaste stället av Öresund, med ständig färjetrafik till danska Helsingör och en tät stadskärna. Fönsterputs efterfrågas året runt i Helsingborg, och flera företag erbjuder abonnemang två till fyra gånger per år.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag boka fönsterputs tillsammans med hemstädning i Helsingborg?",
+        "a": "Många firmor erbjuder kombinerade paket — kontrollera respektive företags erbjudande."
+      },
+      {
+        "q": "Är fönsterputs dyrare i lägenheter med stora glaspartier?",
+        "a": "Ja, priset sätts oftast per fönster eller kvadratmeter glas, så moderna lägenheter med stora fönster kan kosta mer per tillfälle."
+      }
+    ]
+  },
+  "fonsterputs/jonkoping": {
+    "introtext": "Jönköping ligger vid södra Vätterns strand och har vuxit från tändsticksindustrins storhetstid till att bli ett av landets viktigaste logistiknav. Fönsterputs efterfrågas året runt i Jönköping, och flera företag erbjuder abonnemang två till fyra gånger per år.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag boka fönsterputs tillsammans med hemstädning i Jönköping?",
+        "a": "Många firmor erbjuder kombinerade paket — kontrollera respektive företags erbjudande."
+      },
+      {
+        "q": "Är fönsterputs dyrare i lägenheter med stora glaspartier?",
+        "a": "Ja, priset sätts oftast per fönster eller kvadratmeter glas, så moderna lägenheter med stora fönster kan kosta mer per tillfälle."
+      }
+    ]
+  },
+  "fonsterputs/linkoping": {
+    "introtext": "Linköping är en universitets- och flygindustristad där Saab och Mjärdevi Science Park sätter sin prägel på arbetsmarknaden. Fönsterputs efterfrågas året runt i Linköping, och flera företag erbjuder abonnemang två till fyra gånger per år.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag boka fönsterputs tillsammans med hemstädning i Linköping?",
+        "a": "Många firmor erbjuder kombinerade paket — kontrollera respektive företags erbjudande."
+      },
+      {
+        "q": "Är fönsterputs dyrare i lägenheter med stora glaspartier?",
+        "a": "Ja, priset sätts oftast per fönster eller kvadratmeter glas, så moderna lägenheter med stora fönster kan kosta mer per tillfälle."
+      }
+    ]
+  },
+  "fonsterputs/lund": {
+    "introtext": "Lund är en av landets mest studenttäta städer, med anrik domkyrka och forskningsanläggningar som MAX IV och ESS strax utanför centrum. Det gör regelbunden professionell fönsterputs särskilt värdefullt för boende i Lund, som annars snabbt får smutsiga och slitna fönster.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör man putsa fönster i Lund?",
+        "a": "2–4 gånger per år är vanligt, oftare om bostaden ligger nära en trafikerad gata eller kusten."
+      },
+      {
+        "q": "Putsar firmorna fönster på höga hus i Lund?",
+        "a": "Ja, flera av de listade firmorna har utrustning och certifiering för fönsterputs på högre höjder — fråga specifikt vid bokning."
+      }
+    ]
+  },
+  "fonsterputs/orebro": {
+    "introtext": "Örebro ligger centralt i Sverige med ett medeltida slott mitt i stadskärnan och fungerar som ett viktigt nav för handel och logistik. Många i Örebro väljer ett återkommande abonnemang för fönsterputs istället för att klättra i egna stegar, särskilt i lägenhetshus.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag teckna ett abonnemang för fönsterputs i Örebro?",
+        "a": "Ja, de flesta firmor i listan erbjuder återkommande putsning kvartalsvis eller halvårsvis."
+      },
+      {
+        "q": "Putsar de även altandörrar och uterum i Örebro?",
+        "a": "Vanligtvis ja — fråga företaget om exakt vad som ingår i offerten."
+      }
+    ]
+  },
+  "fonsterputs/sundsvall": {
+    "introtext": "Sundsvall i Västernorrland kallas 'Stenstaden' efter att ha byggts upp i sten efter den stora branden 1888, med ett kustklimat som kräver regelbundet underhåll av fasader och fönster. Många i Sundsvall väljer ett återkommande abonnemang för fönsterputs istället för att klättra i egna stegar, särskilt i lägenhetshus.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag teckna ett abonnemang för fönsterputs i Sundsvall?",
+        "a": "Ja, de flesta firmor i listan erbjuder återkommande putsning kvartalsvis eller halvårsvis."
+      },
+      {
+        "q": "Putsar de även altandörrar och uterum i Sundsvall?",
+        "a": "Vanligtvis ja — fråga företaget om exakt vad som ingår i offerten."
+      }
+    ]
+  },
+  "fonsterputs/umea": {
+    "introtext": "Umeå är Norrlands studentstad, med en ung befolkning och snabb tillväxt kring universitetet och kulturlivet. Fönsterputs efterfrågas året runt i Umeå, och flera företag erbjuder abonnemang två till fyra gånger per år.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag boka fönsterputs tillsammans med hemstädning i Umeå?",
+        "a": "Många firmor erbjuder kombinerade paket — kontrollera respektive företags erbjudande."
+      },
+      {
+        "q": "Är fönsterputs dyrare i lägenheter med stora glaspartier?",
+        "a": "Ja, priset sätts oftast per fönster eller kvadratmeter glas, så moderna lägenheter med stora fönster kan kosta mer per tillfälle."
+      }
+    ]
+  },
+  "fonsterputs/uppsala": {
+    "introtext": "Uppsala är en av landets äldsta universitetsstäder, med tät pendling till Stockholm och en bostadsmarknad som präglas av student- och forskarliv. Fönsterputs efterfrågas året runt i Uppsala, och flera företag erbjuder abonnemang två till fyra gånger per år.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag boka fönsterputs tillsammans med hemstädning i Uppsala?",
+        "a": "Många firmor erbjuder kombinerade paket — kontrollera respektive företags erbjudande."
+      },
+      {
+        "q": "Är fönsterputs dyrare i lägenheter med stora glaspartier?",
+        "a": "Ja, priset sätts oftast per fönster eller kvadratmeter glas, så moderna lägenheter med stora fönster kan kosta mer per tillfälle."
+      }
+    ]
+  },
+  "fonsterputs/vaxjo": {
+    "introtext": "Växjö i Småland marknadsför sig som Europas grönaste stad och ligger nära Glasriket, med ett växande näringsliv inom både industri och tjänster. Många i Växjö väljer ett återkommande abonnemang för fönsterputs istället för att klättra i egna stegar, särskilt i lägenhetshus.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Fönsterputs i privatbostad är RUT-berättigat: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag teckna ett abonnemang för fönsterputs i Växjö?",
+        "a": "Ja, de flesta firmor i listan erbjuder återkommande putsning kvartalsvis eller halvårsvis."
+      },
+      {
+        "q": "Putsar de även altandörrar och uterum i Växjö?",
+        "a": "Vanligtvis ja — fråga företaget om exakt vad som ingår i offerten."
+      }
+    ]
+  },
+  "hemstadning/eskilstuna": {
+    "introtext": "Eskilstuna är en historisk industristad i Mälardalen, känd för sitt smidesarv och en växande logistik- och tjänstesektor. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i Eskilstuna — många väljer en fast städdag varannan eller var fjärde vecka för att hålla hemmet i ordning utan att det tar tid från vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i Eskilstuna?",
+        "a": "De flesta väljer varannan vecka för en normalstor bostad, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Vad ingår i en vanlig hemstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "hemstadning/gavle": {
+    "introtext": "Gävle är en kuststad i Gästrikland med anor från 1400-talet, där salt havsluft och ett kärvt vinterklimat sliter på både hus och fönster. På Städtorget märker vi ett stigande intresse för fast hemstädning i Gävle, särskilt bland barnfamiljer och yrkesarbetande med fulla scheman.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Går det att boka en engångsstädning i Gävle utan abonnemang?",
+        "a": "Ja, de flesta firmor erbjuder både engångsstädning och återkommande avtal."
+      },
+      {
+        "q": "Är hemstädning värt det jämfört med att städa själv?",
+        "a": "Med RUT-avdraget blir kostnaden ofta överkomlig, och många upplever att den sparade tiden väger tyngre än priset."
+      }
+    ]
+  },
+  "hemstadning/helsingborg": {
+    "introtext": "Helsingborg ligger vid det smalaste stället av Öresund, med ständig färjetrafik till danska Helsingör och en tät stadskärna. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i Helsingborg — många väljer en fast städdag varannan eller var fjärde vecka för att hålla hemmet i ordning utan att det tar tid från vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i Helsingborg?",
+        "a": "De flesta väljer varannan vecka för en normalstor bostad, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Vad ingår i en vanlig hemstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "hemstadning/jonkoping": {
+    "introtext": "Jönköping ligger vid södra Vätterns strand och har vuxit från tändsticksindustrins storhetstid till att bli ett av landets viktigaste logistiknav. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i Jönköping — många väljer en fast städdag varannan eller var fjärde vecka för att hålla hemmet i ordning utan att det tar tid från vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i Jönköping?",
+        "a": "De flesta väljer varannan vecka för en normalstor bostad, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Vad ingår i en vanlig hemstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "hemstadning/karlstad": {
+    "introtext": "Karlstad vid Vänerns strand kallas 'solstaden' och är en regional handels- och universitetsstad i Värmland. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i Karlstad — många väljer en fast städdag varannan eller var fjärde vecka för att hålla hemmet i ordning utan att det tar tid från vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i Karlstad?",
+        "a": "De flesta väljer varannan vecka för en normalstor bostad, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Vad ingår i en vanlig hemstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "hemstadning/linkoping": {
+    "introtext": "Linköping är en universitets- och flygindustristad där Saab och Mjärdevi Science Park sätter sin prägel på arbetsmarknaden. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i Linköping — många väljer en fast städdag varannan eller var fjärde vecka för att hålla hemmet i ordning utan att det tar tid från vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i Linköping?",
+        "a": "De flesta väljer varannan vecka för en normalstor bostad, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Vad ingår i en vanlig hemstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "hemstadning/norrkoping": {
+    "introtext": "Norrköping bär spår av sitt industriarv som en gång kallades 'Sveriges Manchester', med gamla textilfabriker som idag rymmer kultur- och kontorslokaler. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i Norrköping — många väljer en fast städdag varannan eller var fjärde vecka för att hålla hemmet i ordning utan att det tar tid från vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i Norrköping?",
+        "a": "De flesta väljer varannan vecka för en normalstor bostad, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Vad ingår i en vanlig hemstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "hemstadning/orebro": {
+    "introtext": "Örebro ligger centralt i Sverige med ett medeltida slott mitt i stadskärnan och fungerar som ett viktigt nav för handel och logistik. På Städtorget märker vi ett stigande intresse för fast hemstädning i Örebro, särskilt bland barnfamiljer och yrkesarbetande med fulla scheman.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Går det att boka en engångsstädning i Örebro utan abonnemang?",
+        "a": "Ja, de flesta firmor erbjuder både engångsstädning och återkommande avtal."
+      },
+      {
+        "q": "Är hemstädning värt det jämfört med att städa själv?",
+        "a": "Med RUT-avdraget blir kostnaden ofta överkomlig, och många upplever att den sparade tiden väger tyngre än priset."
+      }
+    ]
+  },
+  "hemstadning/sodertalje": {
+    "introtext": "Södertälje strax söder om Stockholm är en av landets mest internationella orter, präglad av storföretag som Scania och AstraZeneca. Efterfrågan på pålitlig, återkommande hemstädning växer stadigt i Södertälje, i takt med att fler hushåll vill frigöra tid i vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Kan jag få samma städare varje gång i Södertälje?",
+        "a": "Många städfirmor erbjuder en fast kontaktperson eller ett fast team om du önskar det — fråga företaget vid bokning."
+      },
+      {
+        "q": "Behöver jag tillhandahålla städmaterial själv?",
+        "a": "Nej, de flesta firmor tar med egna miljömärkta städprodukter, men fråga alltid innan bokning om något är oklart."
+      }
+    ]
+  },
+  "hemstadning/sundsvall": {
+    "introtext": "Sundsvall i Västernorrland kallas 'Stenstaden' efter att ha byggts upp i sten efter den stora branden 1888, med ett kustklimat som kräver regelbundet underhåll av fasader och fönster. På Städtorget märker vi ett stigande intresse för fast hemstädning i Sundsvall, särskilt bland barnfamiljer och yrkesarbetande med fulla scheman.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Går det att boka en engångsstädning i Sundsvall utan abonnemang?",
+        "a": "Ja, de flesta firmor erbjuder både engångsstädning och återkommande avtal."
+      },
+      {
+        "q": "Är hemstädning värt det jämfört med att städa själv?",
+        "a": "Med RUT-avdraget blir kostnaden ofta överkomlig, och många upplever att den sparade tiden väger tyngre än priset."
+      }
+    ]
+  },
+  "hemstadning/umea": {
+    "introtext": "Umeå är Norrlands studentstad, med en ung befolkning och snabb tillväxt kring universitetet och kulturlivet. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i Umeå — många väljer en fast städdag varannan eller var fjärde vecka för att hålla hemmet i ordning utan att det tar tid från vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i Umeå?",
+        "a": "De flesta väljer varannan vecka för en normalstor bostad, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Vad ingår i en vanlig hemstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "hemstadning/uppsala": {
+    "introtext": "Uppsala är en av landets äldsta universitetsstäder, med tät pendling till Stockholm och en bostadsmarknad som präglas av student- och forskarliv. Det gör återkommande hemstädning till en av de mest efterfrågade tjänsterna i Uppsala — många väljer en fast städdag varannan eller var fjärde vecka för att hålla hemmet i ordning utan att det tar tid från vardagen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bör jag boka hemstädning i Uppsala?",
+        "a": "De flesta väljer varannan vecka för en normalstor bostad, men veckostädning är vanligt bland barnfamiljer och husdjursägare."
+      },
+      {
+        "q": "Vad ingår i en vanlig hemstädning?",
+        "a": "Vanligtvis dammtorkning, dammsugning, golvtvätt, badrum och kök. Fönsterputs och skåprensning tillkommer oftast som tillägg."
+      }
+    ]
+  },
+  "hemstadning/vasteras": {
+    "introtext": "Västerås vid Mälarens strand är en industristad med rötter i kraft- och verkstadsindustrin, och en av landets snabbast växande medelstora städer. På Städtorget märker vi ett stigande intresse för fast hemstädning i Västerås, särskilt bland barnfamiljer och yrkesarbetande med fulla scheman.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Går det att boka en engångsstädning i Västerås utan abonnemang?",
+        "a": "Ja, de flesta firmor erbjuder både engångsstädning och återkommande avtal."
+      },
+      {
+        "q": "Är hemstädning värt det jämfört med att städa själv?",
+        "a": "Med RUT-avdraget blir kostnaden ofta överkomlig, och många upplever att den sparade tiden väger tyngre än priset."
+      }
+    ]
+  },
+  "hemstadning/vaxjo": {
+    "introtext": "Växjö i Småland marknadsför sig som Europas grönaste stad och ligger nära Glasriket, med ett växande näringsliv inom både industri och tjänster. På Städtorget märker vi ett stigande intresse för fast hemstädning i Växjö, särskilt bland barnfamiljer och yrkesarbetande med fulla scheman.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "RUT-avdrag gäller för hemstädning i privatbostad: 50 % avdrag på arbetskostnaden, upp till 75 000 kr per person och år (delas med ROT-avdraget)."
+    },
+    "faq": [
+      {
+        "q": "Går det att boka en engångsstädning i Växjö utan abonnemang?",
+        "a": "Ja, de flesta firmor erbjuder både engångsstädning och återkommande avtal."
+      },
+      {
+        "q": "Är hemstädning värt det jämfört med att städa själv?",
+        "a": "Med RUT-avdraget blir kostnaden ofta överkomlig, och många upplever att den sparade tiden väger tyngre än priset."
+      }
+    ]
+  },
+  "kontorsstadning/eskilstuna": {
+    "introtext": "Eskilstuna är en historisk industristad i Mälardalen, känd för sitt smidesarv och en växande logistik- och tjänstesektor. Företag i Eskilstuna efterfrågar allt oftare skräddarsydda städavtal för kontor, med städning som sker utanför ordinarie arbetstid för att inte störa verksamheten.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Är kontorsstädning avdragsgillt för mitt företag i Eskilstuna?",
+        "a": "Kostnaden räknas ofta som en driftskostnad och kan vara avdragsgill, och moms kan lyftas — kontrollera alltid med er revisor."
+      },
+      {
+        "q": "Kan jag få städning av bara vissa delar av kontoret?",
+        "a": "Ja, de flesta firmor skräddarsyr upplägget efter behov, från enstaka rum till hela våningsplan."
+      }
+    ]
+  },
+  "kontorsstadning/gavle": {
+    "introtext": "Gävle är en kuststad i Gästrikland med anor från 1400-talet, där salt havsluft och ett kärvt vinterklimat sliter på både hus och fönster. I Gävle finns ett brett utbud av kontor, coworking-ytor och företagslokaler, vilket skapar efterfrågan på flexibel kontorsstädning anpassad efter verksamhetens öppettider.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Kan städningen ske kvällar och helger i Gävle?",
+        "a": "Ja, de flesta kontorsstädfirmor erbjuder städning utanför kontorstid för att inte störa verksamheten."
+      },
+      {
+        "q": "Går det att teckna löpande avtal istället för enstaka bokningar?",
+        "a": "Ja, de flesta firmor i listan erbjuder månads- eller årsavtal med fast pris."
+      }
+    ]
+  },
+  "kontorsstadning/goteborg": {
+    "introtext": "Göteborg är en stad av kontraster, från villor i ytterområdena till lägenheter nära älven, med ett väderklimat som präglas av västkustens blåst och regn. Företag i Göteborg efterfrågar allt oftare skräddarsydda städavtal för kontor, med städning som sker utanför ordinarie arbetstid för att inte störa verksamheten.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Är kontorsstädning avdragsgillt för mitt företag i Göteborg?",
+        "a": "Kostnaden räknas ofta som en driftskostnad och kan vara avdragsgill, och moms kan lyftas — kontrollera alltid med er revisor."
+      },
+      {
+        "q": "Kan jag få städning av bara vissa delar av kontoret?",
+        "a": "Ja, de flesta firmor skräddarsyr upplägget efter behov, från enstaka rum till hela våningsplan."
+      }
+    ]
+  },
+  "kontorsstadning/helsingborg": {
+    "introtext": "Helsingborg ligger vid det smalaste stället av Öresund, med ständig färjetrafik till danska Helsingör och en tät stadskärna. Företag i Helsingborg efterfrågar allt oftare skräddarsydda städavtal för kontor, med städning som sker utanför ordinarie arbetstid för att inte störa verksamheten.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Är kontorsstädning avdragsgillt för mitt företag i Helsingborg?",
+        "a": "Kostnaden räknas ofta som en driftskostnad och kan vara avdragsgill, och moms kan lyftas — kontrollera alltid med er revisor."
+      },
+      {
+        "q": "Kan jag få städning av bara vissa delar av kontoret?",
+        "a": "Ja, de flesta firmor skräddarsyr upplägget efter behov, från enstaka rum till hela våningsplan."
+      }
+    ]
+  },
+  "kontorsstadning/jonkoping": {
+    "introtext": "Jönköping ligger vid södra Vätterns strand och har vuxit från tändsticksindustrins storhetstid till att bli ett av landets viktigaste logistiknav. Företag i Jönköping efterfrågar allt oftare skräddarsydda städavtal för kontor, med städning som sker utanför ordinarie arbetstid för att inte störa verksamheten.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Är kontorsstädning avdragsgillt för mitt företag i Jönköping?",
+        "a": "Kostnaden räknas ofta som en driftskostnad och kan vara avdragsgill, och moms kan lyftas — kontrollera alltid med er revisor."
+      },
+      {
+        "q": "Kan jag få städning av bara vissa delar av kontoret?",
+        "a": "Ja, de flesta firmor skräddarsyr upplägget efter behov, från enstaka rum till hela våningsplan."
+      }
+    ]
+  },
+  "kontorsstadning/karlstad": {
+    "introtext": "Karlstad vid Vänerns strand kallas 'solstaden' och är en regional handels- och universitetsstad i Värmland. Företag i Karlstad efterfrågar allt oftare skräddarsydda städavtal för kontor, med städning som sker utanför ordinarie arbetstid för att inte störa verksamheten.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Är kontorsstädning avdragsgillt för mitt företag i Karlstad?",
+        "a": "Kostnaden räknas ofta som en driftskostnad och kan vara avdragsgill, och moms kan lyftas — kontrollera alltid med er revisor."
+      },
+      {
+        "q": "Kan jag få städning av bara vissa delar av kontoret?",
+        "a": "Ja, de flesta firmor skräddarsyr upplägget efter behov, från enstaka rum till hela våningsplan."
+      }
+    ]
+  },
+  "kontorsstadning/lund": {
+    "introtext": "Lund är en av landets mest studenttäta städer, med anrik domkyrka och forskningsanläggningar som MAX IV och ESS strax utanför centrum. Företag i Lund efterfrågar allt oftare skräddarsydda städavtal för kontor, med städning som sker utanför ordinarie arbetstid för att inte störa verksamheten.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Är kontorsstädning avdragsgillt för mitt företag i Lund?",
+        "a": "Kostnaden räknas ofta som en driftskostnad och kan vara avdragsgill, och moms kan lyftas — kontrollera alltid med er revisor."
+      },
+      {
+        "q": "Kan jag få städning av bara vissa delar av kontoret?",
+        "a": "Ja, de flesta firmor skräddarsyr upplägget efter behov, från enstaka rum till hela våningsplan."
+      }
+    ]
+  },
+  "kontorsstadning/malmo": {
+    "introtext": "Malmö har en av landets mest internationella befolkningar och ett läge nära Öresundsbron som gör staden extra rörlig. Företag i Malmö efterfrågar allt oftare skräddarsydda städavtal för kontor, med städning som sker utanför ordinarie arbetstid för att inte störa verksamheten.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Är kontorsstädning avdragsgillt för mitt företag i Malmö?",
+        "a": "Kostnaden räknas ofta som en driftskostnad och kan vara avdragsgill, och moms kan lyftas — kontrollera alltid med er revisor."
+      },
+      {
+        "q": "Kan jag få städning av bara vissa delar av kontoret?",
+        "a": "Ja, de flesta firmor skräddarsyr upplägget efter behov, från enstaka rum till hela våningsplan."
+      }
+    ]
+  },
+  "kontorsstadning/orebro": {
+    "introtext": "Örebro ligger centralt i Sverige med ett medeltida slott mitt i stadskärnan och fungerar som ett viktigt nav för handel och logistik. I Örebro finns ett brett utbud av kontor, coworking-ytor och företagslokaler, vilket skapar efterfrågan på flexibel kontorsstädning anpassad efter verksamhetens öppettider.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Kan städningen ske kvällar och helger i Örebro?",
+        "a": "Ja, de flesta kontorsstädfirmor erbjuder städning utanför kontorstid för att inte störa verksamheten."
+      },
+      {
+        "q": "Går det att teckna löpande avtal istället för enstaka bokningar?",
+        "a": "Ja, de flesta firmor i listan erbjuder månads- eller årsavtal med fast pris."
+      }
+    ]
+  },
+  "kontorsstadning/sundsvall": {
+    "introtext": "Sundsvall i Västernorrland kallas 'Stenstaden' efter att ha byggts upp i sten efter den stora branden 1888, med ett kustklimat som kräver regelbundet underhåll av fasader och fönster. I Sundsvall finns ett brett utbud av kontor, coworking-ytor och företagslokaler, vilket skapar efterfrågan på flexibel kontorsstädning anpassad efter verksamhetens öppettider.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Kan städningen ske kvällar och helger i Sundsvall?",
+        "a": "Ja, de flesta kontorsstädfirmor erbjuder städning utanför kontorstid för att inte störa verksamheten."
+      },
+      {
+        "q": "Går det att teckna löpande avtal istället för enstaka bokningar?",
+        "a": "Ja, de flesta firmor i listan erbjuder månads- eller årsavtal med fast pris."
+      }
+    ]
+  },
+  "kontorsstadning/umea": {
+    "introtext": "Umeå är Norrlands studentstad, med en ung befolkning och snabb tillväxt kring universitetet och kulturlivet. Företag i Umeå efterfrågar allt oftare skräddarsydda städavtal för kontor, med städning som sker utanför ordinarie arbetstid för att inte störa verksamheten.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Är kontorsstädning avdragsgillt för mitt företag i Umeå?",
+        "a": "Kostnaden räknas ofta som en driftskostnad och kan vara avdragsgill, och moms kan lyftas — kontrollera alltid med er revisor."
+      },
+      {
+        "q": "Kan jag få städning av bara vissa delar av kontoret?",
+        "a": "Ja, de flesta firmor skräddarsyr upplägget efter behov, från enstaka rum till hela våningsplan."
+      }
+    ]
+  },
+  "kontorsstadning/vasteras": {
+    "introtext": "Västerås vid Mälarens strand är en industristad med rötter i kraft- och verkstadsindustrin, och en av landets snabbast växande medelstora städer. I Västerås finns ett brett utbud av kontor, coworking-ytor och företagslokaler, vilket skapar efterfrågan på flexibel kontorsstädning anpassad efter verksamhetens öppettider.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Kan städningen ske kvällar och helger i Västerås?",
+        "a": "Ja, de flesta kontorsstädfirmor erbjuder städning utanför kontorstid för att inte störa verksamheten."
+      },
+      {
+        "q": "Går det att teckna löpande avtal istället för enstaka bokningar?",
+        "a": "Ja, de flesta firmor i listan erbjuder månads- eller årsavtal med fast pris."
+      }
+    ]
+  },
+  "kontorsstadning/vaxjo": {
+    "introtext": "Växjö i Småland marknadsför sig som Europas grönaste stad och ligger nära Glasriket, med ett växande näringsliv inom både industri och tjänster. I Växjö finns ett brett utbud av kontor, coworking-ytor och företagslokaler, vilket skapar efterfrågan på flexibel kontorsstädning anpassad efter verksamhetens öppettider.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för kontorsstädning, eftersom avdraget bara gäller arbete i privatbostäder, inte kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Kan städningen ske kvällar och helger i Växjö?",
+        "a": "Ja, de flesta kontorsstädfirmor erbjuder städning utanför kontorstid för att inte störa verksamheten."
+      },
+      {
+        "q": "Går det att teckna löpande avtal istället för enstaka bokningar?",
+        "a": "Ja, de flesta firmor i listan erbjuder månads- eller årsavtal med fast pris."
+      }
+    ]
+  },
+  "storstadning/eskilstuna": {
+    "introtext": "Eskilstuna är en historisk industristad i Mälardalen, känd för sitt smidesarv och en växande logistik- och tjänstesektor. Storstädning i Eskilstuna omfattar oftast sådant som sällan hinns med i vardagen — bakom vitvaror, i skåp och längs golvlister — och bokas ofta säsongsvis.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i en storstädning i Eskilstuna?",
+        "a": "Hos många firmor ingår invändig fönsterputs — bekräfta alltid omfattningen innan bokning."
+      },
+      {
+        "q": "Passar storstädning för hela huset eller bara vissa rum?",
+        "a": "Båda delarna går att boka — de flesta firmor erbjuder både helhetsstädning och städning av utvalda rum eller ytor."
+      }
+    ]
+  },
+  "storstadning/gavle": {
+    "introtext": "Gävle är en kuststad i Gästrikland med anor från 1400-talet, där salt havsluft och ett kärvt vinterklimat sliter på både hus och fönster. I Gävle väljer många hushåll att boka en storstädning inför vår eller höst, som ett komplement till den vanliga löpande städningen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag kombinera storstädning med flyttstädning i Gävle?",
+        "a": "Nej, det är oftast olika tjänster med olika omfattning — fråga företaget vilken som passar ditt behov."
+      },
+      {
+        "q": "Vad kostar en storstädning jämfört med vanlig hemstädning?",
+        "a": "Storstädning tar oftast längre tid och kostar därför mer per tillfälle, men bokas mer sällan."
+      }
+    ]
+  },
+  "storstadning/goteborg": {
+    "introtext": "Göteborg är en stad av kontraster, från villor i ytterområdena till lägenheter nära älven, med ett väderklimat som präglas av västkustens blåst och regn. Storstädning i Göteborg omfattar oftast sådant som sällan hinns med i vardagen — bakom vitvaror, i skåp och längs golvlister — och bokas ofta säsongsvis.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i en storstädning i Göteborg?",
+        "a": "Hos många firmor ingår invändig fönsterputs — bekräfta alltid omfattningen innan bokning."
+      },
+      {
+        "q": "Passar storstädning för hela huset eller bara vissa rum?",
+        "a": "Båda delarna går att boka — de flesta firmor erbjuder både helhetsstädning och städning av utvalda rum eller ytor."
+      }
+    ]
+  },
+  "storstadning/helsingborg": {
+    "introtext": "Helsingborg ligger vid det smalaste stället av Öresund, med ständig färjetrafik till danska Helsingör och en tät stadskärna. Storstädning i Helsingborg omfattar oftast sådant som sällan hinns med i vardagen — bakom vitvaror, i skåp och längs golvlister — och bokas ofta säsongsvis.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i en storstädning i Helsingborg?",
+        "a": "Hos många firmor ingår invändig fönsterputs — bekräfta alltid omfattningen innan bokning."
+      },
+      {
+        "q": "Passar storstädning för hela huset eller bara vissa rum?",
+        "a": "Båda delarna går att boka — de flesta firmor erbjuder både helhetsstädning och städning av utvalda rum eller ytor."
+      }
+    ]
+  },
+  "storstadning/jonkoping": {
+    "introtext": "Jönköping ligger vid södra Vätterns strand och har vuxit från tändsticksindustrins storhetstid till att bli ett av landets viktigaste logistiknav. Storstädning i Jönköping omfattar oftast sådant som sällan hinns med i vardagen — bakom vitvaror, i skåp och längs golvlister — och bokas ofta säsongsvis.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i en storstädning i Jönköping?",
+        "a": "Hos många firmor ingår invändig fönsterputs — bekräfta alltid omfattningen innan bokning."
+      },
+      {
+        "q": "Passar storstädning för hela huset eller bara vissa rum?",
+        "a": "Båda delarna går att boka — de flesta firmor erbjuder både helhetsstädning och städning av utvalda rum eller ytor."
+      }
+    ]
+  },
+  "storstadning/karlstad": {
+    "introtext": "Karlstad vid Vänerns strand kallas 'solstaden' och är en regional handels- och universitetsstad i Värmland. Storstädning i Karlstad omfattar oftast sådant som sällan hinns med i vardagen — bakom vitvaror, i skåp och längs golvlister — och bokas ofta säsongsvis.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i en storstädning i Karlstad?",
+        "a": "Hos många firmor ingår invändig fönsterputs — bekräfta alltid omfattningen innan bokning."
+      },
+      {
+        "q": "Passar storstädning för hela huset eller bara vissa rum?",
+        "a": "Båda delarna går att boka — de flesta firmor erbjuder både helhetsstädning och städning av utvalda rum eller ytor."
+      }
+    ]
+  },
+  "storstadning/lund": {
+    "introtext": "Lund är en av landets mest studenttäta städer, med anrik domkyrka och forskningsanläggningar som MAX IV och ESS strax utanför centrum. Storstädning i Lund omfattar oftast sådant som sällan hinns med i vardagen — bakom vitvaror, i skåp och längs golvlister — och bokas ofta säsongsvis.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i en storstädning i Lund?",
+        "a": "Hos många firmor ingår invändig fönsterputs — bekräfta alltid omfattningen innan bokning."
+      },
+      {
+        "q": "Passar storstädning för hela huset eller bara vissa rum?",
+        "a": "Båda delarna går att boka — de flesta firmor erbjuder både helhetsstädning och städning av utvalda rum eller ytor."
+      }
+    ]
+  },
+  "storstadning/norrkoping": {
+    "introtext": "Norrköping bär spår av sitt industriarv som en gång kallades 'Sveriges Manchester', med gamla textilfabriker som idag rymmer kultur- och kontorslokaler. I Norrköping väljer många hushåll att boka en storstädning inför vår eller höst, som ett komplement till den vanliga löpande städningen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag kombinera storstädning med flyttstädning i Norrköping?",
+        "a": "Nej, det är oftast olika tjänster med olika omfattning — fråga företaget vilken som passar ditt behov."
+      },
+      {
+        "q": "Vad kostar en storstädning jämfört med vanlig hemstädning?",
+        "a": "Storstädning tar oftast längre tid och kostar därför mer per tillfälle, men bokas mer sällan."
+      }
+    ]
+  },
+  "storstadning/orebro": {
+    "introtext": "Örebro ligger centralt i Sverige med ett medeltida slott mitt i stadskärnan och fungerar som ett viktigt nav för handel och logistik. I Örebro väljer många hushåll att boka en storstädning inför vår eller höst, som ett komplement till den vanliga löpande städningen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag kombinera storstädning med flyttstädning i Örebro?",
+        "a": "Nej, det är oftast olika tjänster med olika omfattning — fråga företaget vilken som passar ditt behov."
+      },
+      {
+        "q": "Vad kostar en storstädning jämfört med vanlig hemstädning?",
+        "a": "Storstädning tar oftast längre tid och kostar därför mer per tillfälle, men bokas mer sällan."
+      }
+    ]
+  },
+  "storstadning/sundsvall": {
+    "introtext": "Sundsvall i Västernorrland kallas 'Stenstaden' efter att ha byggts upp i sten efter den stora branden 1888, med ett kustklimat som kräver regelbundet underhåll av fasader och fönster. I Sundsvall väljer många hushåll att boka en storstädning inför vår eller höst, som ett komplement till den vanliga löpande städningen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag kombinera storstädning med flyttstädning i Sundsvall?",
+        "a": "Nej, det är oftast olika tjänster med olika omfattning — fråga företaget vilken som passar ditt behov."
+      },
+      {
+        "q": "Vad kostar en storstädning jämfört med vanlig hemstädning?",
+        "a": "Storstädning tar oftast längre tid och kostar därför mer per tillfälle, men bokas mer sällan."
+      }
+    ]
+  },
+  "storstadning/umea": {
+    "introtext": "Umeå är Norrlands studentstad, med en ung befolkning och snabb tillväxt kring universitetet och kulturlivet. Storstädning i Umeå omfattar oftast sådant som sällan hinns med i vardagen — bakom vitvaror, i skåp och längs golvlister — och bokas ofta säsongsvis.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputs i en storstädning i Umeå?",
+        "a": "Hos många firmor ingår invändig fönsterputs — bekräfta alltid omfattningen innan bokning."
+      },
+      {
+        "q": "Passar storstädning för hela huset eller bara vissa rum?",
+        "a": "Båda delarna går att boka — de flesta firmor erbjuder både helhetsstädning och städning av utvalda rum eller ytor."
+      }
+    ]
+  },
+  "storstadning/vasteras": {
+    "introtext": "Västerås vid Mälarens strand är en industristad med rötter i kraft- och verkstadsindustrin, och en av landets snabbast växande medelstora städer. I Västerås väljer många hushåll att boka en storstädning inför vår eller höst, som ett komplement till den vanliga löpande städningen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag kombinera storstädning med flyttstädning i Västerås?",
+        "a": "Nej, det är oftast olika tjänster med olika omfattning — fråga företaget vilken som passar ditt behov."
+      },
+      {
+        "q": "Vad kostar en storstädning jämfört med vanlig hemstädning?",
+        "a": "Storstädning tar oftast längre tid och kostar därför mer per tillfälle, men bokas mer sällan."
+      }
+    ]
+  },
+  "storstadning/vaxjo": {
+    "introtext": "Växjö i Småland marknadsför sig som Europas grönaste stad och ligger nära Glasriket, med ett växande näringsliv inom både industri och tjänster. I Växjö väljer många hushåll att boka en storstädning inför vår eller höst, som ett komplement till den vanliga löpande städningen.",
+    "faktaruta": {
+      "title": "RUT-avdrag",
+      "text": "Storstädning i privatbostad omfattas av RUT-avdraget precis som hemstädning: 50 % avdrag, upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Kan jag kombinera storstädning med flyttstädning i Växjö?",
+        "a": "Nej, det är oftast olika tjänster med olika omfattning — fråga företaget vilken som passar ditt behov."
+      },
+      {
+        "q": "Vad kostar en storstädning jämfört med vanlig hemstädning?",
+        "a": "Storstädning tar oftast längre tid och kostar därför mer per tillfälle, men bokas mer sällan."
+      }
+    ]
+  },
+  "trappstadning/gavle": {
+    "introtext": "Gävle är en kuststad i Gästrikland med anor från 1400-talet, där salt havsluft och ett kärvt vinterklimat sliter på både hus och fönster. Bostadsrättsföreningar i Gävle tecknar ofta löpande avtal för trappstädning, för att slippa organisera städningen själva bland de boende.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Kan en bostadsrättsförening i Gävle själv välja hur ofta trapphuset städas?",
+        "a": "Ja, de flesta firmor erbjuder flexibla avtal där föreningen väljer städfrekvens efter behov och budget."
+      },
+      {
+        "q": "Städas källare och tvättstuga också vid trappstädning?",
+        "a": "Ofta ingår närliggande gemensamma utrymmen som källargångar och tvättstugor — fråga företaget om exakt omfattning."
+      }
+    ]
+  },
+  "trappstadning/goteborg": {
+    "introtext": "Göteborg är en stad av kontraster, från villor i ytterområdena till lägenheter nära älven, med ett väderklimat som präglas av västkustens blåst och regn. Trappstädning i Göteborg beställs oftast av bostadsrättsföreningar och fastighetsägare för att hålla gemensamma trapphus och entréer rena och representativa.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta städas ett trapphus normalt i Göteborg?",
+        "a": "Det beror på husets storlek, men en till två gånger per vecka är vanligt för flerbostadshus."
+      },
+      {
+        "q": "Är trappstädning RUT-berättigat?",
+        "a": "Nej, enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+      }
+    ]
+  },
+  "trappstadning/helsingborg": {
+    "introtext": "Helsingborg ligger vid det smalaste stället av Öresund, med ständig färjetrafik till danska Helsingör och en tät stadskärna. Trappstädning i Helsingborg beställs oftast av bostadsrättsföreningar och fastighetsägare för att hålla gemensamma trapphus och entréer rena och representativa.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta städas ett trapphus normalt i Helsingborg?",
+        "a": "Det beror på husets storlek, men en till två gånger per vecka är vanligt för flerbostadshus."
+      },
+      {
+        "q": "Är trappstädning RUT-berättigat?",
+        "a": "Nej, enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+      }
+    ]
+  },
+  "trappstadning/jonkoping": {
+    "introtext": "Jönköping ligger vid södra Vätterns strand och har vuxit från tändsticksindustrins storhetstid till att bli ett av landets viktigaste logistiknav. Trappstädning i Jönköping beställs oftast av bostadsrättsföreningar och fastighetsägare för att hålla gemensamma trapphus och entréer rena och representativa.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta städas ett trapphus normalt i Jönköping?",
+        "a": "Det beror på husets storlek, men en till två gånger per vecka är vanligt för flerbostadshus."
+      },
+      {
+        "q": "Är trappstädning RUT-berättigat?",
+        "a": "Nej, enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+      }
+    ]
+  },
+  "trappstadning/karlstad": {
+    "introtext": "Karlstad vid Vänerns strand kallas 'solstaden' och är en regional handels- och universitetsstad i Värmland. Trappstädning i Karlstad beställs oftast av bostadsrättsföreningar och fastighetsägare för att hålla gemensamma trapphus och entréer rena och representativa.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta städas ett trapphus normalt i Karlstad?",
+        "a": "Det beror på husets storlek, men en till två gånger per vecka är vanligt för flerbostadshus."
+      },
+      {
+        "q": "Är trappstädning RUT-berättigat?",
+        "a": "Nej, enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+      }
+    ]
+  },
+  "trappstadning/linkoping": {
+    "introtext": "Linköping är en universitets- och flygindustristad där Saab och Mjärdevi Science Park sätter sin prägel på arbetsmarknaden. I Linköping är regelbunden trappstädning en vanlig del av fastighetsskötseln, med städning en till flera gånger per vecka beroende på husets storlek.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Vem tecknar avtal för trappstädning i Linköping, föreningen eller de boende?",
+        "a": "Normalt tecknar bostadsrättsföreningen eller fastighetsägaren avtalet, och kostnaden ingår i avgiften eller hyran."
+      },
+      {
+        "q": "Ingår fönsterputs i entrén vid trappstädning?",
+        "a": "Hos många firmor ingår putsning av entrédörrar och fönster i trapphuset — bekräfta omfattningen vid offertförfrågan."
+      }
+    ]
+  },
+  "trappstadning/malmo": {
+    "introtext": "Malmö har en av landets mest internationella befolkningar och ett läge nära Öresundsbron som gör staden extra rörlig. Bostadsrättsföreningar i Malmö tecknar ofta löpande avtal för trappstädning, för att slippa organisera städningen själva bland de boende.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Kan en bostadsrättsförening i Malmö själv välja hur ofta trapphuset städas?",
+        "a": "Ja, de flesta firmor erbjuder flexibla avtal där föreningen väljer städfrekvens efter behov och budget."
+      },
+      {
+        "q": "Städas källare och tvättstuga också vid trappstädning?",
+        "a": "Ofta ingår närliggande gemensamma utrymmen som källargångar och tvättstugor — fråga företaget om exakt omfattning."
+      }
+    ]
+  },
+  "trappstadning/stockholm": {
+    "introtext": "Stockholm är landets största stad, med en bostadsmarknad dominerad av lägenheter och bostadsrätter samt ett högt tempo i vardagen. I Stockholm är regelbunden trappstädning en vanlig del av fastighetsskötseln, med städning en till flera gånger per vecka beroende på husets storlek.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Vem tecknar avtal för trappstädning i Stockholm, föreningen eller de boende?",
+        "a": "Normalt tecknar bostadsrättsföreningen eller fastighetsägaren avtalet, och kostnaden ingår i avgiften eller hyran."
+      },
+      {
+        "q": "Ingår fönsterputs i entrén vid trappstädning?",
+        "a": "Hos många firmor ingår putsning av entrédörrar och fönster i trapphuset — bekräfta omfattningen vid offertförfrågan."
+      }
+    ]
+  },
+  "trappstadning/sundsvall": {
+    "introtext": "Sundsvall i Västernorrland kallas 'Stenstaden' efter att ha byggts upp i sten efter den stora branden 1888, med ett kustklimat som kräver regelbundet underhåll av fasader och fönster. Bostadsrättsföreningar i Sundsvall tecknar ofta löpande avtal för trappstädning, för att slippa organisera städningen själva bland de boende.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Kan en bostadsrättsförening i Sundsvall själv välja hur ofta trapphuset städas?",
+        "a": "Ja, de flesta firmor erbjuder flexibla avtal där föreningen väljer städfrekvens efter behov och budget."
+      },
+      {
+        "q": "Städas källare och tvättstuga också vid trappstädning?",
+        "a": "Ofta ingår närliggande gemensamma utrymmen som källargångar och tvättstugor — fråga företaget om exakt omfattning."
+      }
+    ]
+  },
+  "trappstadning/umea": {
+    "introtext": "Umeå är Norrlands studentstad, med en ung befolkning och snabb tillväxt kring universitetet och kulturlivet. Trappstädning i Umeå beställs oftast av bostadsrättsföreningar och fastighetsägare för att hålla gemensamma trapphus och entréer rena och representativa.",
+    "faktaruta": {
+      "title": "Viktigt att notera",
+      "text": "RUT-avdrag gäller inte för trappstädning. Enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta städas ett trapphus normalt i Umeå?",
+        "a": "Det beror på husets storlek, men en till två gånger per vecka är vanligt för flerbostadshus."
+      },
+      {
+        "q": "Är trappstädning RUT-berättigat?",
+        "a": "Nej, enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
+      }
+    ]
   }
 }

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
   const cityInfo = getCity(city);
   if (!s || !cityInfo) return {};
   const list = companiesForService(service, city);
-  const isB2B = ["kontorsstadning", "byggstadning"].includes(service);
+  const isB2B = ["kontorsstadning", "byggstadning", "trappstadning"].includes(service);
   const description = isB2B
     ? `${s.name} i ${cityInfo.name}: jämför ${list.length} städfirmor med Google-omdömen och priser. Kontakta firmorna direkt – helt gratis.`
     : `${s.name} i ${cityInfo.name}: jämför ${list.length} städfirmor med Google-omdömen, priser och RUT-avdrag. Kontakta firmorna direkt – helt gratis.`;

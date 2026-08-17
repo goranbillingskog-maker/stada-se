@@ -11,8 +11,8 @@
 ## Innehållsregler
 
 - Hitta aldrig på siffror: antal företag, betygsnitt, priser eller andra statistikuppgifter. Om ett värde saknas eller inte går att hitta i sajtens egen datakälla, använd platshållaren `[VÄRDE SAKNAS]` och flagga det tydligt i din rapport — gissa aldrig.
-- RUT-avdrag gäller för: hemstädning, flyttstädning, fönsterputs, storstädning och trappstädning — men **endast** när tjänsten utförs i en privatbostad.
-- RUT-avdrag gäller **inte** för kontorsstädning eller byggstädning i kommersiell lokal.
+- RUT-avdrag gäller för: hemstädning, flyttstädning, fönsterputs, storstädning (alla i privatbostad)
+- RUT-avdrag gäller inte för kontorsstädning, byggstädning, trappstädning
 - Aktuell RUT-nivå (kontrollera alltid mot Skatteverkets webbplats innan publicering, eftersom nivåerna kan ändras av riksdagen): 50 % avdrag på arbetskostnaden, tak 75 000 kr per person och år (delas med ROT-avdraget).
 - Skriv all text på svenska, med naturlig ton. Undvik överdrivna superlativ eller påståenden som inte kan beläggas ("Sveriges bästa städfirma" etc.).
 - Varje ny tjänst×ort-text ska ha en egen vinkel/inledning — kopiera inte samma mening och byt bara ut ortsnamnet, det är precis det mönstret som gjort datan svår att indexera.
