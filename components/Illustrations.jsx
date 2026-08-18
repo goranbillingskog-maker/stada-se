@@ -5,19 +5,19 @@ const stroke = { fill: "none", strokeWidth: 2, strokeLinecap: "round", strokeLin
 export function ServiceIcon({ icon }) {
   switch (icon) {
     case "home":
-      return <img src="/images/icons/hemstad.png" alt="Hemstädning" width="24" height="24" style={{ display: "block" }} />;
+      return <img src="/images/icons/hemstad.png" alt="Hemstädning" width="48" height="48" style={{ display: "block" }} />;
     case "box":
-      return <img src="/images/icons/flyttstad.png" alt="Flyttstädning" width="24" height="24" style={{ display: "block" }} />;
+      return <img src="/images/icons/flyttstad.png" alt="Flyttstädning" width="48" height="48" style={{ display: "block" }} />;
     case "office":
-      return <img src="/images/icons/kontorsstad.png" alt="Kontorsstädning" width="24" height="24" style={{ display: "block" }} />;
+      return <img src="/images/icons/kontorsstad.png" alt="Kontorsstädning" width="48" height="48" style={{ display: "block" }} />;
     case "sparkle":
-      return <img src="/images/icons/storstad.png" alt="Storstädning" width="24" height="24" style={{ display: "block" }} />;
+      return <img src="/images/icons/storstad.png" alt="Storstädning" width="48" height="48" style={{ display: "block" }} />;
     case "window":
-      return <img src="/images/icons/fonsterputs.png" alt="Fönsterputs" width="24" height="24" style={{ display: "block" }} />;
+      return <img src="/images/icons/fonsterputs.png" alt="Fönsterputs" width="48" height="48" style={{ display: "block" }} />;
     case "hammer":
-      return <img src="/images/icons/byggstad.png" alt="Byggstädning" width="24" height="24" style={{ display: "block" }} />;
+      return <img src="/images/icons/byggstad.png" alt="Byggstädning" width="48" height="48" style={{ display: "block" }} />;
     case "stairs":
-      return <img src="/images/icons/trappstad.png" alt="Trappstädning" width="24" height="24" style={{ display: "block" }} />;
+      return <img src="/images/icons/trappstad.png" alt="Trappstädning" width="48" height="48" style={{ display: "block" }} />;
     default:
       return (
         <svg viewBox="0 0 24 24" width="24" height="24">
