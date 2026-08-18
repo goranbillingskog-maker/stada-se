@@ -88,7 +88,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-art">
-            <img src="/images/home-hero.jpg" alt="Städtorget illustration" style={{ width: "100%", height: "auto", borderRadius: "var(--radius)" }} />
+            <img src="/images/home-hero.png" alt="Städtorget illustration" style={{ width: "100%", height: "auto", borderRadius: "var(--radius)" }} />
           </div>
         </div>
       </section>
