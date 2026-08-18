@@ -10,6 +10,7 @@ import {
   CITY_COORDS,
 } from "../../../../lib/services.js";
 import { CompanyCard, Breadcrumbs, JsonLd } from "../../../../components/Ui.jsx";
+import { ServiceIcon } from "../../../../components/Illustrations.jsx";
 import serviceCityContent from "../../../../data/service_city_content.json";
 
 export const dynamicParams = false;
@@ -158,6 +159,9 @@ export default async function ServiceCityPage({ params }) {
       />
       <section className="section" style={{ paddingTop: 24 }}>
         <div className="container">
+          <div className="service-card" style={{ display: "inline-flex", padding: 12, marginBottom: 18 }}>
+            <div className="icon" style={{ margin: 0 }}><ServiceIcon icon={s.icon} /></div>
+          </div>
           <h1>
             {s.name} i {cityInfo.name}
           </h1>
