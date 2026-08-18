@@ -159,12 +159,14 @@ export default async function ServiceCityPage({ params }) {
       />
       <section className="section" style={{ paddingTop: 24 }}>
         <div className="container">
-          <div className="service-card" style={{ display: "inline-flex", padding: 12, marginBottom: 18 }}>
-            <div className="icon" style={{ margin: 0 }}><ServiceIcon icon={s.icon} /></div>
+          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 24 }}>
+            <div className="service-card" style={{ display: "inline-flex", padding: 12, margin: 0 }}>
+              <div className="icon" style={{ margin: 0 }}><ServiceIcon icon={s.icon} /></div>
+            </div>
+            <h1 style={{ margin: 0 }}>
+              {s.name} i {cityInfo.name}
+            </h1>
           </div>
-          <h1>
-            {s.name} i {cityInfo.name}
-          </h1>
 
           {customContent ? (
             <div className="two-col" style={{ padding: "16px 0" }}>

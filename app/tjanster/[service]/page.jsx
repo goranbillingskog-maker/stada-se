@@ -55,10 +55,14 @@ export default async function ServicePage({ params }) {
       <Breadcrumbs items={[{ label: "Hem", href: "/" }, { label: s.name }]} />
       <section className="section" style={{ paddingTop: 24 }}>
         <div className="container">
-          <div className="service-card" style={{ display: "inline-flex", padding: 12, marginBottom: 18 }}>
-            <div className="icon" style={{ margin: 0 }}><ServiceIcon icon={s.icon} /></div>
+          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 24 }}>
+            <div className="service-card" style={{ display: "inline-flex", padding: 12, margin: 0 }}>
+              <div className="icon" style={{ margin: 0 }}><ServiceIcon icon={s.icon} /></div>
+            </div>
+            <h1 style={{ margin: 0 }}>
+              {s.name} – jämför firmor i din stad
+            </h1>
           </div>
-          <h1>{s.name} – jämför firmor i din stad</h1>
           <p className="lead">
             {s.intro} Just nu listar vi {total} städfirmor som erbjuder{" "}
             {s.name.toLowerCase()} i Sveriges största städer. Välj din stad nedan.
