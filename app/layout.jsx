@@ -29,12 +29,20 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body>
         <header className="site-header">
           <div className="container">
-            <Link href="/" className="logo" aria-label="Städtorget">
-              <img src="/stadtorgetLogo.svg" alt="Städtorget" width="170" height="53" className="logo-img" />
+            <Link href="/" className="logo" aria-label="Städtorget" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none" }}>
+              <img src="/logo.png" alt="Städtorget logotyp" width="44" height="44" style={{ borderRadius: "8px", display: "block" }} />
+              <span className="logo-word" style={{ fontSize: "22px", letterSpacing: "-0.02em" }}>
+                <span style={{ fontWeight: 800, color: "var(--mint-dark)" }}>STÄD</span>
+                <span style={{ fontWeight: 500, color: "#000" }}>TORGET</span>
+              </span>
             </Link>
             <nav className="main-nav" aria-label="Huvudmeny">
               <div className="nav-dropdown">

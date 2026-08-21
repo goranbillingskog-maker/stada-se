@@ -68,7 +68,7 @@ export default async function ArticlePage({ params }) {
       "name": SITE_NAME,
       "logo": {
         "@type": "ImageObject",
-        "url": `${SITE_URL}/stadtorgetLogo.svg`,
+        "url": `${SITE_URL}/logo.png`,
       },
     },
     "mainEntityOfPage": {

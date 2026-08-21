@@ -15,6 +15,16 @@
   --shadow: 0 1px 2px rgba(31, 30, 29, 0.05), 0 10px 30px rgba(31, 30, 29, 0.06);
   --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
   --font-inter: "Inter";
+
+  /* Nya designtokens för piloten */
+  --bloom-mint: #2FBE86;
+  --mint-dark: #1F8F63;
+  --mint-tint: #E7F7EF;
+  --honey: #FFB84D;
+  --cream: #F7F5EF;
+  --ink-new: #1C1B18;
+  --ink-soft-new: #55524B;
+  --line-new: #E7E3D8;
 }
 
 * { box-sizing: border-box; }
@@ -459,5 +469,115 @@ img { max-width: 100%; }
     height: 120px;
   }
 }
+
+/* ===== Pilot-redesign (.theme-pilot) ===== */
+.theme-pilot {
+  --paper: var(--cream);
+  --paper-2: var(--cream);
+  --card: #ffffff;
+  --ink: var(--ink-new);
+  --ink-soft: var(--ink-soft-new);
+  --line: var(--line-new);
+  --coral: var(--bloom-mint);
+  --coral-dark: var(--mint-dark);
+  --coral-light: var(--mint-tint);
+  --teal: var(--bloom-mint);
+  --teal-light: var(--mint-tint);
+  --font-serif: var(--font-inter);
+}
+
+/* Anpassa typsnitt och marginaler */
+.theme-pilot h1,
+.theme-pilot h2,
+.theme-pilot h3 {
+  font-family: var(--font-inter), sans-serif !important;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--mint-dark);
+}
+
+.theme-pilot body {
+  background: var(--cream);
+  color: var(--ink-new);
+}
+
+/* Knappar */
+.theme-pilot .btn-primary,
+.theme-pilot .nav-cta,
+.theme-pilot .search-input:focus {
+  background: var(--bloom-mint) !important;
+  color: white !important;
+  border-color: var(--bloom-mint) !important;
+}
+
+.theme-pilot .btn-primary:hover,
+.theme-pilot .nav-cta:hover {
+  background: var(--mint-dark) !important;
+}
+
+.theme-pilot .btn-outline {
+  border: 1.5px solid var(--line-new) !important;
+  color: var(--ink-new) !important;
+  background: transparent !important;
+}
+
+.theme-pilot .btn-outline:hover {
+  background: var(--ink-new) !important;
+  color: var(--cream) !important;
+  border-color: var(--ink-new) !important;
+}
+
+/* Företagskort */
+.theme-pilot .company-card {
+  background: var(--card);
+  border: 1px solid var(--line-new) !important;
+  border-radius: 20px !important;
+  padding: 20px !important;
+  box-shadow: none !important;
+}
+
+.theme-pilot .company-card h3 a,
+.theme-pilot .company-card h2 a {
+  color: var(--ink-new) !important;
+  font-weight: 700;
+}
+
+.theme-pilot .company-avatar,
+.theme-pilot .company-photo,
+.theme-pilot .avatar-fallback {
+  border-radius: 12px !important;
+  border: 1px solid var(--line-new) !important;
+  background: var(--mint-tint) !important;
+}
+
+.theme-pilot .company-meta {
+  color: var(--ink-soft-new) !important;
+  font-size: 13px;
+}
+
+/* Badges */
+.theme-pilot .badge {
+  background: var(--paper-2);
+  color: var(--ink-soft-new);
+  border: 1px solid var(--line-new);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.theme-pilot .badge-rut {
+  background: var(--honey) !important;
+  color: var(--ink-new) !important;
+  border-color: var(--honey) !important;
+  font-weight: 700 !important;
+}
+
+/* Specifikt för hero i nya stilen */
+.theme-pilot .hero h1 em {
+  font-style: normal;
+  color: var(--bloom-mint);
+}
+
 
 

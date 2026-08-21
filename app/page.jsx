@@ -55,7 +55,7 @@ export default function HomePage() {
   };
 
   return (
-    <>
+    <div className="theme-pilot">
       <JsonLd data={siteJsonLd} />
       <JsonLd data={faqJsonLd} />
 
@@ -192,6 +192,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-    </>
+    </div>
   );
 }

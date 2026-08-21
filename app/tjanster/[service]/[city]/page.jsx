@@ -145,8 +145,10 @@ export default async function ServiceCityPage({ params }) {
 
   const { relatedCities, relatedService } = getRelatedLinks(s.slug, cityInfo.slug);
 
+  const isPilot = s.slug === "hemstadning" && cityInfo.slug === "stockholm";
+
   return (
-    <>
+    <div className={isPilot ? "theme-pilot" : ""}>
       <JsonLd data={jsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
@@ -243,7 +245,7 @@ export default async function ServiceCityPage({ params }) {
           )}
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
