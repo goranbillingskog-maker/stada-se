@@ -108,14 +108,16 @@ export default async function CompanyPage({ params }) {
       <div className="container">
         <header className="company-header">
           <Avatar company={c} />
-          <div>
-            <h1>{c.name}</h1>
-            <div className="company-meta">
+          <div style={{ width: "100%" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "20px", flexWrap: "wrap", marginBottom: "6px" }}>
+              <h1 style={{ margin: 0 }}>{c.name}</h1>
+              <Rating company={c} />
+            </div>
+            <div className="company-meta" style={{ margin: 0 }}>
               Städfirma i {c.city}
               {c.area ? ` · ${c.area}` : ""}
               {c.foundedYear ? ` · Grundad ${c.foundedYear}` : ""}
             </div>
-            <Rating company={c} />
           </div>
         </header>
 

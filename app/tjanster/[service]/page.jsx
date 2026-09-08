@@ -49,9 +49,23 @@ export default async function ServicePage({ params }) {
     ],
   };
 
+  const faqJsonLd = s.faq && s.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": s.faq.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer,
+      },
+    })),
+  } : null;
+
   return (
-    <>
+    <div className="theme-pilot">
       <JsonLd data={breadcrumbJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <Breadcrumbs items={[{ label: "Hem", href: "/" }, { label: s.name }]} />
       <section className="section" style={{ paddingTop: 24 }}>
         <div className="container">
@@ -63,11 +77,24 @@ export default async function ServicePage({ params }) {
               {s.name} – jämför firmor i din stad
             </h1>
           </div>
-          <p className="lead">
+          <p className="lead" style={{ marginBottom: 32 }}>
             {s.intro} Just nu listar vi {total} städfirmor som erbjuder{" "}
             {s.name.toLowerCase()} i Sveriges största städer. Välj din stad nedan.
           </p>
-          <div className="city-grid">
+
+          {s.priceRange && (
+            <div style={{ marginBottom: 40, padding: 24, background: "#fdfdfd", border: "1px solid #eaeaea", borderRadius: 8 }}>
+              <h2 style={{ marginTop: 0, marginBottom: 12, fontSize: "1.4rem" }}>
+                Vad kostar {s.name.toLowerCase()}?
+              </h2>
+              <p style={{ margin: 0, lineHeight: 1.6, color: "#444" }}>
+                {s.priceRange}
+              </p>
+            </div>
+          )}
+
+          <h2 style={{ fontSize: "1.4rem", marginBottom: 16 }}>Välj stad för {s.name.toLowerCase()}</h2>
+          <div className="city-grid" style={{ marginBottom: 48 }}>
             {cities.map((c) => (
               <Link key={c.slug} href={`/tjanster/${s.slug}/${c.slug}/`} className="city-card">
                 <span>
@@ -79,8 +106,36 @@ export default async function ServicePage({ params }) {
               </Link>
             ))}
           </div>
+
+          {s.faq && s.faq.length > 0 && (
+            <div style={{ borderTop: "1px solid #eaeaea", paddingTop: 40, marginTop: 40 }}>
+              <h2 style={{ fontSize: "1.6rem", marginBottom: 24 }}>
+                Vanliga frågor och svar om {s.name.toLowerCase()}
+              </h2>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                {s.faq.map((item, index) => (
+                  <details
+                    key={index}
+                    style={{
+                      background: "#f9f9f9",
+                      padding: "16px 20px",
+                      borderRadius: 8,
+                      border: "1px solid #eaeaea",
+                    }}
+                  >
+                    <summary style={{ fontWeight: "600", cursor: "pointer", outline: "none" }}>
+                      {item.question}
+                    </summary>
+                    <p style={{ marginTop: 12, marginBottom: 0, lineHeight: 1.6, color: "#555" }}>
+                      {item.answer}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
-    </>
+    </div>
   );
 }

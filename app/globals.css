@@ -40,7 +40,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; letter-spacing: -0.01em; }
+h1, h2, h3 {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--mint-dark);
+}
 
 a { color: var(--teal); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -242,19 +247,19 @@ img { max-width: 100%; }
   .company-card .rating { grid-column: 2; text-align: left; }
   .company-card .rating .stars { font-size: 0.9rem; }
 }
-.company-visual { width: 96px; height: 96px; }
+.company-visual { width: 96px; height: 96px; flex-shrink: 0; }
 .company-photo {
-  width: 96px; height: 96px; border-radius: 12px; object-fit: cover; border: 1px solid var(--line);
+  width: 96px; height: 96px; border-radius: 12px; object-fit: cover; border: 1px solid var(--line); flex-shrink: 0;
 }
 .company-avatar {
   width: 96px; height: 96px; border-radius: 12px; object-fit: contain;
-  background: #fff; border: 1px solid var(--line); padding: 10px;
+  background: #fff; border: 1px solid var(--line); padding: 10px; flex-shrink: 0;
 }
 .avatar-fallback {
   width: 96px; height: 96px; border-radius: 12px;
   background: var(--teal-light); color: var(--teal);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-serif); font-weight: 700; font-size: 1.6rem;
+  font-family: var(--font-serif); font-weight: 700; font-size: 1.6rem; flex-shrink: 0;
 }
 @media (max-width: 640px) {
   .company-visual, .company-photo, .company-avatar, .avatar-fallback { width: 64px; height: 64px; }
@@ -308,7 +313,7 @@ img { max-width: 100%; }
 
 /* ===== Company page ===== */
 .company-header {
-  display: grid; grid-template-columns: 96px 1fr; gap: 22px; align-items: center; padding: 28px 0 8px;
+  display: grid; grid-template-columns: 96px 1fr; gap: 22px; align-items: start; padding: 28px 0 8px;
 }
 .company-header h1 { margin: 0 0 6px; font-size: clamp(1.6rem, 3.5vw, 2.3rem); }
 .two-col {
@@ -491,9 +496,9 @@ img { max-width: 100%; }
 .theme-pilot h2,
 .theme-pilot h3 {
   font-family: var(--font-inter), sans-serif !important;
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  color: var(--mint-dark);
+  font-weight: 800 !important;
+  letter-spacing: -0.025em !important;
+  color: var(--mint-dark) !important;
 }
 
 .theme-pilot body {

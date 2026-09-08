@@ -12,11 +12,11 @@ export const ARTICLES = [
       <p>Att lämna ett boende i fint skick är mer än en formalitet inför besiktningen. Det är det sista handslaget med ett kapitel i livet, och det förtjänar att göras ordentligt. Oavsett om du tänker kavla upp ärmarna själv eller ta hjälp av ett proffs, är den här guiden till för att göra flyttstädningen förutsägbar istället för stressig. Ingen anledning att gissa sig fram – här är ordningen som gör att både du och nästa person som flyttar in blir nöjda.</p>
 
       <h2>Del 1: Förberedelsefasen – innan dammtussarna tar över</h2>
-      <p>Flyttstädning går lätter om du tänker på det som en process, inte ett maraton du kör i sista sekund.</p>
+      <p>Flyttstädning går lättare om du tänker på det som en process, inte ett maraton du kör i sista sekund.</p>
       <p>Ett bra tumregel: börja i god tid. Skjuter du upp allt till sista natten är det ett säkert recept på sömnbrist och dåligt humör mitt i flytten.</p>
       <ul>
         <li><strong>Sortera medan du packar.</strong> Gå igenom saker löpande istället för att vänta till slutet. Varje pryl du bestämmer dig för att inte ta med är en sak mindre att städa bort sen.</li>
-        <li><strong>Se över det som sitter fast.</strong> En snabb koll på möbler, gardiner och tapeter du inte tänkt ta med gör att du vet i förväg vad som behöver rengöras eller lämnas kvar i fint skick.</li>
+        <li><strong>Se över det som sitter fast.</strong> Snabb koll på möbler, gardiner och tapeter du inte tänkt ta med gör att du vet i förväg vad som behöver rengöras eller lämnas kvar i fint skick.</li>
         <li><strong>Bestäm var sakerna ska ta vägen.</strong> Återvinning, second hand, skänkas bort eller säljas – bestäm det i god tid. Att lämpa av allt i ett enda hastverk sista dagen skapar mer stress än det löser.</li>
       </ul>
 
@@ -59,6 +59,64 @@ export const ARTICLES = [
         <h3 style="margin-top: 0; color: var(--teal);">Vill du slippa hela momentet?</h3>
         <p style="margin-bottom: 16px;">Utforska våra lokala städföretag på Stadtorget och hitta ett proffs som passar din flytt och din budget.</p>
         <a href="/tjanster/flyttstadning/" class="nav-cta" style="display: inline-block; text-decoration: none;">Hitta flyttstädning nu</a>
+      </div>
+    `
+  },
+  {
+    slug: "rut-avdrag-stadning-2026",
+    title: "RUT-avdrag för städning 2026 — så mycket får du dra av | Städtorget",
+    description: "Så fungerar RUT-avdraget för städning 2026: 50% skattereduktion, maxbelopp och vilka städtjänster som omfattas. Jämför städfirmor på Städtorget.",
+    publishedAt: "2026-08-23",
+    author: "redaktionen på Städtorget",
+    readTime: "ca 4 minuter",
+    image: "/images/stada.png",
+    content: `
+      <p>Om du anlitar en städfirma för hemmet kan du nästan alltid halvera arbetskostnaden tack vare RUT-avdraget. Här går vi igenom exakt hur mycket du får dra av, vilka städtjänster som omfattas och hur det går till i praktiken.</p>
+
+      <h2>Vad är RUT-avdraget?</h2>
+      <p>RUT-avdraget är en skattereduktion för hushållsnära tjänster, däribland städning. Istället för att du själv ansöker om avdraget hos Skatteverket i efterhand, drar städfirman av det direkt på fakturan — du betalar helt enkelt ett lägre pris från början.</p>
+
+      <h2>Hur mycket får jag dra av?</h2>
+      <p>RUT ger en <strong>skattereduktion på 50 % av arbetskostnaden</strong>. Det finns ett tak på <strong>75 000 kr per person och år</strong> i skattereduktion — detta tak delas med ROT-avdraget (renovering), där maximalt 50 000 kr av taket får utgöras av ROT. Ett hushåll med två vuxna kan alltså tillsammans utnyttja upp till 150 000 kr i RUT/ROT-avdrag per år.</p>
+
+      <h2>Vilka städtjänster omfattas av RUT?</h2>
+      <p>RUT-avdrag gäller för städning i din egen permanentbostad, bland annat:</p>
+      <ul>
+        <li>Hemstädning</li>
+        <li>Flyttstädning</li>
+        <li>Storstädning</li>
+        <li>Fönsterputs</li>
+        <li>Byggstädning efter renovering av din egen bostad</li>
+      </ul>
+      <p>RUT gäller <strong>inte</strong> för kontorsstädning, städning av fritidshus i vissa fall, eller trappstädning som beställs av en bostadsrättsförening — eftersom föreningen är en juridisk person och inte en privatperson.</p>
+
+      <h2>Så fungerar det i praktiken</h2>
+      <ol>
+        <li>Du bokar städningen och uppger att du vill nyttja RUT-avdrag.</li>
+        <li>Städfirman drar av 50 % av arbetskostnaden direkt på fakturan.</li>
+        <li>Du betalar bara det reducerade beloppet — elektroniskt (kontant betalning ger inte rätt till avdrag).</li>
+        <li>Firman ansöker om utbetalning från Skatteverket i efterhand. Du behöver inte göra något ytterligare.</li>
+      </ol>
+
+      <h2>Vem kan använda RUT-avdraget?</h2>
+      <p>Du behöver:</p>
+      <ul>
+        <li>Vara minst 18 år</li>
+        <li>Vara bosatt och skattskyldig i Sverige</li>
+        <li>Ha betalat tillräckligt mycket skatt under året för att avdraget ska kunna nyttjas fullt ut</li>
+        <li>Låta tjänsten utföras i ditt eget hem (eller i vissa fall en förälders bostad)</li>
+      </ul>
+
+      <h2>Vanliga frågor om RUT-avdrag för städning</h2>
+      <p><strong>Kan jag få RUT-avdrag flera gånger per år?</strong><br />Ja, det finns ingen begränsning på antal tillfällen — bara på det totala beloppet (75 000 kr per person och år, delat med ROT).</p>
+      <p><strong>Måste jag ansöka om RUT-avdraget själv?</strong><br />Nej. Städfirman sköter ansökan till Skatteverket. Du behöver bara betala det redan reducerade beloppet på fakturan.</p>
+      <p><strong>Gäller RUT-avdrag för kontorsstädning?</strong><br />Nej, RUT gäller enbart hushållsnära tjänster i din privatbostad — inte kommersiella lokaler.</p>
+      <p><strong>Vad händer om jag redan nått taket på 75 000 kr?</strong><br />Då får du betala hela arbetskostnaden själv för resten av året, tills taket återställs vid nästa kalenderår.</p>
+      <p><strong>Kan en bostadsrättsförening använda RUT-avdrag för trappstädning?</strong><br />Nej, eftersom föreningen är en juridisk person. RUT gäller bara privatpersoner.</p>
+
+      <div class="article-cta-box" style="background: var(--teal-light); border: 1.5px solid rgba(15, 107, 92, 0.2); padding: 24px; border-radius: var(--radius); margin: 32px 0;">
+        <h3 style="margin-top: 0; color: var(--teal);">Redo att boka?</h3>
+        <p style="margin-bottom: 16px;"><a href="/#stader">Jämför städfirmor i din stad</a> och se vilka som passar dig bäst — alla priser på Städtorget kan kombineras med RUT-avdrag där det är tillämpligt.</p>
       </div>
     `
   }
