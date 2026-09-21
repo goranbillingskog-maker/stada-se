@@ -1581,10 +1581,12 @@
     ]
   },
   "flyttstadning/sodermalm": {
+    "title": "Flyttstädning på Södermalm – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning på Södermalm: jämför [ANTAL FÖRETAG] städfirmor vana vid sekelskifte och höga krav på besiktningsgaranti. Snittbetyg [BETYG] av 5 och 50 % RUT-avdrag.",
     "introtext": "Södermalm präglas av charmiga sekelskifteshus, kullerstensgator och kulturminnesmärkta fastigheter kring Katarina-Sofia, Mariatorget och Zinkensdamm. Att flyttstäda en lägenhet här ställer särskilda krav — höga takhöjder, spegeldörrar, spröjsade fönster och ibland trånga trappuppgångar utan hiss kräver städfirmor med rätt erfarenhet och utrustning. Bostadsrättsföreningar och hyresvärdar på Södermalm har ofta strikta besiktningsprotokoll, och en godkänd besiktningsgaranti är avgörande för ett smidigt tillträde. På Städtorget hittar du [ANTAL FÖRETAG] granskade städfirmor som utför flyttstädning på Södermalm med ett genomsnittligt betyg på [BETYG] av 5.",
     "faktaruta": {
       "title": "RUT-avdrag vid flyttstädning på Södermalm",
-      "text": "Flyttstädning i din privatbostad ger rätt till RUT-avdrag på 50 % av arbetskostnaden direkt på fakturan. Det maximala avdraget är 75 000 kr per person och år (sammanräknat med ROT-avdrag). Flyttstädning prissätts vanligen per kvadratmeter eller som ett fast totalpris. Städfirman sköter all administration och ansöker om utbetalningen från Skatteverket åt dig."
+      "text": "Flyttstädning i din privatbostad på Södermalm ger rätt till 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (tak 75 000 kr per person och år). RUT gäller även för hemstädning, storstädning och fönsterputs i bostaden, men gäller inte för kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -1598,10 +1600,12 @@
     ]
   },
   "flyttstadning/ostermalm": {
+    "title": "Flyttstädning på Östermalm – Jämför städfirmor för paradvåningar",
+    "description": "Boka flyttstädning på Östermalm. Vi listar [ANTAL FÖRETAG] städfirmor för paradvåningar och våningar vid Karlaplan med snittbetyg [BETYG] av 5. Alltid städgaranti.",
     "introtext": "Östermalm och Gärdet är känt för sina rymliga sekelskiftesvåningar, exklusiva materialval och höga krav på finish. Vid en flytt här — oavsett om det gäller en paradvåning vid Strandvägen, en bostad vid Karlaplan eller en funkislägenhet på Gärdet — är kraven från köpare och fastighetsägare kompromisslösa. Stuckaturer, parkettgolv, öppna spisar och tidstypiska snickerier kräver skonsam och fackmannamässig rengöring. På Städtorget listar vi [ANTAL FÖRETAG] granskade städfirmor med erfarenhet av flyttstädning på Östermalm, med snittbetyg [BETYG] av 5.",
     "faktaruta": {
       "title": "RUT-avdrag vid flyttstädning på Östermalm",
-      "text": "Som privatperson har du rätt till 50 % RUT-avdrag på arbetskostnaden för flyttstädning i din bostad, upp till 75 000 kr per person och år. För större våningar på Östermalm lämnar firmorna oftast en fast offert efter kvadratmeteryta och eventuella biytor som balkong eller vinkällare."
+      "text": "Som privatperson har du rätt till 50 % RUT-avdrag på arbetskostnaden för flyttstädning i din bostad på Östermalm, upp till 75 000 kr per person och år. RUT gäller även hemstädning, storstädning och fönsterputs, men omfattar inte kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -1615,10 +1619,12 @@
     ]
   },
   "hemstadning/kungsholmen": {
+    "title": "Hemstädning på Kungsholmen – Jämför regelbunden städhjälp",
+    "description": "Hemstädning på Kungsholmen: jämför [ANTAL FÖRETAG] granskade städfirmor från Norr Mälarstrand till Hornsberg. Snittbetyg [BETYG] av 5, fast städare och RUT-avdrag.",
     "introtext": "Kungsholmen kombinerar sjönära promenadstråk längs Norr Mälarstrand med moderna bostadskvarter i Hornsberg och sekelskifteshus kring Fridhemsplan och Rådhuset. För många boende med intensiva arbetsdagar och familjeliv är regelbunden hemstädning ett självklart sätt att frigöra tid och skapa lugn i vardagen. Att ha en fast städdag varannan vecka med samma återkommande städare är det mest populära upplägget i stadsdelen. På Städtorget hittar du [ANTAL FÖRETAG] noggrant granskade städfirmor som erbjuder hemstädning på Kungsholmen, med snittbetyget [BETYG] av 5.",
     "faktaruta": {
       "title": "RUT-avdrag för hemstädning på Kungsholmen",
-      "text": "Hemstädning i din permanenta bostad omfattas av RUT-avdraget, vilket innebär 50 % rabatt på arbetskostnaden direkt på fakturan (upp till 75 000 kr/person/år). Ett normalt timpris innan avdrag ligger på 450–650 kr/timme, vilket motsvarar ca 225–325 kr/timme efter RUT-avdrag."
+      "text": "Hemstädning i din permanenta bostad omfattas av RUT-avdraget, vilket ger 50 % rabatt på arbetskostnaden direkt på fakturan (upp till 75 000 kr/person/år). Gäller även flyttstädning, storstädning och fönsterputs i bostad, men gäller ej för kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -1632,10 +1638,12 @@
     ]
   },
   "flyttstadning/sollentuna": {
+    "title": "Flyttstädning i Sollentuna – Jämför städfirmor med garanti",
+    "description": "Flyttstädning i Sollentuna: jämför [ANTAL FÖRETAG] städfirmor för villor i Silverdal och lägenheter i Tureberg. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
     "introtext": "Sollentuna i norra Storstockholm erbjuder en varierad bostadsmarknad med allt från friliggande villor i Viby, Vaxmora och Sjöberg till moderna lägenheter och radhus i Tureberg, Edsberg och Silverdal. När det är dags att flytta innebär villor och radhus ofta större ytor, källare, garage och fönster i flera väderstreck som ska rengöras enligt strikta besiktningsnormer. På Städtorget samlar vi [ANTAL FÖRETAG] granskade flyttstädfirmor i Sollentuna som erbjuder besiktningsgaranti, med ett genomsnittligt betyg på [BETYG] av 5.",
     "faktaruta": {
       "title": "RUT-avdrag för flyttstädning i Sollentuna",
-      "text": "Vid flyttstädning av permanentbostad i Sollentuna halveras arbetskostnaden tack vare 50 % RUT-avdrag direkt på fakturan (tak 75 000 kr per person och år). För villor och radhus rekommenderas att be om ett fast helhetspris där eventuella tilläggsytor specificeras tydligt."
+      "text": "Vid flyttstädning av permanentbostad i Sollentuna halveras arbetskostnaden tack vare 50 % RUT-avdrag direkt på fakturan (tak 75 000 kr per person och år). RUT gäller även hemstädning, storstädning och fönsterputs, men omfattar inte kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {

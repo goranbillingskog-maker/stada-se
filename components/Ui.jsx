@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { initials } from "../lib/data.js";
+import { initials, formatCompanyLocation } from "../lib/data.js";
 
 export function Avatar({ company }) {
   const src = company.logo || company.favicon;
@@ -69,8 +69,10 @@ export function CompanyCard({ company, headingLevel = "h3", hideRut = false }) {
           <Link href={href}>{company.name}</Link>
         </H>
         <div className="company-meta">
-          {company.area ? `${company.area}, ` : ""}
-          {company.city}
+          <span>{formatCompanyLocation(company)}</span>
+          {company.coverageNote ? (
+            <span style={{ color: "var(--primary)", fontWeight: 500 }}> · {company.coverageNote}</span>
+          ) : null}
         </div>
         <div className="badges">
           {company.services.map((s) => (

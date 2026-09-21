@@ -4,6 +4,9 @@ import {
   getCompany,
   getCity,
   SITE_URL,
+  placePreposition,
+  formatCompanyLocation,
+  formatCompanyAddressSchema,
 } from "../../../lib/data.js";
 import { Avatar, Rating, Breadcrumbs, JsonLd } from "../../../components/Ui.jsx";
 
@@ -20,9 +23,11 @@ export async function generateMetadata({ params }) {
   const ratingPart = c.rating
     ? ` Betyg ${c.rating.toFixed(1).replace(".", ",")}/5 (${c.reviews ?? 0} omdömen).`
     : "";
+  const prep = placePreposition(c.citySlug);
+  const loc = formatCompanyLocation(c);
   return {
-    title: `${c.name} – Städfirma i ${c.city}`,
-    description: `${c.name} i ${c.city}${c.area ? ` (${c.area})` : ""}: ${c.services
+    title: `${c.name} – Städfirma ${prep} ${c.city}`,
+    description: `${c.name} (${loc}): ${c.services
       .slice(0, 4)
       .join(", ")}.${ratingPart} Se tjänster, RUT-avdrag och kontaktuppgifter.`,
     alternates: { canonical: `/${c.citySlug}/${c.slug}/` },
@@ -52,13 +57,7 @@ export default async function CompanyPage({ params }) {
     ...(c.legalName ? { legalName: c.legalName } : {}),
     ...(c.website ? { url: c.website } : {}),
     ...(c.phone ? { telephone: c.phone } : {}),
-    address: {
-      "@type": "PostalAddress",
-      ...(c.address ? { streetAddress: c.address } : {}),
-      ...(c.postalCode ? { postalCode: c.postalCode } : {}),
-      addressLocality: c.city,
-      addressCountry: "SE",
-    },
+    address: formatCompanyAddressSchema(c),
     ...(c.rating && c.reviews
       ? {
           aggregateRating: {
@@ -82,7 +81,7 @@ export default async function CompanyPage({ params }) {
       {
         "@type": "ListItem",
         position: 2,
-        name: `Städfirmor i ${c.city}`,
+        name: `Städfirmor ${placePreposition(c.citySlug)} ${c.city}`,
         item: `${SITE_URL}/${c.citySlug}/`,
       },
       {
@@ -101,7 +100,7 @@ export default async function CompanyPage({ params }) {
       <Breadcrumbs
         items={[
           { label: "Hem", href: "/" },
-          { label: `Städfirmor i ${cityInfo?.name ?? c.city}`, href: `/${c.citySlug}/` },
+          { label: `Städfirmor ${placePreposition(c.citySlug)} ${cityInfo?.name ?? c.city}`, href: `/${c.citySlug}/` },
           { label: c.name },
         ]}
       />
@@ -114,8 +113,7 @@ export default async function CompanyPage({ params }) {
               <Rating company={c} />
             </div>
             <div className="company-meta" style={{ margin: 0 }}>
-              Städfirma i {c.city}
-              {c.area ? ` · ${c.area}` : ""}
+              Städfirma {placePreposition(c.citySlug)} {formatCompanyLocation(c)}
               {c.foundedYear ? ` · Grundad ${c.foundedYear}` : ""}
             </div>
           </div>
@@ -178,7 +176,7 @@ export default async function CompanyPage({ params }) {
                     label="Adress"
                     value={
                       c.address
-                        ? `${c.address}, ${c.postalCode} ${c.city}`
+                        ? `${c.address}, ${c.postalCode ? c.postalCode + " " : ""}${formatCompanyLocation(c)}`
                         : ""
                     }
                   />

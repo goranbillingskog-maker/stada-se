@@ -1,6 +1,7 @@
 {
   "sodermalm": {
     "title": "Städfirmor på Södermalm – Jämför lokala städbolag med omdömen",
+    "description": "Hitta städfirma på Södermalm. Jämför [ANTAL FÖRETAG] granskade städbolag från Hornstull till Nytorget med snittbetyg [BETYG] av 5. Boka trygg städhjälp med RUT-avdrag.",
     "introtext": "Letar du efter en pålitlig städfirma på Södermalm? Här jämför du [ANTAL FÖRETAG] granskade städföretag som är verksamma över hela Söder — från Hornstull och Zinkensdamm till Medborgarplatsen, Nytorget och Danvikstull. Oavsett om du behöver veckovis hemstädning i en sekelskifteslägenhet, flyttstädning med besiktningsgaranti eller fönsterputs mot livliga gator, hittar du rätt städhjälp här med ett snittbetyg på [BETYG] av 5.",
     "faktaruta": {
       "title": "RUT-avdrag för städtjänster på Södermalm",
@@ -23,10 +24,11 @@
   },
   "vasastan": {
     "title": "Städfirmor i Vasastan – Jämför granskade städföretag",
+    "description": "Söker du städfirma i Vasastan? Jämför [ANTAL FÖRETAG] proffsiga städföretag kring Odenplan och Birkastan med snittbetyg [BETYG]/5. Sekelskiftesvana och RUT-avdrag.",
     "introtext": "Hitta rätt städfirma i Vasastan. Vi listar [ANTAL FÖRETAG] granskade städbolag som verkar kring Odenplan, S:t Eriksplan, Birkastan och Röda bergen. Stadsdelens vackra sekelskiftesfastigheter med stuckaturer, höga golvsocklar och trägolv kräver städare med noggrannhet och känsla för detaljer. Jämför omdömen, priser och tjänster nedan för att hitta din nästa städpartner i Vasastan (snittbetyg [BETYG] av 5).",
     "faktaruta": {
       "title": "RUT-avdrag för städhjälp i Vasastan",
-      "text": "Privatpersoner som bokar hemstädning, flyttstädning, storstädning eller fönsterputs i Vasastan får 50 % i RUT-avdrag på arbetskostnaden direkt på fakturan (max 75 000 kr per person och år). Företagstjänster såsom kontorsstädning och trappstädning omfattas ej av RUT."
+      "text": "Privatpersoner som anlitar städfirma för hemstädning, flyttstädning, storstädning eller fönsterputs i Vasastan får 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (max 75 000 kr per person och år). RUT gäller inte för kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -41,10 +43,11 @@
   },
   "bromma": {
     "title": "Städfirmor i Bromma – Jämför städbolag för villa och lägenhet",
+    "description": "Jämför städfirma i Bromma. Se [ANTAL FÖRETAG] städbolag för villa i Äppelviken och lägenhet i Alvik med snittbetyg [BETYG] av 5. Hemstäd, flyttstäd och RUT-rabatt.",
     "introtext": "I Bromma möts villakvarter i Äppelviken, Smedslätten och Nockeby med lägenhetsområden i Alvik, Traneberg och Blackeberg. Här listar vi [ANTAL FÖRETAG] granskade städfirmor som erbjuder allt från veckostädning för barnfamiljer till flyttstädning av stora villor och fönsterputsning av spröjsade verandor. Firmorna i Bromma har ett starkt snittbetyg på [BETYG] av 5.",
     "faktaruta": {
       "title": "RUT-avdrag vid städning i Bromma",
-      "text": "RUT-avdraget ger dig 50 % rabatt på arbetskostnaden vid städning i din bostad eller villa i Bromma. Taket är 75 000 kr per person och år. För villor med större ytor kan RUT-avdraget spara tiotusentals kronor per år vid regelbunden städning."
+      "text": "RUT-avdraget ger dig 50 % rabatt på arbetskostnaden vid hemstädning, flyttstädning, storstädning eller fönsterputs i din bostad i Bromma. Taket är 75 000 kr per person och år. RUT gäller inte för kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -59,10 +62,11 @@
   },
   "nacka": {
     "title": "Städfirmor i Nacka – Jämför lokala städföretag med betyg",
+    "description": "Hitta städfirma i Nacka. Jämför [ANTAL FÖRETAG] städföretag i Sickla, Saltsjöbaden och Boo med snittbetyg [BETYG] av 5. Trygg städning för hus och lägenhet med RUT.",
     "introtext": "Söker du en städfirma i Nacka? Vi samlar [ANTAL FÖRETAG] granskade och professionella städföretag verksamma i Sickla, Saltsjö-Boo, Saltsjöbaden, Älta och Orminge. Oavsett om du bor i en skärgårdsvilla, ett radhus eller en modern lägenhet vid Järla sjö kan du jämföra priser, tjänster och omdömen för att hitta rätt städhjälp (snittbetyg [BETYG] av 5).",
     "faktaruta": {
       "title": "RUT-avdrag för städtjänster i Nacka",
-      "text": "RUT-avdraget halverar arbetskostnaden (50 %) för hushållsnära städtjänster i din bostad i Nacka, upp till 75 000 kr per person och kalenderår. Företagen sköter redovisningen mot Skatteverket så att du endast betalar nettopriset."
+      "text": "RUT-avdraget ger 50 % rabatt på arbetskostnaden för hemstädning, flyttstädning, storstädning och fönsterputs i bostad i Nacka, upp till 75 000 kr per person och år. Gäller ej för kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -77,10 +81,11 @@
   },
   "solna": {
     "title": "Städfirmor i Solna – Jämför städbolag med omdömen och priser",
+    "description": "Städfirma i Solna: jämför [ANTAL FÖRETAG] kontrollerade städföretag verksamma i Råsunda och Arenastaden med snittbetyg [BETYG] av 5. Priser, omdömen och RUT-avdrag.",
     "introtext": "Hitta en granskad städfirma i Solna. Här jämför du [ANTAL FÖRETAG] städföretag som utför hemstädning, flyttstädning och kontorsstädning i Råsunda, Hagalund, Bergshamra, Arenastaden och Järvastaden. Med närhet till innerstaden och många nybyggda bostadskvarter finns ett stort utbud av erfarna städare med ett genomsnittligt betyg på [BETYG] av 5.",
     "faktaruta": {
       "title": "RUT-avdrag vid städhjälp i Solna",
-      "text": "Du som bor i Solna får 50 % i RUT-avdrag på arbetskostnaden för hemstädning, flyttstädning och storstädning. Avdraget gäller upp till 75 000 kr per person och år i privatbostad."
+      "text": "Du som bor i Solna får 50 % i RUT-avdrag på arbetskostnaden för hemstädning, flyttstädning, storstädning och fönsterputs i din bostad (upp till 75 000 kr/person/år). RUT gäller inte kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -95,10 +100,11 @@
   },
   "taby": {
     "title": "Städfirmor i Täby – Jämför städbolag i Täby med omdömen",
+    "description": "Söker du städfirma i Täby? Jämför [ANTAL FÖRETAG] lokala städföretag för villa och radhus i Näsby Park och Täby C med snittbetyg [BETYG]/5. F-skatt och RUT-avdrag.",
     "introtext": "I Täby finns en stark tradition av hushållsnära tjänster och städhjälp för villor, radhus och lägenheter kring Täby Centrum, Näsby Park, Täby Kyrkby och Viggbyholm. På Städtorget jämför du [ANTAL FÖRETAG] kontrollerade städfirmor i Täby med betyg, kundrecensioner och prisuppgifter (snittbetyg [BETYG] av 5).",
     "faktaruta": {
       "title": "RUT-avdrag för städning i Täby",
-      "text": "Med RUT-avdraget betalar du endast 50 % av arbetskostnaden för hemstädning och flyttstädning i din bostad i Täby. Maximalt avdrag är 75 000 kr per person och år."
+      "text": "Med RUT-avdraget dras 50 % av arbetskostnaden av direkt för hemstädning, flyttstädning, storstädning och fönsterputs i din bostad i Täby (max 75 000 kr per person och år). Gäller inte för kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -113,10 +119,11 @@
   },
   "ostermalm": {
     "title": "Städfirmor på Östermalm – Jämför granskade städbolag",
+    "description": "Städfirma på Östermalm: jämför [ANTAL FÖRETAG] städbolag vana vid paradvåningar vid Karlaplan och Gärdet. Högsta diskretion, snittbetyg [BETYG]/5 och 50 % RUT-rabatt.",
     "introtext": "Söker du en professionell städfirma på Östermalm? Här jämför du [ANTAL FÖRETAG] granskade städföretag som utför hemstädning, flyttstädning och storstädning kring Karlaplan, Stureplan, Östermalmstorg och Gärdet. Hög diskretion, noggrannhet och vana vid paradvåningar och stuckaturer kännetecknar firmorna i området (snittbetyg [BETYG] av 5).",
     "faktaruta": {
       "title": "RUT-avdrag på Östermalm",
-      "text": "RUT-avdraget ger 50 % rabatt på arbetskostnaden för hushållsnära städtjänster i privatbostad på Östermalm (upp till 75 000 kr/person/år)."
+      "text": "RUT-avdraget ger 50 % rabatt på arbetskostnaden för hemstädning, flyttstädning, storstädning och fönsterputs i privatbostad på Östermalm (upp till 75 000 kr per person och år). Gäller inte kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -127,10 +134,11 @@
   },
   "kungsholmen": {
     "title": "Städfirmor på Kungsholmen – Jämför städbolag med omdömen",
+    "description": "Hitta städfirma på Kungsholmen. Jämför [ANTAL FÖRETAG] städbolag från Fridhemsplan till Hornsberg med snittbetyg [BETYG] av 5. Kontrollerade firmor och RUT-avdrag.",
     "introtext": "Letar du efter en trygg städfirma på Kungsholmen? Vi listar [ANTAL FÖRETAG] kontrollerade städföretag som servar boende från Rådhuset och Fridhemsplan till Stadshagen, Hornsberg och Kristineberg. Jämför betyg, tjänster och omdömen för att hitta rätt städhjälp (snittbetyg [BETYG] av 5).",
     "faktaruta": {
       "title": "RUT-avdrag för städning på Kungsholmen",
-      "text": "50 % RUT-avdrag gäller på arbetskostnaden för hemstädning och flyttstädning i din bostad på Kungsholmen, direkt via fakturan upp till 75 000 kr per person och år."
+      "text": "50 % RUT-avdrag gäller på arbetskostnaden för hemstädning, flyttstädning, storstädning och fönsterputs i din bostad på Kungsholmen (upp till 75 000 kr per person och år). Avdraget gäller inte för kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {
@@ -141,10 +149,11 @@
   },
   "sollentuna": {
     "title": "Städfirmor i Sollentuna – Jämför städbolag för villa och lägenhet",
+    "description": "Städfirma i Sollentuna: jämför [ANTAL FÖRETAG] granskade städbolag för hem och villa i Tureberg, Helenelund och Edsviken med snittbetyg [BETYG]/5 samt RUT-avdrag.",
     "introtext": "Hitta rätt städfirma i Sollentuna. Här jämför du [ANTAL FÖRETAG] granskade städföretag med verksamhet i Tureberg, Edsberg, Silverdal, Helenelund och Rotebro. Jämför priser för hemstädning, flyttstädning med garanti och storstädning (snittbetyg [BETYG] av 5).",
     "faktaruta": {
       "title": "RUT-avdrag för städning i Sollentuna",
-      "text": "Vid hushållsnära städtjänster i Sollentuna dras 50 % RUT-avdrag av direkt på fakturan, upp till 75 000 kr per person och år för privatpersoner."
+      "text": "Vid hemstädning, flyttstädning, storstädning och fönsterputs i privatbostad i Sollentuna dras 50 % RUT-avdrag direkt på fakturan (tak 75 000 kr per person och år). Gäller inte kontorsstädning, byggstädning eller trappstädning."
     },
     "faq": [
       {

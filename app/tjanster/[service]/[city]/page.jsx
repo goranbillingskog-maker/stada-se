@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getCity, SITE_URL } from "../../../../lib/data.js";
+import { getCity, SITE_URL, placePreposition } from "../../../../lib/data.js";
 import {
   SERVICES,
   getService,
@@ -26,11 +26,35 @@ export async function generateMetadata({ params }) {
   if (!s || !cityInfo) return {};
   const list = companiesForService(service, city);
   const isB2B = ["kontorsstadning", "byggstadning", "trappstadning"].includes(service);
-  const description = isB2B
-    ? `${s.name} i ${cityInfo.name}: jämför ${list.length} städfirmor med Google-omdömen och priser. Kontakta firmorna direkt – helt gratis.`
-    : `${s.name} i ${cityInfo.name}: jämför ${list.length} städfirmor med Google-omdömen, priser och RUT-avdrag. Kontakta firmorna direkt – helt gratis.`;
+  const contentKey = `${s.slug}/${cityInfo.slug}`;
+  const customContent = serviceCityContent[contentKey] || null;
+  const prep = placePreposition(cityInfo.slug);
+
+  const rated = list.filter((c) => c.rating);
+  const avg =
+    rated.length > 0
+      ? (rated.reduce((a, c) => a + c.rating, 0) / rated.length).toFixed(1).replace(".", ",")
+      : null;
+
+  const replacePlaceholders = (text) => {
+    if (!text) return "";
+    return text
+      .replaceAll("[ANTAL FÖRETAG]", list.length)
+      .replaceAll("[BETYG]", avg || "[VÄRDE SAKNAS]");
+  };
+
+  const title = customContent?.title
+    ? replacePlaceholders(customContent.title)
+    : `${s.name} ${prep} ${cityInfo.name} – jämför ${list.length} städfirmor`;
+
+  const description = customContent?.description
+    ? replacePlaceholders(customContent.description)
+    : isB2B
+    ? `${s.name} ${prep} ${cityInfo.name}: jämför ${list.length} städfirmor med Google-omdömen och priser. Kontakta firmorna direkt – helt gratis.`
+    : `${s.name} ${prep} ${cityInfo.name}: jämför ${list.length} städfirmor med Google-omdömen, priser och RUT-avdrag. Kontakta firmorna direkt – helt gratis.`;
+
   return {
-    title: `${s.name} ${cityInfo.name} – jämför ${list.length} städfirmor`,
+    title,
     description,
     alternates: { canonical: `/tjanster/${s.slug}/${cityInfo.slug}/` },
   };
@@ -88,6 +112,7 @@ export default async function ServiceCityPage({ params }) {
       : null;
 
   const isB2B = ["kontorsstadning", "byggstadning", "trappstadning"].includes(s.slug);
+  const prep = placePreposition(cityInfo.slug);
 
   // Load custom content if it exists
   const contentKey = `${s.slug}/${cityInfo.slug}`;
@@ -102,12 +127,12 @@ export default async function ServiceCityPage({ params }) {
 
   const introText = customContent
     ? replacePlaceholders(customContent.introtext)
-    : `${s.intro} I ${cityInfo.name} listar vi ${companies.length} städfirmor som erbjuder ${s.name.toLowerCase()}${avg ? `, med ett genomsnittligt betyg på ${avg} av 5` : ""}.${withRut && !isB2B ? ` ${withRut} av dem erbjuder RUT-avdrag.` : ""} Jämför och kontakta firmorna direkt nedan.`;
+    : `${s.intro} ${prep.charAt(0).toUpperCase() + prep.slice(1)} ${cityInfo.name} listar vi ${companies.length} städfirmor som erbjuder ${s.name.toLowerCase()}${avg ? `, med ett genomsnittligt betyg på ${avg} av 5` : ""}.${withRut && !isB2B ? ` ${withRut} av dem erbjuder RUT-avdrag.` : ""} Jämför och kontakta firmorna direkt nedan.`;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `${s.name} i ${cityInfo.name}`,
+    name: `${s.name} ${prep} ${cityInfo.name}`,
     numberOfItems: companies.length,
     itemListElement: companies.map((c, i) => ({
       "@type": "ListItem",
@@ -126,7 +151,7 @@ export default async function ServiceCityPage({ params }) {
       {
         "@type": "ListItem",
         position: 3,
-        name: `${s.name} ${cityInfo.name}`,
+        name: `${s.name} ${prep} ${cityInfo.name}`,
         item: `${SITE_URL}/tjanster/${s.slug}/${cityInfo.slug}/`,
       },
     ],
@@ -166,7 +191,7 @@ export default async function ServiceCityPage({ params }) {
               <div className="icon" style={{ margin: 0 }}><ServiceIcon icon={s.icon} /></div>
             </div>
             <h1 style={{ margin: 0 }}>
-              {s.name} i {cityInfo.name}
+              {s.name} {prep} {cityInfo.name}
             </h1>
           </div>
 
@@ -183,9 +208,16 @@ export default async function ServiceCityPage({ params }) {
                   ))}
                 </div>
 
+                {s.slug === "flyttstadning" && cityInfo.slug === "sodermalm" && (
+                  <p style={{ marginTop: -16, marginBottom: 32, fontSize: "0.95rem", color: "var(--muted)" }}>
+                    Fler städfirmor som utför flyttstädning på Södermalm tillkommer löpande. Se även alla{" "}
+                    <Link href="/sodermalm/">städfirmor på Södermalm</Link>.
+                  </p>
+                )}
+
                 {customContent.faq && customContent.faq.length > 0 && (
                   <section className="faq" style={{ marginTop: 40, marginBottom: 32 }}>
-                    <h2>Vanliga frågor om {s.name.toLowerCase()} i {cityInfo.name}</h2>
+                    <h2>Vanliga frågor om {s.name.toLowerCase()} {prep} {cityInfo.name}</h2>
                     {customContent.faq.map((f, index) => (
                       <details key={index}>
                         <summary>{f.q}</summary>
@@ -208,9 +240,9 @@ export default async function ServiceCityPage({ params }) {
                   </p>
                   {relatedService ? (
                     <p style={{ margin: 0, fontSize: "0.9rem" }}>
-                      Behöver du andra städtjänster i {cityInfo.name}? Jämför även{" "}
+                      Behöver du andra städtjänster {prep} {cityInfo.name}? Jämför även{" "}
                       <Link href={`/tjanster/${relatedService.slug}/${cityInfo.slug}/`}>
-                        {relatedService.name.toLowerCase()} i {cityInfo.name}
+                        {relatedService.name.toLowerCase()} {prep} {cityInfo.name}
                       </Link>.
                     </p>
                   ) : null}
@@ -236,9 +268,15 @@ export default async function ServiceCityPage({ params }) {
                   <CompanyCard key={c.slug} company={c} hideRut={isB2B} />
                 ))}
               </div>
+              {s.slug === "flyttstadning" && cityInfo.slug === "sodermalm" && (
+                <p style={{ marginTop: 12, marginBottom: 24, fontSize: "0.95rem", color: "var(--muted)" }}>
+                  Fler städfirmor som utför flyttstädning på Södermalm tillkommer löpande. Se även alla{" "}
+                  <Link href="/sodermalm/">städfirmor på Södermalm</Link>.
+                </p>
+              )}
               <p className="small-print">
                 Se även{" "}
-                <Link href={`/${cityInfo.slug}/`}>alla städfirmor i {cityInfo.name}</Link>{" "}
+                <Link href={`/${cityInfo.slug}/`}>alla städfirmor {prep} {cityInfo.name}</Link>{" "}
                 eller <Link href={`/tjanster/${s.slug}/`}>{s.name.toLowerCase()} i andra städer</Link>.
               </p>
             </>
@@ -248,4 +286,5 @@ export default async function ServiceCityPage({ params }) {
     </div>
   );
 }
+
 
