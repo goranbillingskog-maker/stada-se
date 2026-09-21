@@ -1,0 +1,156 @@
+{
+  "sodermalm": {
+    "title": "Städfirmor på Södermalm – Jämför lokala städbolag med omdömen",
+    "introtext": "Letar du efter en pålitlig städfirma på Södermalm? Här jämför du [ANTAL FÖRETAG] granskade städföretag som är verksamma över hela Söder — från Hornstull och Zinkensdamm till Medborgarplatsen, Nytorget och Danvikstull. Oavsett om du behöver veckovis hemstädning i en sekelskifteslägenhet, flyttstädning med besiktningsgaranti eller fönsterputs mot livliga gator, hittar du rätt städhjälp här med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för städtjänster på Södermalm",
+      "text": "När du anlitar en städfirma för hemstädning, flyttstädning, storstädning eller fönsterputs i din bostad på Södermalm har du rätt till 50 % RUT-avdrag på arbetskostnaden. Avdraget dras direkt på fakturan upp till 75 000 kr per person och år. RUT gäller inte för kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar det att anlita en städfirma på Södermalm?",
+        "a": "Priset för hemstädning på Södermalm ligger vanligtvis mellan 220 och 320 kr per timme efter RUT-avdrag. Flyttstädning prissätts oftast med ett fast kvadratmeterpris eller fast paketpris baserat på bostadens yta och skick."
+      },
+      {
+        "q": "Hur väljer jag bäst städfirma på Södermalm?",
+        "a": "Jämför kundomdömen på Google och Reco, kontrollera att firman har F-skatt och ansvarsförsäkring, och be om skriftlig offert. Vid regelbunden hemstädning är det också en fördel att välja en firma som garanterar samma städare varje gång."
+      },
+      {
+        "q": "Sköter städfirman RUT-avdraget åt mig?",
+        "a": "Ja, alla seriösa städföretag på Södermalm drar av 50 % av arbetskostnaden direkt på fakturan och administrerar ansökan hos Skatteverket utan extra kostnad för dig."
+      }
+    ]
+  },
+  "vasastan": {
+    "title": "Städfirmor i Vasastan – Jämför granskade städföretag",
+    "introtext": "Hitta rätt städfirma i Vasastan. Vi listar [ANTAL FÖRETAG] granskade städbolag som verkar kring Odenplan, S:t Eriksplan, Birkastan och Röda bergen. Stadsdelens vackra sekelskiftesfastigheter med stuckaturer, höga golvsocklar och trägolv kräver städare med noggrannhet och känsla för detaljer. Jämför omdömen, priser och tjänster nedan för att hitta din nästa städpartner i Vasastan (snittbetyg [BETYG] av 5).",
+    "faktaruta": {
+      "title": "RUT-avdrag för städhjälp i Vasastan",
+      "text": "Privatpersoner som bokar hemstädning, flyttstädning, storstädning eller fönsterputs i Vasastan får 50 % i RUT-avdrag på arbetskostnaden direkt på fakturan (max 75 000 kr per person och år). Företagstjänster såsom kontorsstädning och trappstädning omfattas ej av RUT."
+    },
+    "faq": [
+      {
+        "q": "Vad är ett vanligt timpris för hemstädning i Vasastan?",
+        "a": "Ett vanligt timpris för hemstädning i Vasastan är 225–325 kr per timme efter RUT-avdrag (ca 450–650 kr/h innan avdrag), med något lägre timpris vid löpande abonnemang jämfört med enstaka tillfällen."
+      },
+      {
+        "q": "Har städfirmorna i Vasastan erfarenhet av sekelskifteslägenheter?",
+        "a": "Ja, de flesta städfirmor med bas i Vasastan är vana vid högt i tak, kakelugnar, stuckaturer och spröjsade fönster, och använder skonsamma metoder som vårdar äldre ytor."
+      }
+    ]
+  },
+  "bromma": {
+    "title": "Städfirmor i Bromma – Jämför städbolag för villa och lägenhet",
+    "introtext": "I Bromma möts villakvarter i Äppelviken, Smedslätten och Nockeby med lägenhetsområden i Alvik, Traneberg och Blackeberg. Här listar vi [ANTAL FÖRETAG] granskade städfirmor som erbjuder allt från veckostädning för barnfamiljer till flyttstädning av stora villor och fönsterputsning av spröjsade verandor. Firmorna i Bromma har ett starkt snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid städning i Bromma",
+      "text": "RUT-avdraget ger dig 50 % rabatt på arbetskostnaden vid städning i din bostad eller villa i Bromma. Taket är 75 000 kr per person och år. För villor med större ytor kan RUT-avdraget spara tiotusentals kronor per år vid regelbunden städning."
+    },
+    "faq": [
+      {
+        "q": "Kostar det mer att städa en villa än en lägenhet i Bromma?",
+        "a": "Timpriset är vanligtvis detsamma, men den totala kostnaden blir högre för en villa eftersom den har större yta, fler badrum och våningsplan som tar längre tid att städa."
+      },
+      {
+        "q": "Erbjuder städfirmorna i Bromma städning med samma personal?",
+        "a": "Ja, de flesta firmorna prioriterar att du får samma städare vid varje tillfälle, vilket ger trygghet och ett jämnt städresultat."
+      }
+    ]
+  },
+  "nacka": {
+    "title": "Städfirmor i Nacka – Jämför lokala städföretag med betyg",
+    "introtext": "Söker du en städfirma i Nacka? Vi samlar [ANTAL FÖRETAG] granskade och professionella städföretag verksamma i Sickla, Saltsjö-Boo, Saltsjöbaden, Älta och Orminge. Oavsett om du bor i en skärgårdsvilla, ett radhus eller en modern lägenhet vid Järla sjö kan du jämföra priser, tjänster och omdömen för att hitta rätt städhjälp (snittbetyg [BETYG] av 5).",
+    "faktaruta": {
+      "title": "RUT-avdrag för städtjänster i Nacka",
+      "text": "RUT-avdraget halverar arbetskostnaden (50 %) för hushållsnära städtjänster i din bostad i Nacka, upp till 75 000 kr per person och kalenderår. Företagen sköter redovisningen mot Skatteverket så att du endast betalar nettopriset."
+    },
+    "faq": [
+      {
+        "q": "Vilka städtjänster är vanligast att boka i Nacka?",
+        "a": "Regelbunden hemstädning varannan vecka och flyttstädning är de mest efterfrågade tjänsterna i Nacka, tätt följt av fönsterputsning inför vår och höst."
+      },
+      {
+        "q": "Täcker städfirmorna hela Nacka kommun inklusive Saltsjöbaden och Boo?",
+        "a": "Ja, de flesta firmorna i vår lista servar hela Nacka kommun samt närliggande delar av Värmdö och Söderort."
+      }
+    ]
+  },
+  "solna": {
+    "title": "Städfirmor i Solna – Jämför städbolag med omdömen och priser",
+    "introtext": "Hitta en granskad städfirma i Solna. Här jämför du [ANTAL FÖRETAG] städföretag som utför hemstädning, flyttstädning och kontorsstädning i Råsunda, Hagalund, Bergshamra, Arenastaden och Järvastaden. Med närhet till innerstaden och många nybyggda bostadskvarter finns ett stort utbud av erfarna städare med ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid städhjälp i Solna",
+      "text": "Du som bor i Solna får 50 % i RUT-avdrag på arbetskostnaden för hemstädning, flyttstädning och storstädning. Avdraget gäller upp till 75 000 kr per person och år i privatbostad."
+    },
+    "faq": [
+      {
+        "q": "Hur snabbt kan jag få städhjälp i Solna?",
+        "a": "Många firmor i Solna kan erbjuda ett första städtillfälle inom några arbetsdagar efter att du begärt offert eller bokat online."
+      },
+      {
+        "q": "Gäller städgaranti vid flyttstädning i Solna?",
+        "a": "Ja, seriösa städfirmor lämnar normalt 7–14 dagars besiktningsgaranti som säkerställer att hyresvärd eller köpare godkänner städningen."
+      }
+    ]
+  },
+  "taby": {
+    "title": "Städfirmor i Täby – Jämför städbolag i Täby med omdömen",
+    "introtext": "I Täby finns en stark tradition av hushållsnära tjänster och städhjälp för villor, radhus och lägenheter kring Täby Centrum, Näsby Park, Täby Kyrkby och Viggbyholm. På Städtorget jämför du [ANTAL FÖRETAG] kontrollerade städfirmor i Täby med betyg, kundrecensioner och prisuppgifter (snittbetyg [BETYG] av 5).",
+    "faktaruta": {
+      "title": "RUT-avdrag för städning i Täby",
+      "text": "Med RUT-avdraget betalar du endast 50 % av arbetskostnaden för hemstädning och flyttstädning i din bostad i Täby. Maximalt avdrag är 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar hemstädning för en villa i Täby?",
+        "a": "För en normalstor villa på 140–180 kvm landar kostnaden ofta kring 1 200–1 800 kr per städtillfälle efter RUT-avdrag vid städning varannan vecka."
+      },
+      {
+        "q": "Erbjuder städfirmorna i Täby miljövänlig städning?",
+        "a": "Ja, merparten av firmorna i Täby använder Svanenmärkta eller ekologiska rengöringsprodukter för ett hållbart och allergivänligt resultat."
+      }
+    ]
+  },
+  "ostermalm": {
+    "title": "Städfirmor på Östermalm – Jämför granskade städbolag",
+    "introtext": "Söker du en professionell städfirma på Östermalm? Här jämför du [ANTAL FÖRETAG] granskade städföretag som utför hemstädning, flyttstädning och storstädning kring Karlaplan, Stureplan, Östermalmstorg och Gärdet. Hög diskretion, noggrannhet och vana vid paradvåningar och stuckaturer kännetecknar firmorna i området (snittbetyg [BETYG] av 5).",
+    "faktaruta": {
+      "title": "RUT-avdrag på Östermalm",
+      "text": "RUT-avdraget ger 50 % rabatt på arbetskostnaden för hushållsnära städtjänster i privatbostad på Östermalm (upp till 75 000 kr/person/år)."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar flyttstädning på Östermalm?",
+        "a": "Flyttstädning kostar i snitt 35–50 kr/kvm efter RUT-avdrag, beroende på våningens storlek och skick."
+      }
+    ]
+  },
+  "kungsholmen": {
+    "title": "Städfirmor på Kungsholmen – Jämför städbolag med omdömen",
+    "introtext": "Letar du efter en trygg städfirma på Kungsholmen? Vi listar [ANTAL FÖRETAG] kontrollerade städföretag som servar boende från Rådhuset och Fridhemsplan till Stadshagen, Hornsberg och Kristineberg. Jämför betyg, tjänster och omdömen för att hitta rätt städhjälp (snittbetyg [BETYG] av 5).",
+    "faktaruta": {
+      "title": "RUT-avdrag för städning på Kungsholmen",
+      "text": "50 % RUT-avdrag gäller på arbetskostnaden för hemstädning och flyttstädning i din bostad på Kungsholmen, direkt via fakturan upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar hemstädning på Kungsholmen?",
+        "a": "Hemstädning på Kungsholmen kostar normalt ca 225–325 kr per timme efter RUT-avdrag vid löpande abonnemang."
+      }
+    ]
+  },
+  "sollentuna": {
+    "title": "Städfirmor i Sollentuna – Jämför städbolag för villa och lägenhet",
+    "introtext": "Hitta rätt städfirma i Sollentuna. Här jämför du [ANTAL FÖRETAG] granskade städföretag med verksamhet i Tureberg, Edsberg, Silverdal, Helenelund och Rotebro. Jämför priser för hemstädning, flyttstädning med garanti och storstädning (snittbetyg [BETYG] av 5).",
+    "faktaruta": {
+      "title": "RUT-avdrag för städning i Sollentuna",
+      "text": "Vid hushållsnära städtjänster i Sollentuna dras 50 % RUT-avdrag av direkt på fakturan, upp till 75 000 kr per person och år för privatpersoner."
+    },
+    "faq": [
+      {
+        "q": "Erbjuder städfirmorna i Sollentuna städgaranti?",
+        "a": "Ja, vid flyttstädning erbjuder de flesta firmorna i Sollentuna full besiktningsgaranti som garanterar godkännande vid avflyttning."
+      }
+    ]
+  }
+}

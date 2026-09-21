@@ -67,8 +67,8 @@ export default function HomePage() {
               Hitta rätt städfirma – <em>utan att leta</em>
             </h1>
             <p className="sub">
-              Jämför {companies.length} städfirmor i Sveriges {cities.length} största
-              städer. Riktiga omdömen, tydliga tjänster, RUT-avdrag – och du
+              Jämför {companies.length} städfirmor i Sveriges största städer och
+              områden. Riktiga omdömen, tydliga tjänster, RUT-avdrag – och du
               kontaktar firmorna direkt, helt gratis.
             </p>
             <Search />
@@ -79,7 +79,7 @@ export default function HomePage() {
               </div>
               <div className="hero-stat">
                 <strong>{cities.length}</strong>
-                <span>städer</span>
+                <span>städer & områden</span>
               </div>
               <div className="hero-stat">
                 <strong>100 %</strong>
@@ -113,10 +113,10 @@ export default function HomePage() {
 
       <section className="section section-alt" id="stader">
         <div className="container">
-          <h2>Städfirmor per stad</h2>
+          <h2>Städfirmor per stad och område</h2>
           <p className="lead">
-            Välj din stad för att se alla städfirmor med omdömen, tjänster och
-            kontaktuppgifter.
+            Välj din stad eller ditt område för att se alla städfirmor med omdömen,
+            tjänster och kontaktuppgifter.
           </p>
           <div className="city-grid">
             {cities.map((c) => (

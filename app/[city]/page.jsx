@@ -5,10 +5,12 @@ import {
   getCity,
   getCompaniesByCity,
   topServicesInCity,
+  STOCKHOLM_DISTRICTS,
   SITE_URL,
 } from "../../lib/data.js";
 import { SERVICES, companiesForService } from "../../lib/services.js";
 import { CompanyCard, Breadcrumbs, JsonLd } from "../../components/Ui.jsx";
+import cityContent from "../../data/city_content.json";
 
 export const dynamicParams = false;
 
@@ -20,8 +22,10 @@ export async function generateMetadata({ params }) {
   const { city } = await params;
   const cityInfo = getCity(city);
   if (!cityInfo) return {};
+  const custom = cityContent[cityInfo.slug] || null;
+  const title = custom?.title || `Städfirma ${cityInfo.name} – jämför ${cityInfo.count} städfirmor med omdömen`;
   return {
-    title: `Städfirma ${cityInfo.name} – jämför ${cityInfo.count} städfirmor med omdömen`,
+    title,
     description: `Hitta städfirma i ${cityInfo.name}. Jämför ${cityInfo.count} städfirmor med Google-omdömen, tjänster, RUT-avdrag och kontaktuppgifter. Hemstädning, flyttstädning och kontorsstädning i ${cityInfo.name}.`,
     alternates: { canonical: `/${cityInfo.slug}/` },
   };
@@ -41,6 +45,42 @@ export default async function CityPage({ params }) {
     count: companiesForService(s.slug, city).length,
   })).filter((s) => s.count > 0);
 
+  const rated = companies.filter((c) => c.rating);
+  const avg =
+    rated.length > 0
+      ? (rated.reduce((a, c) => a + c.rating, 0) / rated.length).toFixed(1).replace(".", ",")
+      : null;
+
+  const custom = cityContent[cityInfo.slug] || null;
+  const isStockholmDistrict = STOCKHOLM_DISTRICTS.some((d) => d.slug === cityInfo.slug);
+  const isStockholmMain = cityInfo.slug === "stockholm";
+
+  const replacePlaceholders = (text) => {
+    if (!text) return "";
+    return text
+      .replaceAll("[ANTAL FÖRETAG]", companies.length)
+      .replaceAll("[BETYG]", avg || "[VÄRDE SAKNAS]");
+  };
+
+  const introText = custom
+    ? replacePlaceholders(custom.introtext)
+    : `Här hittar du ${companies.length} städfirmor i ${cityInfo.name}${
+        cityInfo.avgRating
+          ? `, med ett genomsnittligt Google-betyg på ${String(cityInfo.avgRating).replace(".", ",")} av 5`
+          : ""
+      }. ${
+        topServices.length
+          ? `Vanligaste tjänsterna är ${topServices
+              .map((s) => s.name.toLowerCase())
+              .slice(0, 3)
+              .join(", ")}.`
+          : ""
+      } ${
+        withRut
+          ? `${withRut} av firmorna erbjuder RUT-avdrag, vilket halverar arbetskostnaden för dig som privatperson.`
+          : ""
+      } Jämför betyg och tjänster nedan och kontakta firmorna direkt – helt gratis.`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -54,78 +94,218 @@ export default async function CityPage({ params }) {
     })),
   };
 
+  const breadcrumbItems = isStockholmDistrict
+    ? [
+        { label: "Hem", href: "/" },
+        { label: "Stockholm", href: "/stockholm/" },
+        { label: `Städfirmor ${cityInfo.name}` },
+      ]
+    : [
+        { label: "Hem", href: "/" },
+        { label: `Städfirmor i ${cityInfo.name}` },
+      ];
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Hem", item: SITE_URL },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: `Städfirmor i ${cityInfo.name}`,
-        item: `${SITE_URL}/${cityInfo.slug}/`,
-      },
-    ],
+    itemListElement: isStockholmDistrict
+      ? [
+          { "@type": "ListItem", position: 1, name: "Hem", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: "Stockholm", item: `${SITE_URL}/stockholm/` },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: `Städfirmor i ${cityInfo.name}`,
+            item: `${SITE_URL}/${cityInfo.slug}/`,
+          },
+        ]
+      : [
+          { "@type": "ListItem", position: 1, name: "Hem", item: SITE_URL },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: `Städfirmor i ${cityInfo.name}`,
+            item: `${SITE_URL}/${cityInfo.slug}/`,
+          },
+        ],
   };
+
+  const faqJsonLd =
+    custom && custom.faq && custom.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: custom.faq.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
 
   return (
     <>
       <JsonLd data={jsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
-      <Breadcrumbs
-        items={[
-          { label: "Hem", href: "/" },
-          { label: `Städfirmor i ${cityInfo.name}` },
-        ]}
-      />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
+      <Breadcrumbs items={breadcrumbItems} />
       <section className="section" style={{ paddingTop: 24 }}>
         <div className="container">
           <h1>Städfirmor i {cityInfo.name}</h1>
-          <p className="lead">
-            Här hittar du {companies.length} städfirmor i {cityInfo.name}
-            {cityInfo.avgRating
-              ? `, med ett genomsnittligt Google-betyg på ${String(cityInfo.avgRating).replace(".", ",")} av 5`
-              : ""}
-            .{" "}
-            {topServices.length
-              ? `Vanligaste tjänsterna är ${topServices
-                  .map((s) => s.name.toLowerCase())
-                  .slice(0, 3)
-                  .join(", ")}.`
-              : ""}{" "}
-            {withRut
-              ? `${withRut} av firmorna erbjuder RUT-avdrag, vilket halverar arbetskostnaden för dig som privatperson.`
-              : ""}{" "}
-            Jämför betyg och tjänster nedan och kontakta firmorna direkt – helt gratis.
-          </p>
 
-          {serviceChips.length ? (
-            <div className="chip-row">
-              {serviceChips.map((s) => (
-                <Link key={s.slug} className="chip" href={`/tjanster/${s.slug}/${cityInfo.slug}/`}>
-                  {s.name} <span className="n">({s.count})</span>
-                </Link>
-              ))}
+          {custom ? (
+            <div className="two-col" style={{ padding: "16px 0" }}>
+              <div>
+                <p className="lead" style={{ marginBottom: 24 }}>
+                  {introText}
+                </p>
+
+                {serviceChips.length ? (
+                  <div className="chip-row" style={{ marginBottom: 24 }}>
+                    {serviceChips.map((s) => (
+                      <Link key={s.slug} className="chip" href={`/tjanster/${s.slug}/${cityInfo.slug}/`}>
+                        {s.name} <span className="n">({s.count})</span>
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
+
+                {photos.length >= 2 ? (
+                  <div className="photo-strip" style={{ marginBottom: 24 }}>
+                    {photos.map((c) => (
+                      <img key={c.slug} src={c.photo} alt={`${c.name} i ${cityInfo.name}`} loading="lazy" />
+                    ))}
+                  </div>
+                ) : null}
+
+                <div className="company-list" style={{ marginBottom: 32 }}>
+                  {companies.map((c) => (
+                    <CompanyCard key={c.slug} company={c} />
+                  ))}
+                </div>
+
+                {custom.faq && custom.faq.length > 0 && (
+                  <section className="faq" style={{ marginTop: 40, marginBottom: 32 }}>
+                    <h2>Vanliga frågor om städfirmor i {cityInfo.name}</h2>
+                    {custom.faq.map((f, index) => (
+                      <details key={index}>
+                        <summary>{f.q}</summary>
+                        <p>{f.a}</p>
+                      </details>
+                    ))}
+                  </section>
+                )}
+
+                {isStockholmDistrict && (
+                  <div className="panel" style={{ marginTop: 24, padding: "20px 24px" }}>
+                    <h3 style={{ fontSize: "1.15rem", margin: "0 0 10px" }}>
+                      Städfirmor i hela Stockholm
+                    </h3>
+                    <p style={{ margin: "0 0 10px", fontSize: "0.9rem" }}>
+                      Behöver du städhjälp i andra delar av länet? Se{" "}
+                      <Link href="/stockholm/">alla städfirmor i Stockholm</Link> eller utforska närliggande stadsdelar:{" "}
+                      {STOCKHOLM_DISTRICTS.filter((d) => d.slug !== cityInfo.slug)
+                        .slice(0, 4)
+                        .map((d, idx) => (
+                          <span key={d.slug}>
+                            {idx > 0 ? ", " : ""}
+                            <Link href={`/${d.slug}/`}>{d.name}</Link>
+                          </span>
+                        ))}
+                      .
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              <aside style={{ marginTop: 0 }}>
+                {custom.faktaruta && (
+                  <section className="panel" style={{ background: "var(--card)" }}>
+                    <h2>{custom.faktaruta.title}</h2>
+                    <p style={{ fontSize: "0.95rem", lineHeight: "1.5" }}>{custom.faktaruta.text}</p>
+                  </section>
+                )}
+              </aside>
             </div>
-          ) : null}
+          ) : (
+            <>
+              <p className="lead">{introText}</p>
 
-          {photos.length >= 2 ? (
-            <div className="photo-strip">
-              {photos.map((c) => (
-                <img key={c.slug} src={c.photo} alt={`${c.name} i ${cityInfo.name}`} loading="lazy" />
-              ))}
-            </div>
-          ) : null}
+              {isStockholmMain && (
+                <div
+                  className="panel"
+                  style={{
+                    margin: "24px 0 32px",
+                    padding: "24px 28px",
+                    background: "var(--card)",
+                  }}
+                >
+                  <h2 style={{ fontSize: "1.25rem", marginTop: 0, marginBottom: 8 }}>
+                    Städfirmor i Stockholms stadsdelar och förorter
+                  </h2>
+                  <p style={{ fontSize: "0.95rem", color: "var(--muted)", marginBottom: 16 }}>
+                    Hitta och jämför lokala städföretag i specifika delar av Stockholm:
+                  </p>
+                  <div
+                    style={{
+                      display: "grid",
+                      gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
+                      gap: 12,
+                    }}
+                  >
+                    {STOCKHOLM_DISTRICTS.map((d) => (
+                      <Link
+                        key={d.slug}
+                        href={`/${d.slug}/`}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "space-between",
+                          padding: "10px 14px",
+                          background: "var(--bg)",
+                          borderRadius: 8,
+                          border: "1px solid var(--border)",
+                          fontWeight: 500,
+                          textDecoration: "none",
+                        }}
+                      >
+                        <span>Städfirma {d.name}</span>
+                        <span>→</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
 
-          <div className="company-list">
-            {companies.map((c) => (
-              <CompanyCard key={c.slug} company={c} />
-            ))}
-          </div>
-          <p className="small-print">
-            Listan sorteras efter Google-betyg. Uppgifterna kommer från offentliga
-            källor och företagens egna webbplatser.
-          </p>
+              {serviceChips.length ? (
+                <div className="chip-row">
+                  {serviceChips.map((s) => (
+                    <Link key={s.slug} className="chip" href={`/tjanster/${s.slug}/${cityInfo.slug}/`}>
+                      {s.name} <span className="n">({s.count})</span>
+                    </Link>
+                  ))}
+                </div>
+              ) : null}
+
+              {photos.length >= 2 ? (
+                <div className="photo-strip">
+                  {photos.map((c) => (
+                    <img key={c.slug} src={c.photo} alt={`${c.name} i ${cityInfo.name}`} loading="lazy" />
+                  ))}
+                </div>
+              ) : null}
+
+              <div className="company-list">
+                {companies.map((c) => (
+                  <CompanyCard key={c.slug} company={c} />
+                ))}
+              </div>
+              <p className="small-print">
+                Listan sorteras efter Google-betyg. Uppgifterna kommer från offentliga
+                källor och företagens egna webbplatser.
+              </p>
+            </>
+          )}
         </div>
       </section>
     </>

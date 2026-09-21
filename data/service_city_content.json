@@ -1579,5 +1579,73 @@
         "a": "Nej, enligt Skatteverket räknas gemensamma utrymmen som trapphus inte som privatbostad, så RUT-avdrag gäller inte."
       }
     ]
+  },
+  "flyttstadning/sodermalm": {
+    "introtext": "Södermalm präglas av charmiga sekelskifteshus, kullerstensgator och kulturminnesmärkta fastigheter kring Katarina-Sofia, Mariatorget och Zinkensdamm. Att flyttstäda en lägenhet här ställer särskilda krav — höga takhöjder, spegeldörrar, spröjsade fönster och ibland trånga trappuppgångar utan hiss kräver städfirmor med rätt erfarenhet och utrustning. Bostadsrättsföreningar och hyresvärdar på Södermalm har ofta strikta besiktningsprotokoll, och en godkänd besiktningsgaranti är avgörande för ett smidigt tillträde. På Städtorget hittar du [ANTAL FÖRETAG] granskade städfirmor som utför flyttstädning på Södermalm med ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning på Södermalm",
+      "text": "Flyttstädning i din privatbostad ger rätt till RUT-avdrag på 50 % av arbetskostnaden direkt på fakturan. Det maximala avdraget är 75 000 kr per person och år (sammanräknat med ROT-avdrag). Flyttstädning prissätts vanligen per kvadratmeter eller som ett fast totalpris. Städfirman sköter all administration och ansöker om utbetalningen från Skatteverket åt dig."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en flyttstädning på Södermalm?",
+        "a": "En komplett flyttstädning omfattar samtliga rum: rengöring av ugn, kyl, frys och köksfläkt, kalkborttagning och rengöring bakom badkar i badrum, fönsterputsning samt avtorkning av snickerier, dörrkarmar och garderober."
+      },
+      {
+        "q": "Ingår besiktningsgaranti när jag anlitar städfirma via Städtorget?",
+        "a": "De flesta seriösa flyttstädfirmorna på Södermalm erbjuder en nöjd-kund-garanti (ofta 7–14 dagar). Det innebär att om hyresvärden eller köparen har anmärkningar vid besiktningen återkommer firman och åtgärdar bristerna kostnadsfritt."
+      }
+    ]
+  },
+  "flyttstadning/ostermalm": {
+    "introtext": "Östermalm och Gärdet är känt för sina rymliga sekelskiftesvåningar, exklusiva materialval och höga krav på finish. Vid en flytt här — oavsett om det gäller en paradvåning vid Strandvägen, en bostad vid Karlaplan eller en funkislägenhet på Gärdet — är kraven från köpare och fastighetsägare kompromisslösa. Stuckaturer, parkettgolv, öppna spisar och tidstypiska snickerier kräver skonsam och fackmannamässig rengöring. På Städtorget listar vi [ANTAL FÖRETAG] granskade städfirmor med erfarenhet av flyttstädning på Östermalm, med snittbetyg [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning på Östermalm",
+      "text": "Som privatperson har du rätt till 50 % RUT-avdrag på arbetskostnaden för flyttstädning i din bostad, upp till 75 000 kr per person och år. För större våningar på Östermalm lämnar firmorna oftast en fast offert efter kvadratmeteryta och eventuella biytor som balkong eller vinkällare."
+    },
+    "faq": [
+      {
+        "q": "Hur långt i förväg bör jag boka flyttstädning på Östermalm?",
+        "a": "Eftersom många flyttar sker i samband med månadsskiften rekommenderas att boka 1–2 veckor i förväg, och ännu tidigare under högsäsongen i maj–juni och augusti–september."
+      },
+      {
+        "q": "Hanterar städfirmorna ömtåliga material som marmor och fiskbensparkett?",
+        "a": "Ja, de professionella firmorna på Östermalm använder anpassade, skonsamma rengöringsmedel och metoder för att inte skada natursten, obehandlat trä eller stuckaturer."
+      }
+    ]
+  },
+  "hemstadning/kungsholmen": {
+    "introtext": "Kungsholmen kombinerar sjönära promenadstråk längs Norr Mälarstrand med moderna bostadskvarter i Hornsberg och sekelskifteshus kring Fridhemsplan och Rådhuset. För många boende med intensiva arbetsdagar och familjeliv är regelbunden hemstädning ett självklart sätt att frigöra tid och skapa lugn i vardagen. Att ha en fast städdag varannan vecka med samma återkommande städare är det mest populära upplägget i stadsdelen. På Städtorget hittar du [ANTAL FÖRETAG] noggrant granskade städfirmor som erbjuder hemstädning på Kungsholmen, med snittbetyget [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning på Kungsholmen",
+      "text": "Hemstädning i din permanenta bostad omfattas av RUT-avdraget, vilket innebär 50 % rabatt på arbetskostnaden direkt på fakturan (upp till 75 000 kr/person/år). Ett normalt timpris innan avdrag ligger på 450–650 kr/timme, vilket motsvarar ca 225–325 kr/timme efter RUT-avdrag."
+    },
+    "faq": [
+      {
+        "q": "Får jag samma städare varje gång vid abonnemang på Kungsholmen?",
+        "a": "De flesta etablerade städfirmorna på Kungsholmen strävar efter att alltid skicka samma person vid återkommande hemstädning för att skapa kontinuitet och trygghet."
+      },
+      {
+        "q": "Vad behöver jag ha hemma inför hemstädningen?",
+        "a": "Vanligtvis tillhandahåller du en fungerande dammsugare, mopp och hink. Många firmor tar med egna professionella och miljömärkta rengöringsmedel, medan andra använder kundens medel efter överenskommelse."
+      }
+    ]
+  },
+  "flyttstadning/sollentuna": {
+    "introtext": "Sollentuna i norra Storstockholm erbjuder en varierad bostadsmarknad med allt från friliggande villor i Viby, Vaxmora och Sjöberg till moderna lägenheter och radhus i Tureberg, Edsberg och Silverdal. När det är dags att flytta innebär villor och radhus ofta större ytor, källare, garage och fönster i flera väderstreck som ska rengöras enligt strikta besiktningsnormer. På Städtorget samlar vi [ANTAL FÖRETAG] granskade flyttstädfirmor i Sollentuna som erbjuder besiktningsgaranti, med ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för flyttstädning i Sollentuna",
+      "text": "Vid flyttstädning av permanentbostad i Sollentuna halveras arbetskostnaden tack vare 50 % RUT-avdrag direkt på fakturan (tak 75 000 kr per person och år). För villor och radhus rekommenderas att be om ett fast helhetspris där eventuella tilläggsytor specificeras tydligt."
+    },
+    "faq": [
+      {
+        "q": "Ingår biytor som garage, förråd och altan vid flyttstädning i Sollentuna?",
+        "a": "Bostadens boarea, kök, badrum och invändig fönsterputs ingår alltid som standard. Biytor såsom garage, fristående förråd och inglasad altan kan oftast läggas till som tillval mot fast tilläggspris."
+      },
+      {
+        "q": "Vad händer om flyttstädningen inte blir godkänd av hyresvärd eller köpare?",
+        "a": "Seriösa städfirmor i Sollentuna lämnar godkänd-garanti och åtgärdar eventuella anmärkningar kostnadsfritt, vanligtvis inom 24–48 timmar efter besiktningstillfället."
+      }
+    ]
   }
 }
