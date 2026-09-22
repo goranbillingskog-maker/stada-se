@@ -3,6 +3,19 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
+function normalizeText(str) {
+  return String(str || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
+
+const STOP_WORDS = new Set([
+  "foretag", "stadforetag", "stadfirma", "stadfirmor", "stadbolag",
+  "stad", "stadning", "stadare", "pa", "i", "hos", "till", "om", "en", "ett", "av", "och"
+]);
+
 export default function Search() {
   const [query, setQuery] = useState("");
   const [index, setIndex] = useState(null);
@@ -12,12 +25,25 @@ export default function Search() {
   async function loadIndex() {
     if (index) return;
     try {
-      const res = await fetch("/api/search-index/");
+      // Använd versionsparameter och no-cache för att tvinga webbläsaren att kringgå äldre diskcache
+      const res = await fetch("/api/search-index/?v=20260922c", { cache: "no-cache" });
+      if (!res.ok) throw new Error("Kunde inte ladda sökindex");
       setIndex(await res.json());
-    } catch {
-      setIndex({ cities: [], companies: [] });
+    } catch (e) {
+      console.error("Fel vid laddning av sökindex:", e);
+      try {
+        const fallback = await fetch("/api/search-index/");
+        setIndex(await fallback.json());
+      } catch {
+        setIndex({ cities: [], companies: [] });
+      }
     }
   }
+
+  // Förladda indexet direkt vid sidladdning i bakgrunden
+  useEffect(() => {
+    loadIndex();
+  }, []);
 
   useEffect(() => {
     function onClickOutside(e) {
@@ -27,41 +53,50 @@ export default function Search() {
     return () => document.removeEventListener("mousedown", onClickOutside);
   }, []);
 
-  const rawQ = query.trim().toLowerCase();
-  const q = rawQ;
+  const rawQ = query.trim();
+  const normQ = normalizeText(rawQ);
+
   let cityHits = [];
   let companyHits = [];
-  if (index && rawQ.length >= 2) {
-    // 1. Direkt delsträngsmatchning
-    cityHits = index.cities.filter((c) => c.name.toLowerCase().includes(rawQ)).slice(0, 4);
-    companyHits = index.companies
-      .filter((c) => c.name.toLowerCase().includes(rawQ) || c.city.toLowerCase().includes(rawQ) || (c.area && c.area.toLowerCase().includes(rawQ)))
-      .slice(0, 8);
 
-    // 2. Om ingen direkt träff, eller sökfrasen innehåller vanliga ord som "företag", "på", "i", "städfirma"
-    if (!cityHits.length || !companyHits.length) {
-      const stopWords = new Set([
-        "företag", "städföretag", "städfirma", "städfirmor", "städbolag",
-        "städ", "städning", "städare", "på", "i", "hos", "till", "om", "en", "ett", "av", "och"
-      ]);
-      const tokens = rawQ.split(/[\s,.-]+/).filter((t) => t && !stopWords.has(t));
+  if (index && normQ.length >= 2) {
+    // 1. Försök hitta städer (matcha både visningsnamn och slug, med och utan å/ä/ö)
+    cityHits = index.cities.filter((c) => {
+      const name = normalizeText(c.name);
+      const slug = normalizeText(c.slug);
+      return name.includes(normQ) || slug.includes(normQ);
+    }).slice(0, 4);
 
-      if (tokens.length > 0) {
-        if (!cityHits.length) {
-          cityHits = index.cities.filter((c) => {
-            const cityName = c.name.toLowerCase();
-            return tokens.some((t) => cityName.includes(t));
-          }).slice(0, 4);
-        }
+    // 2. Försök hitta företag (matcha namn, stad, slug, delområde)
+    companyHits = index.companies.filter((c) => {
+      const name = normalizeText(c.name);
+      const city = normalizeText(c.city);
+      const citySlug = normalizeText(c.citySlug);
+      const area = normalizeText(c.area);
+      return name.includes(normQ) || city.includes(normQ) || citySlug.includes(normQ) || area.includes(normQ);
+    }).slice(0, 8);
 
-        if (!companyHits.length) {
-          companyHits = index.companies.filter((c) => {
-            const name = c.name.toLowerCase();
-            const city = c.city.toLowerCase();
-            const area = (c.area || "").toLowerCase();
-            return tokens.every((t) => name.includes(t) || city.includes(t) || area.includes(t));
-          }).slice(0, 8);
-        }
+    // 3. Om få eller inga träffar, tokenisera och ta bort fyllnadsord (t.ex. "företag", "på", "i", "städfirma")
+    if (cityHits.length === 0 || companyHits.length === 0) {
+      const tokens = normQ.split(/[\s,.-]+/).filter((t) => t && !STOP_WORDS.has(t));
+      const searchTokens = tokens.length > 0 ? tokens : [normQ];
+
+      if (cityHits.length === 0) {
+        cityHits = index.cities.filter((c) => {
+          const name = normalizeText(c.name);
+          const slug = normalizeText(c.slug);
+          return searchTokens.some((t) => name.includes(t) || slug.includes(t));
+        }).slice(0, 4);
+      }
+
+      if (companyHits.length === 0) {
+        companyHits = index.companies.filter((c) => {
+          const name = normalizeText(c.name);
+          const city = normalizeText(c.city);
+          const citySlug = normalizeText(c.citySlug);
+          const area = normalizeText(c.area);
+          return searchTokens.every((t) => name.includes(t) || city.includes(t) || citySlug.includes(t) || area.includes(t));
+        }).slice(0, 8);
       }
     }
   }
@@ -73,11 +108,18 @@ export default function Search() {
         className="search-input"
         placeholder="Sök stad eller städfirma…"
         value={query}
-        onChange={(e) => { setQuery(e.target.value); setOpen(true); }}
-        onFocus={() => { loadIndex(); setOpen(true); }}
+        onChange={(e) => {
+          setQuery(e.target.value);
+          setOpen(true);
+          loadIndex();
+        }}
+        onFocus={() => {
+          setOpen(true);
+          loadIndex();
+        }}
         aria-label="Sök stad eller städfirma"
       />
-      {open && q.length >= 2 ? (
+      {open && rawQ.length >= 2 ? (
         <div className="search-results">
           {cityHits.map((c) => (
             <Link key={c.slug} href={`/${c.slug}/`} onClick={() => setOpen(false)}>
