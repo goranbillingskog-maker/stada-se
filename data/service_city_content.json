@@ -1845,5 +1845,195 @@
         "a": "Ja, städfirman administrerar RUT-avdraget direkt med Skatteverket och du betalar endast 50 % av arbetskostnaden på fakturan."
       }
     ]
+  },
+  "flyttstadning/botkyrka": {
+    "title": "Flyttstädning i Botkyrka – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning i Botkyrka: jämför [ANTAL FÖRETAG] kvalitetssäkrade städfirmor för bostäder i Tumba och Tullinge. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Ska du flytta i Botkyrka? En flyttstädning ställer höga krav och kontrolleras noga av hyresvärd eller köpare. På Städtorget jämför du [ANTAL FÖRETAG] granskade flyttstädfirmor i Tumba, Tullinge, Norsborg och Alby med besiktningsgaranti och ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Botkyrka",
+      "text": "Flyttstädning i din privatbostad i Botkyrka ger 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (upp till 75 000 kr per person och år). RUT gäller även hemstädning och fönsterputs, men inte företagsstädning eller byggstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i flyttstädning i Botkyrka?",
+        "a": "Samtliga rum rengörs grundligt inklusive ugn, spis, kyl/frys, köksfläkt, badrum, golvbrunnar samt fönsterputsning invändigt och utvändigt."
+      },
+      {
+        "q": "Vad innebär besiktningsgarantin på flyttstädning?",
+        "a": "Garantin innebär att städfirman kostnadsfritt åtgärdar eventuella anmärkningar från besiktningsmannen eller den nya boende inom garantiperioden."
+      }
+    ]
+  },
+  "hemstadning/botkyrka": {
+    "title": "Hemstädning i Botkyrka – Jämför lokala städfirmor med RUT",
+    "description": "Hemstädning i Botkyrka: jämför [ANTAL FÖRETAG] kontrollerade städfirmor för villa och lägenhet i Tumba och Tullinge. Snittbetyg [BETYG] av 5 med 50 % RUT-avdrag.",
+    "introtext": "Få mer tid över i vardagen med återkommande hemstädning i Botkyrka. Jämför [ANTAL FÖRETAG] noggrant granskade städföretag som städar i Tumba, Tullinge, Uttran och Norsborg. Hitta städhjälp med samma städare varje gång och ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Botkyrka",
+      "text": "Hemstädning i Botkyrka ger 50 % RUT-avdrag på arbetskostnaden upp till 75 000 kr per person och år. Avdraget administreras direkt av städfirman på din faktura."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta kan man få hemstädning i Botkyrka?",
+        "a": "De vanligaste intervallen är varje vecka, varannan vecka eller var fjärde vecka utifrån hushållets behov."
+      },
+      {
+        "q": "Är det samma person som kommer och städar i Botkyrka?",
+        "a": "Ja, de flesta professionella firmor strävar efter att erbjuda en fast städare för kontinuitet och trygghet."
+      }
+    ]
+  },
+  "flyttstadning/haninge": {
+    "title": "Flyttstädning i Haninge – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning i Haninge: jämför [ANTAL FÖRETAG] städfirmor för bostäder i Handen, Vendelsö och Brandbergen. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Planerar du flytt i Haninge kommun? Med en professionell flyttstädning säkerställer du att lägenheten eller villan blir godkänd vid besiktningen. På Städtorget jämför du [ANTAL FÖRETAG] kvalitetssäkrade flyttstädfirmor i Handen, Brandbergen, Vega och Västerhaninge med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Haninge",
+      "text": "Vid flyttstädning i Haninge dras 50 % av arbetskostnaden av via RUT-avdraget (max 75 000 kr per person och år). Gäller privatbostäder men ej kommersiell lokalvård."
+    },
+    "faq": [
+      {
+        "q": "Ingår fönsterputsning i flyttstädning i Haninge?",
+        "a": "Ja, fönsterputsning på alla sidor ingår som standard i en komplett flyttstädning hos seriösa aktörer."
+      },
+      {
+        "q": "Hur lång tid tar en flyttstädning i Haninge?",
+        "a": "Tiden varierar beroende på boyta och skick, men räkna med 4–8 timmar för ett erfaret städteam."
+      }
+    ]
+  },
+  "hemstadning/haninge": {
+    "title": "Hemstädning i Haninge – Jämför lokala städfirmor med RUT",
+    "description": "Hemstädning i Haninge: jämför [ANTAL FÖRETAG] kontrollerade städfirmor för hem och villor i Handen och Vega. Snittbetyg [BETYG] av 5 och 50 % RUT-avdrag på fakturan.",
+    "introtext": "Underlätta livspusslet med pålitlig hemstädning i Haninge. Här på Städtorget jämför du [ANTAL FÖRETAG] kontrollerade städföretag som utför veckostädning i Handen, Vendelsö, Vega, Tungelsta och Västerhaninge med ett starkt snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Haninge",
+      "text": "Med RUT-avdraget halveras arbetskostnaden för hemstädning i din bostad i Haninge upp till 75 000 kr per person och år. Skattereduktionen sker automatiskt på fakturan."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar löpande hemstädning i Haninge?",
+        "a": "Priset brukar ligga på 220–315 kr per timme efter RUT-avdrag vid regelbundet abonnemang."
+      },
+      {
+        "q": "Kan jag avboka eller boka om ett städtillfälle i Haninge?",
+        "a": "Ja, de flesta företag tillåter kostnadsfri ombokning eller avbokning om det sker senast 24–48 timmar i förväg."
+      }
+    ]
+  },
+  "flyttstadning/tyreso": {
+    "title": "Flyttstädning i Tyresö – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning i Tyresö: jämför [ANTAL FÖRETAG] städfirmor för bostäder i Trollbäcken, Bollmora och Strand. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Står du inför en flytt i Tyresö? Att lämna över ett skinande rent hem med godkänd besiktning sparar både tid och energi. På Städtorget jämför du [ANTAL FÖRETAG] granskade flyttstädfirmor i Bollmora, Trollbäcken och Tyresö Strand med besiktningsgaranti och ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Tyresö",
+      "text": "Du har rätt till 50 % RUT-avdrag på arbetskostnaden för flyttstädning i din bostad i Tyresö, upp till 75 000 kr per person och år. Gäller ej företagslokaler."
+    },
+    "faq": [
+      {
+        "q": "Vad händer om flyttstädningen inte blir godkänd i Tyresö?",
+        "a": "Tack vare städfirmornas besiktningsgaranti kommer städarna tillbaka och åtgärdar bristerna helt kostnadsfritt."
+      },
+      {
+        "q": "När bör jag boka flyttstädning i Tyresö?",
+        "a": "Boka gärna 1–2 veckor i förväg, särskilt vid månadsskiften då efterfrågan på flyttstädning är hög."
+      }
+    ]
+  },
+  "hemstadning/tyreso": {
+    "title": "Hemstädning i Tyresö – Jämför lokala städfirmor med RUT",
+    "description": "Hemstädning i Tyresö: jämför [ANTAL FÖRETAG] kontrollerade städfirmor för villor och bostäder i Tyresö Strand och Trollbäcken. Snittbetyg [BETYG] av 5 med RUT-avdrag.",
+    "introtext": "Unna dig mer frihet i vardagen med regelbunden hemstädning i Tyresö. På Städtorget jämför du [ANTAL FÖRETAG] granskade städföretag som betjänar Bollmora, Trollbäcken, Tyresö Strand och Brevik. Välj en trygg partner med ett starkt snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Tyresö",
+      "text": "RUT-avdraget ger 50 % rabatt på arbetskostnaden för hemstädning i din bostad i Tyresö upp till 75 000 kr per år och person. Avdraget görs direkt på städfakturan."
+    },
+    "faq": [
+      {
+        "q": "Vad är ett normalt pris för hemstädning i Tyresö?",
+        "a": "Ett normalt timpris i Tyresö är ca 225–325 kr efter RUT-avdrag för återkommande hemstädning."
+      },
+      {
+        "q": "Ingår städning av badrum och kök i Tyresö?",
+        "a": "Ja, noggrann rengöring av kök, badrum, toalett samt dammsugning och golvtorkning ingår alltid i standardhemstädning."
+      }
+    ]
+  },
+  "flyttstadning/upplands-vasby": {
+    "title": "Flyttstädning i Upplands Väsby – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning i Upplands Väsby: jämför [ANTAL FÖRETAG] granskade städfirmor för bostäder i Runby och Bollstanäs. Snittbetyg [BETYG] av 5, garanti och 50 % RUT.",
+    "introtext": "Ska du flytta till, från eller inom Upplands Väsby? En professionell flyttstädning med godkänd besiktningsgaranti gör överlämningen trygg och enkel. På Städtorget kan du jämföra [ANTAL FÖRETAG] kvalitetssäkrade flyttstädfirmor i Runby, Bollstanäs, Centrala Väsby och Odenslunda med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Upplands Väsby",
+      "text": "Flyttstädning i Upplands Väsby ger 50 % skattereduktion på arbetskostnaden via RUT-avdraget, upp till 75 000 kr per person och år. Gäller ej kontor eller byggstäd."
+    },
+    "faq": [
+      {
+        "q": "Lämnar firmorna besiktningsgaranti på flyttstädning i Väsby?",
+        "a": "Ja, alla seriösa flyttstädfirmor på Städtorget erbjuder besiktningsgaranti som täcker eventuella anmärkningar från hyresvärd eller köpare."
+      },
+      {
+        "q": "Ingår rengöring bakom ugn och kylskåp i flyttstädningen?",
+        "a": "Ja, om vitvarorna är framdragna rengörs ytorna bakom och under enligt branschstandard för flyttstädning."
+      }
+    ]
+  },
+  "hemstadning/upplands-vasby": {
+    "title": "Hemstädning i Upplands Väsby – Jämför lokala städfirmor med RUT",
+    "description": "Hemstädning i Upplands Väsby: jämför [ANTAL FÖRETAG] kontrollerade städfirmor för hem och villor i Bollstanäs och Fresta. Snittbetyg [BETYG] av 5 med 50 % RUT-avdrag.",
+    "introtext": "Få ett skinande rent hem varje vecka med professionell hemstädning i Upplands Väsby. Jämför [ANTAL FÖRETAG] granskade städföretag i Centrala Väsby, Bollstanäs, Runby och Fresta. Hitta städhjälp med fast städpersonal och ett starkt snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Upplands Väsby",
+      "text": "RUT-avdraget ger 50 % rabatt på arbetskostnaden för hemstädning i Upplands Väsby upp till 75 000 kr per person och år. Avdraget hanteras direkt på din faktura."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar hemstädning per timme i Upplands Väsby?",
+        "a": "Timpriset efter RUT-avdrag ligger vanligen mellan 220 och 315 kr för löpande städabonnemang i Upplands Väsby."
+      },
+      {
+        "q": "Måste jag stå för städmaterial vid hemstädning?",
+        "a": "Kunden tillhandahåller oftast dammsugare, hink och mopp, medan städfirman kan tillhandahålla trasor och rengöringsmedel efter överenskommelse."
+      }
+    ]
+  },
+  "flyttstadning/sigtuna": {
+    "title": "Flyttstädning i Sigtuna – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning i Sigtuna: jämför [ANTAL FÖRETAG] städfirmor för bostäder i Märsta, Rosersberg och Sigtuna stad. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Behöver du boka flyttstädning i Sigtuna kommun? Att anlita en professionell städfirma med besiktningsgaranti säkerställer att din gamla bostad blir godkänd utan dröjsmål. På Städtorget jämför du [ANTAL FÖRETAG] erfarna städföretag i Märsta, Sigtuna stad, Rosersberg och Valsta med snittbetyget [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Sigtuna",
+      "text": "Flyttstädning i privatbostad i Sigtuna ger 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (upp till 75 000 kr per år och person). Gäller ej kommersiella lokaler."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en flyttstädning i Sigtuna och Märsta?",
+        "a": "I flyttstädningen ingår grundlig rengöring av samtliga rum, kök med vitvaror och ugn, badrum med avkalkning samt fönsterputsning."
+      },
+      {
+        "q": "Gäller besiktningsgarantin även för ny köpare i Sigtuna?",
+        "a": "Ja, garantin gäller gentemot såväl hyresvärd som köpare av bostaden och innebär att eventuella fel åtgärdas utan extra kostnad."
+      }
+    ]
+  },
+  "hemstadning/sigtuna": {
+    "title": "Hemstädning i Sigtuna – Jämför lokala städfirmor med RUT",
+    "description": "Hemstädning i Sigtuna: jämför [ANTAL FÖRETAG] kontrollerade städfirmor för hem och villor i Märsta och Sigtuna stad. Snittbetyg [BETYG] av 5 och 50 % RUT-avdrag.",
+    "introtext": "Förenkla vardagen med regelbunden hemstädning i Sigtuna. På Städtorget jämför du [ANTAL FÖRETAG] granskade och pålitliga städbolag som utför hemstädning i Märsta, Sigtuna stad, Rosersberg och Steningehöjden med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Sigtuna",
+      "text": "RUT-avdraget ger 50 % skattereduktion på arbetskostnaden för hemstädning i Sigtuna upp till 75 000 kr per person och år. Avdraget görs direkt på fakturan."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar hemstädning i Sigtuna och Märsta?",
+        "a": "Priset efter RUT-avdrag brukar ligga på 220–320 kr per timme för abonnemangskunder i Sigtuna och Märsta."
+      },
+      {
+        "q": "Kan jag boka hemstädning på prov i Sigtuna?",
+        "a": "Ja, de flesta städfirmor erbjuder en första provstädning utan bindningstid så att du kan utvärdera resultatet i lugn och ro."
+      }
+    ]
   }
 }
