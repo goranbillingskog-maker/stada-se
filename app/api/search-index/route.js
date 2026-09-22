@@ -7,9 +7,10 @@ export async function GET() {
     city: c.city,
     citySlug: c.citySlug,
     slug: c.slug,
+    area: c.area || "",
   }));
   return Response.json(
     { cities, companies },
-    { headers: { "Cache-Control": "public, max-age=3600" } }
+    { headers: { "Cache-Control": "public, max-age=60, s-maxage=300" } }
   );
 }

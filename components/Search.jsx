@@ -27,14 +27,43 @@ export default function Search() {
     return () => document.removeEventListener("mousedown", onClickOutside);
   }, []);
 
-  const q = query.trim().toLowerCase();
+  const rawQ = query.trim().toLowerCase();
+  const q = rawQ;
   let cityHits = [];
   let companyHits = [];
-  if (index && q.length >= 2) {
-    cityHits = index.cities.filter((c) => c.name.toLowerCase().includes(q)).slice(0, 4);
+  if (index && rawQ.length >= 2) {
+    // 1. Direkt delsträngsmatchning
+    cityHits = index.cities.filter((c) => c.name.toLowerCase().includes(rawQ)).slice(0, 4);
     companyHits = index.companies
-      .filter((c) => c.name.toLowerCase().includes(q) || c.city.toLowerCase().includes(q))
+      .filter((c) => c.name.toLowerCase().includes(rawQ) || c.city.toLowerCase().includes(rawQ) || (c.area && c.area.toLowerCase().includes(rawQ)))
       .slice(0, 8);
+
+    // 2. Om ingen direkt träff, eller sökfrasen innehåller vanliga ord som "företag", "på", "i", "städfirma"
+    if (!cityHits.length || !companyHits.length) {
+      const stopWords = new Set([
+        "företag", "städföretag", "städfirma", "städfirmor", "städbolag",
+        "städ", "städning", "städare", "på", "i", "hos", "till", "om", "en", "ett", "av", "och"
+      ]);
+      const tokens = rawQ.split(/[\s,.-]+/).filter((t) => t && !stopWords.has(t));
+
+      if (tokens.length > 0) {
+        if (!cityHits.length) {
+          cityHits = index.cities.filter((c) => {
+            const cityName = c.name.toLowerCase();
+            return tokens.some((t) => cityName.includes(t));
+          }).slice(0, 4);
+        }
+
+        if (!companyHits.length) {
+          companyHits = index.companies.filter((c) => {
+            const name = c.name.toLowerCase();
+            const city = c.city.toLowerCase();
+            const area = (c.area || "").toLowerCase();
+            return tokens.every((t) => name.includes(t) || city.includes(t) || area.includes(t));
+          }).slice(0, 8);
+        }
+      }
+    }
   }
 
   return (
