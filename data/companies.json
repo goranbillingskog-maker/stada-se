@@ -1193,8 +1193,8 @@
     "area": "Malmö",
     "phone": "",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=allabolag.se&sz=128",
+    "website": "https://www.gkstad.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=www.gkstad.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJ8T6MWmujU0YRxfUTKp28u3M/photos/AWCwydjJvLy9soFuh67pDGeBvgR6TmPk46fVJHq-XrDF3ZBiwipyB98CAR-csf-M0Hd49JaCi91q6mVTvKl0563g1d5QckASSVKK7js_MX5I1RKdrxAPjlMBD6PvUTimE_EIzIOZHjCoSPKkABlVfhmXe_G2lFN97glovNOx8WO4wQ7bwmDeUwfWGdL4ueFYOoVygEtpTSWm3W9QKqiqD8TYZX2AhyiTfzoghUZtcXDUiblDaCOXZn37l642To-yTlMYelth34hhdY1tpntSZvlpkPyPjIWuXx79JWYSoTwNJnWM27ghGjkPkLAsigIuC-vyOBf-t13SLj7MRdbEE3mp_xFgplN-Dymk2esLb_QFe9MXkoDAP7EPDy19RLaQweEr-qD-RU6tfq61SEZ5I1QrChz2S737KuJ6JPwxE_p1ifBXAFw-2B9u6ziGVEWDA45K/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Städning",
     "service_descriptions": "Etablerat städbolag i Malmö, registrerat år 2000.",
@@ -1218,7 +1218,7 @@
     "place_id": "ChIJ8T6MWmujU0YRxfUTKp28u3M",
     "data_confidence": "Low — ingen fungerande egen webbplats/kontaktuppgift hittad, endast registerdata från Allabolag/Ratsit; telefon/adress saknas",
     "sources": "https://www.allabolag.se/foretag/gr%C3%B6n-kraft-st%C3%A4dservice-ab/malm%C3%B6/st%C3%A4dservice/2K1S5M6I5YH6T|https://www.ratsit.se/5565881454-Gron_Kraft_StadService_AB",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Easy Clean Syd",
@@ -1785,8 +1785,8 @@
     "area": "Kirseberg",
     "phone": "020-21 42 00",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=allabolag.se&sz=128",
+    "website": "https://godservice.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=godservice.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJq6qq6tajU0YRCozPnUpjZg8/photos/AWCwydig7foxrcMgKZHjXPmVNwhXNMl5xgywr27DebYbp9Letp_AUe8xQUcrP_varajKkg0dx1wRajxIo6dVFPYIiX9ehvVFt6j-iSR-oUDV7nK7IH_UrDk6EILLmcGGRI8vckPfzz2CI97eycM5O_8rTfY0rwZKxPfF-ttS4KlqXn2H3UWFDDg_ja8sKA-6cWVqW3gxvMi0Oe_VIbBpF6n4n0hDyhhYzsAK1RVZW_9TkIT0G4qYR-sJb7wJ2Kd54CZh9948zUjZn_rjzcNf6w1sMxJKhOYmn2NLjUCeOqECAkOyOFUp38Am9fGjaBn7SgsDu_C01fwbdApf5--dxzlyjhqUD-hd8rRojsSpELx4geQ_0CJcKMsRgi7CMEo_jSjIfrP8uLP3GuKrGrmJ8IdZTvcGLbmSQlRhGx_pZ-LheY1cwVvF/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Hemstädning|Kontorsstädning|Trädgårdstjänster|Matlagning|Seniorservice|Barnpassning|Dagligvarudistribution",
     "service_descriptions": "Bredare hushållsnära tjänstebolag med städning som en av flera tjänster (även trädgård, matlagning, seniorservice, barnpassning och dagligvarudistribution) till privatpersoner och företag.",
@@ -1810,7 +1810,7 @@
     "place_id": "ChIJq6qq6tajU0YRCozPnUpjZg8",
     "data_confidence": "Medium — registerdata (org.nr, adress, anställdantal) väl verifierad via två källor, men ingen egen webbplats hittad för tjänstedetaljer/priser",
     "sources": "https://www.allabolag.se/foretag/god-service-i-sverige-ab/malm%C3%B6/parkanl%C3%A4ggningar/2K2Y9I2I63IJW|https://www.ratsit.se/5567846042-God_Service_i_Sverige_AB",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Städmästarna Syd",
@@ -1822,8 +1822,8 @@
     "area": "Limhamn",
     "phone": "040-27 01 11",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=allabolag.se&sz=128",
+    "website": "https://www.stadmastarnasyd.com/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=www.stadmastarnasyd.com&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJdw21JsgUHUQRClDJHUp5pJE/photos/AWCwydigGrWKzXNcXqOPpUToB9UE74DKSYWNrGL55B6-eLwI-ReQf-ZC9ExZDxNxY6KeyZrlnnMp5CPXsS5GbEPjR-CqkVz_ywkKFGfQjh3DdruNtW3U5bnGp_m5XnQEQoE5kxERuInMcQ-G9-syD7ej3sOcDA5pmN2vcvtvNLJe0O0u0sJZ3zH7qiQP3O-KbfwT1f2FC5l8RAo4yyI9TuotVoZT8Z3IuDX741MMq-2R0aYZQoyEd86D_Rcg2dON1ySjgt6s7l60HqYvLrrGqLnN8FfD_6_1NCi6YAU2cf5OsAWow4femNTxkcbhmBXmCQZwkcGuN5OzFGzmmGsAx6CGxHosM4BuVLiRmxZeugSxMTR92QQeWWRdEv4wyL6psS4eSc5MbydD7Cp91oi6p2KnrqT5BcORanqM3NPopdkgrXxj634WKn9vdYZ8A3vsMdUW/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Städning",
     "service_descriptions": "Växande städbolag i Limhamn, Malmö, med stark omsättningstillväxt.",
@@ -1847,7 +1847,7 @@
     "place_id": "ChIJdw21JsgUHUQRClDJHUp5pJE",
     "data_confidence": "Medium — registerdata (SYNA/Allabolag) verifierad och samstämmig men ingen egen webbplats hittad för tjänsteutbud/priser",
     "sources": "https://www.allabolag.se/foretag/st%C3%A4dm%C3%A4starna-syd-ab/limhamn/st%C3%A4dservice/2KIR31AI5YH6T|https://upplysningar.syna.se/foretag/5594384926/stadmastarna-syd-ab",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Call2Clean",
@@ -2377,8 +2377,8 @@
     "area": "Kirseberg",
     "phone": "076-586 06",
     "email": "",
-    "website": "",
-    "logo_url": "",
+    "website": "https://globalstad.com/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=globalstad.com&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJhe5WsdyjU0YRD94B2co6F8U/photos/AWCwydiaQswIi06iK3sSPrnVgDmXT1gsxSvrT07dYMcojfenG-HC4epdF5ct9VUZ6_Fvtze1N5zxHJFndaK2AD8Aq0OlLjsbcg4Luz6XZDWDdlaGIDubodIJsrAZB2vPaVsBHLadzwmM0Awt3dBZP0tomWNv5_-8xXec67KTJ-STUW4u1-FKqtZzNSWhJrf7fzOFzq8mgLT85K62TMJXO5N2NbxckGR3AWgCyoEF-SVe2Knox503gwH8NjxOUtU131kPZZJdNy4xqIhVz2AXgb11gsXPCKf1EXWoZxWYmpACw6fPedVdxda4s3XZkQYLjkUCJXKvh-qg1dmuIuvb5pwrmkInALyXFtDVfnvNyQm_kKKy6C5y03mlzccmxmzzfWK1C6j5d1Zp_moXoFG8DRQf1NKZjLLHvhpUD-x-8qdGKCDeyg/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Flyttstädning|Hemstädning|Industriell rengöring|Städning av fastigheter",
     "service_descriptions": "Städtjänster inklusive flyttstädning, hemstädning, industriell rengöring och fastighetsstädning i Malmö.",
@@ -2402,7 +2402,7 @@
     "place_id": "ChIJhe5WsdyjU0YRD94B2co6F8U",
     "data_confidence": "Low — ingen egen hemsida återfunnen; observera att en snarlik enskild firma 'Globalstäd Skåne' (Lundavägen 44A) finns i samma område vilket kan orsaka sammanblandning",
     "sources": "https://www.allabolag.se/foretag/globalst%C3%A4d-service-ab/malm%C3%B6/st%C3%A4dservice/2KHEW7JI5YH6T|https://www.hitta.se/verksamhet/globalstad-skane-ctxykkctu|Google Places",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Nils Flyttstäd AB",
@@ -3524,8 +3524,8 @@
     "area": "Södermalm",
     "phone": "",
     "email": "",
-    "website": "",
-    "logo_url": "",
+    "website": "https://www.excellentcleaning.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=www.excellentcleaning.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJX070p513X0YRTD5eK1rPTFY/photos/AaVGc3kxYIsdHY5kfT8FMmVNNbQNWfpKIYR6kuC2Mka08BsbSxMKuo8fXKTSPf3qzpVWqBc2VDwFI-yMLuCgf5IWeHRxqqL7T4ZzxIA-BGFRpnEVsgrYUh4Tl16-5HNqQlXspyEiKN8p0bnTwOFhgGgaQ1Eq7zMq0y5Wb-hSA-6pnnBhA7SbI7PKIUbfSF2nxKgSk8I5YluwccAmX1mcxIsyNqOFv2dPUwkEnaCBxfhb87nkB509mLULPU1vYn9D2lOLeQSlhuJUfLakvo4H9KZQfqU4Zz7RXJ2ttwD4oiyBE2NrGYztsf0oWUKOVVnJQEAOQk4EKIUtqPCp6e1EoexOiWAaM67VB9TSWCt5ejZD5FjqkBZkteKsau8Dmq_4HgSzSWpSkUGCDRuejMYy1jCFJKIpdAUfCh-25asdPNgBY6w/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Städning",
     "service_descriptions": "Städfirma verksam på Hornsgatan i Södermalm, exakt tjänsteutbud kunde inte bekräftas – ingen fungerande webbplats hittades vid research.",
@@ -3549,7 +3549,7 @@
     "place_id": "ChIJX070p513X0YRTD5eK1rPTFY",
     "data_confidence": "Low",
     "sources": "Google Places",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Karolf Städservice AB",
@@ -3857,8 +3857,8 @@
     "area": "Bettorp",
     "phone": "010-130 14 90",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=warna.se&sz=128",
+    "website": "https://www.warna.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=www.warna.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJAQAAAE1rXEYRdUlWUPixVGc/photos/AWCwydjQSUvMk7T9d-9IH8lkoS-hraMyjISxpp6uzSEpVAQ4Coyn0DZnZuvjUIfhJW58Byx584sNwoGhEP_TlUP-7_pKIeLAjd7m-xFGndWk4m0RkQ2Phnu1oIAOdFoSGE3-4iJ4Z9vD74c47t2A32uV3OU1yosWhLj-9mpB__XTWdRsq_NdwxvAc3G6qtUYs7qHYf8FE4E1D3w1bpc8gqOqiW20nRImK0CWsacN8WeINTH1eDsdM8iynqfIxkOOHug2nA4A4s6wVWOMTSLatIhsFDfwPbfxYCeCAGBWMFK9icBkUUbufKdm_ZLItPEGmvMY9ChCjX8MBbqySEkNjBSX2OnjOK7LYka4ZrGOVpSBSgzByq54ehIoOxNc-3A9hDfPxgP7298dITrAofkbtYw8BelLfBGY99ea6fiKTOjW5wqarw/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Lokalvård|Fastighetsstädning|Kontorsstädning",
     "service_descriptions": "Lokalvård: bred städtjänst för företag och fastigheter|Fastighetsstädning: städning åt fastighetsägare och BRF|Kontorsstädning: städning av kommersiella lokaler",
@@ -3882,7 +3882,7 @@
     "place_id": "ChIJAQAAAE1rXEYRdUlWUPixVGc",
     "data_confidence": "Medium - Org.nr, adress, VD (Matilda Eklund), anställdantal (19) och omsättning (13 483 tkr) bekräftade via flera oberoende källor (hitta.se, allabolag.se, letabolag.se). Webbplats-URL och e-post kunde inte säkert identifieras/verifieras och lämnas tomma. Fokuserar troligen mest på företags-/fastighetsstädning snarare än privat hemstädning.",
     "sources": "Google Places|hitta.se (org.nr 556946-8076)|allabolag.se|letabolag.se",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Städbolag Ett i Täby AB",
@@ -5189,8 +5189,8 @@
     "area": "Centrum",
     "phone": "",
     "email": "",
-    "website": "",
-    "logo_url": "",
+    "website": "https://ridderborgs.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=ridderborgs.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJo7UKj5J_UUYRJ2LxAq8B_Pk/photos/AXCi2Q1mUYnbnKZgOtOTpjLbGV7SzRhKMxg0hEHVGRXJnwPd5oGYQC3o0eJoAOTLpqE8f3XoRRmMcXP2eOxCkNbYRlWQzYVmvJmC0X8GfjrIeUJq0RgQxKf9wPvhzTdKrLnQO8YV0y7RJfWmMDIe9pjxJZ2XKGRDCkQ8ZQlL/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Fönsterputsning|Solcellstvätt",
     "service_descriptions": "Fönsterputsning: professionell fönsterputsning|Solcellstvätt: rengöring av solceller för optimal effekt",
@@ -5214,7 +5214,7 @@
     "place_id": "ChIJo7UKj5J_UUYRJ2LxAq8B_Pk",
     "data_confidence": "Low-Medium - company registry (Ratsit) confirms legal name, org number, founding date, founder/VD (Ludwig Ridderborg), legal form, and explicitly lists Vagnmansgatan 26, Helsingborg as a registered 'arbetsställe' (place of business), reconciling the apparent mismatch with the company's registered säte in Ängelholm. However, no dedicated company website, phone, or email could be found/confirmed, so contact details, full service descriptions, pricing, and RUT-avdrag status remain unverified.",
     "sources": "https://www.ratsit.se/5595168013-Ridderborgs_fonsterputs_AB|Google Places",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Klarvy Fönsterputs AB",
@@ -7150,8 +7150,8 @@
     "area": "Hageby",
     "phone": "070-876 60 80",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=google.com&sz=128",
+    "website": "https://granlundfastighetsvard.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=granlundfastighetsvard.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJzew8A-kB3WkRJQ5K1ZyZu6E/photos/AaVGc3kejgrH4Gsbws2iCb_8XQ7DITlmB4pWKn9pI9XsMmgDUBuH1PohwC08-6dW2xYjOnl20_lroe1tZo2mqhtgaL-9c_lyahBOKkY3AQlg6Fau28j7hJKm5ui04SCXqeZYw20nxKMSPmrib7rBYExCZu57J4f7SfTeLnmaYMGhxFvYWrPCUMKKWWHnRa-2HGSlGXsMwKQj3FAcQWaO82WiXgR0cjaVzaYGXBarBhEHLOyv9iOjW2YTvMnwNIymjmGAyO9dG-xLcl4KbGvkEzearhBhf2a6TGHuNGEwoMwFagVhdIA42zMpcNbf7VY51f71eIJemY3Dc28AvVnpn4IFcOdA_5mOI_HriofWpxwJu6haK5AabYty9sQdytgGjUKO6bl8k5IgEUnib6fN3-G6AFS_pFML0S1QNfnUSWtWwtiPykorC_JvA3XJc1e7WvB4/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Fönsterputsning|Högtryckstvätt|Rengöring av byggnader|Trädgårds- och utemiljöservice|Snöröjning|Altan- och stenplattsrengöring",
     "service_descriptions": "Fönsterputsning: professionell fönsterputs med egna fönsterskrapor och putsmedel. Högtryckstvätt: rengöring med högtryck. Rengöring av byggnader: yttre och inre rengöring av fastighetsmiljöer. Trädgårds- och utemiljöservice inklusive snöröjning och snöjour. Altan- och stenplattsrengöring. Tjänsterna utförs av Emil och Filip Granlund.",
@@ -7175,7 +7175,7 @@
     "place_id": "ChIJzew8A-kB3WkRJQ5K1ZyZu6E",
     "data_confidence": "High – registry fully confirmed via hitta.se and syna.se; founders named in reviews; no website found",
     "sources": "hitta.se|syna.se|reco.se",
-    "last_verified": "2026-07-24"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Top Städ Service i Sverige AB",
@@ -7557,8 +7557,8 @@
     "area": "Norra Fäladen",
     "phone": "",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=narraclean.se&sz=128",
+    "website": "https://www.naraclean.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=www.naraclean.se&sz=128",
     "image_urls": "",
     "services": "Lokalvård|Flytt|Trädgårdsarbete",
     "service_descriptions": "Lokalvård, flytt och trädgårdsarbete. Litet aktiebolag med 2 anställda, aktivt sedan 2020. Registrerat i Lund, Skåne.",
@@ -7582,7 +7582,7 @@
     "place_id": "ChIJE7WaUjGWU0YRMU9BAiFjtbs",
     "data_confidence": "Medium – registry data confirmed (org 559248-7515), no website found",
     "sources": "hitta.se|syna.se|merinfo.se",
-    "last_verified": "2026-07-24"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Primero Flyttstädning & Hemstädning",
@@ -9555,8 +9555,8 @@
     "area": "Söder",
     "phone": "026-10 15 05",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=allabolag.se&sz=128",
+    "website": "https://astashemservice.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=astashemservice.se&sz=128",
     "image_urls": "",
     "services": "Hemservice|Lokalvård|Insamling av icke-farligt avfall",
     "service_descriptions": "Tillhandahållande av konsumenttjänster i hemmet. Lokalvård. Insamling av icke-farligt avfall.",
@@ -9580,7 +9580,7 @@
     "place_id": "ChIJgZnWHU_HYEYRRhNgbFZZ5Ho",
     "data_confidence": "Medium – nyregistrerat bolag (2026); adress/phone/org nr bekräftade via hitta.se och syna.se; inget eget website hittat; inga Google-recensioner",
     "sources": "hitta.se (559581-9961)|syna.se|Google Places",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Hemstödet",
@@ -10924,8 +10924,8 @@
     "area": "Hässleholmen",
     "phone": "",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=servicefinder.se&sz=128",
+    "website": "https://www.servicegruppenvast.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=www.servicegruppenvast.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJLQR_2OahWkYROmtLRuw5tjU/photos/AaVGc3m3mMYuYESyoPEO5zplo7Pq9hGxed5N2vSlnT4to7KMzmULIgXAuzIvhe1TMzO4dMyXV7t2KoOV6QlkqAQZ3Wjg3CQ1nDvk6qigUHsMdZO4cIjwdKWDIKmqKyj8Z13FgGMk966BplLnBuVW4KyoQu290ZwvvxF-2lxHMBzTezqr2PJekQ6Z1QGkQGdLyt-N3Dx2PL5BGXqctm8B905qNtV9CwbifwHmx_Jx8BLJyysTy8saQ86amlOSM2bNO2LMlJwnxykGC7slNc4M02FtsoLiasXExXfSIf01l-U5DBFDFhLrjdeltAc3-La5G3JtKLjB_xXTYNrdEfMJG0vOYydIxZB-6Lh1MGiEQr5bah95RhGmlV52tOIJ29TMMld0naeil4KWDIcDF7OoTzO_gjE16ANhUQVgI_MGSrzVuWMfPKxhmooyyTTa6t6FOauw/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Hemstädning|Kontorsstädning|Flyttstädning|Fönsterputsning|Trädgårdsskötsel|Gräsklippning|Snöröjning|Ogräsrensning|Beskärning",
     "service_descriptions": "Hemstädning, kontorsstädning, flyttstädning och fönsterputsning. Trädgårdstjänster: skötsel av grönytor, gräsklippning, beskärning av buskar och träd, plantering, ogräsrensning, snöröjning samt enklare anläggningsarbeten.",
@@ -10949,7 +10949,7 @@
     "place_id": "ChIJLQR_2OahWkYROmtLRuw5tjU",
     "data_confidence": "Medium – org.nr och bolagsman bekräftade via bolagsfakta.se; ingen webbplats eller telefon hittad; OBS: bolagsregistrering 2025-10-02 men Google-recensioner kan avse tidigare verksamhet under samma namn",
     "sources": "bolagsfakta.se/9698035418|servicefinder.se/tjanster/hemstadning/boras",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "Viskans Städspecialist AB",
@@ -11035,8 +11035,8 @@
     "area": "Södertälje Väst",
     "phone": "",
     "email": "",
-    "website": "",
-    "logo_url": "https://www.google.com/s2/favicons?domain=allabolag.se&sz=128",
+    "website": "https://www.ikos-stad.se/",
+    "logo_url": "https://www.google.com/s2/favicons?domain=www.ikos-stad.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJbU78u6MNX0YRdHvBHg5P9UE/photos/AaVGc3mcpTx0seKKoKu0rRL9CWqzkBnCCGu9rNtD2ouJxsw47Nm5TOU12qgUdQbLbo92U_ahAE8xVniu4tXQ7skeK9XI1khHHax9NQf6rGU0Z_lmY_Un_VvVNLzPSifoFbUFKAJphKAxC_qjDYR-qpf5v57G8lX5-lplQGUixF2AlqY4KH94ZJmSoljWPx_H8r5LPW2R5pYDL5uU2NvCjWRBox2R-2wqBWQSc-erlPSPDhzgaD3IIxNhJnyAnPB1u_ql7lKbUePOPqAuYcCMQAz9ZHLp-7nv0OpSDKnpBgqfVa_xeRswo4-wa6blidstaxkdwtJnjo-rznLOxh5l5xHuI4mCcrh71OB8Yb5x2sOjTww7tNKqQTi8asfZQFCkRE1PgeT8oh3yKrfbNFfOLqc3SBwQJR__eXRTO9G2UoBo03fSVVy7/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Städfirma|Lokalvård",
     "service_descriptions": "Städfirma med allmän lokalvård (SNI 81210). Söker deltidsstädare, erbjuder varierat arbete i trevlig arbetsmiljö.",
@@ -11060,7 +11060,7 @@
     "place_id": "ChIJbU78u6MNX0YRdHvBHg5P9UE",
     "data_confidence": "Medium — Registry data (allabolag.se, syna.se) confirmed org number, legal form, founder, employees, founded year. No website or direct contact info found.",
     "sources": "allabolag.se (559250-0663) | syna.se | datreal.com | ledigajobbsodertalje.se | Google Places | Exa search 2026-07-25",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-22"
   },
   {
     "company_name": "JJJ Städ",
