@@ -1655,5 +1655,195 @@
         "a": "Seriösa städfirmor i Sollentuna lämnar godkänd-garanti och åtgärdar eventuella anmärkningar kostnadsfritt, vanligtvis inom 24–48 timmar efter besiktningstillfället."
       }
     ]
+  },
+  "flyttstadning/lidingo": {
+    "title": "Flyttstädning på Lidingö – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning på Lidingö: jämför [ANTAL FÖRETAG] städfirmor för villor och lägenheter i Hersby och Torsvik. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Lidingö präglas av rymliga villor och skärgårdsmiljöer i Hersby, Brevik och Gåshaga, kombinerat med moderna flerbostadshus i Torsvik och Käppala. Att genomföra en flyttstädning på ön ställer ofta höga krav då många fastigheter har generösa biytor, spröjsade fönster och exklusiva golvmaterial som kräver fackmannamässig omsorg. Bostadsrättsföreningar och köpare på Lidingö förväntar sig ett fläckfritt resultat, och en fullständig besiktningsgaranti ger trygghet inför överlåtelsen. På Städtorget samlar vi [ANTAL FÖRETAG] granskade städfirmor som utför flyttstädning på Lidingö med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning på Lidingö",
+      "text": "Flyttstädning i din privatbostad på Lidingö ger rätt till 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (upp till 75 000 kr per person och år). RUT-avdraget gäller även för hemstädning, storstädning och fönsterputs i bostaden, men gäller inte för kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en flyttstädning på Lidingö?",
+        "a": "En komplett flyttstädning omfattar samtliga bostadsrum, grundlig rengöring av ugn, spis, kyl, frys och köksfläkt, kalkborttagning i badrum samt fönsterputsning. Biytor som garage och förråd kan vanligtvis bokas till."
+      },
+      {
+        "q": "Vad innebär städfirmornas besiktningsgaranti på Lidingö?",
+        "a": "Garantin innebär att städfirman kostnadsfritt återkommer och åtgärdar eventuella anmärkningar som uppstår vid köparens eller hyresvärdens avflyttningsbesiktning."
+      }
+    ]
+  },
+  "hemstadning/lidingo": {
+    "title": "Hemstädning på Lidingö – Jämför regelbunden städhjälp",
+    "description": "Hemstädning på Lidingö: jämför [ANTAL FÖRETAG] granskade städfirmor för villor och lägenheter. Snittbetyg [BETYG] av 5, fast städare, trygghet och 50 % RUT-avdrag.",
+    "introtext": "På Lidingö söker många hushåll och barnfamiljer en pålitlig städlösning för att få livspusslet att gå ihop i vardagen. Med allt från skärgårdsvillor i Elfvik och Käppala till lägenheter kring Lidingö centrum efterfrågas regelbunden hemstädning med fast städdag och samma städare vid varje tillfälle. Det skapar personlig trygghet och ett välskött hem utan att helgerna behöver ägnas åt städning. På Städtorget listar vi [ANTAL FÖRETAG] granskade städfirmor som erbjuder professionell hemstädning på Lidingö med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning på Lidingö",
+      "text": "Hemstädning i din bostad på Lidingö ger 50 % skatteavdrag på arbetskostnaden via RUT direkt på fakturan (max 75 000 kr per person och år). RUT omfattar även flyttstädning, storstädning och fönsterputs i privatbostäder, men inte kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Får jag samma städare varje vecka på Lidingö?",
+        "a": "Ja, de flesta städfirmor med abonnemang på Lidingö prioriterar kontinuitet och matchar dig med en fast städare för maximal trygghet och kännedom om ditt hem."
+      },
+      {
+        "q": "Måste jag tillhandahålla städmaterial och dammsugare?",
+        "a": "Vanligtvis tillhandahåller du dammsugare och mopp, medan städfirman ofta tar med professionella och skonsamma rengöringsmedel eller använder dina önskade produkter."
+      }
+    ]
+  },
+  "flyttstadning/sundbyberg": {
+    "title": "Flyttstädning i Sundbyberg – Jämför städfirmor med garanti",
+    "description": "Flyttstädning i Sundbyberg: jämför [ANTAL FÖRETAG] städfirmor för lägenheter i Centrala Sumpan och Ursvik. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Sundbyberg är Sveriges till ytan minsta men mest tätbefolkade kommun, med en dynamisk bostadsmarknad fylld av sekelskifteshus i Centrala Sundbyberg, nyproducerade bostadsrätter i Ursvik och charmiga trävillor i Duvbo. Vid en flytt här är kraven från hyresvärdar och bostadsrättsföreningar högt ställda på att bostaden lämnas i absolut toppskick. En professionell flyttstädning med nöjd-kund-garanti sparar tid och säkerställer att överlämningen går igenom utan anmärkningar. På Städtorget listar vi [ANTAL FÖRETAG] erfarna städfirmor för flyttstädning i Sundbyberg med snittbetyget [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Sundbyberg",
+      "text": "Flyttstädning i din privatbostad i Sundbyberg ger rätt till 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (tak 75 000 kr per person och år). RUT gäller även hemstädning, storstädning och fönsterputs i privatbostäder, men täcker inte kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Hur fungerar städgarantin vid flyttstädning i Sundbyberg?",
+        "a": "Garantin ger trygghet: skulle hyresvärden eller den nya ägaren ha anmärkningar vid besiktningen åtgärdar städfirman bristerna kostnadsfritt inom garantitiden."
+      },
+      {
+        "q": "Ingår fönsterputsning i flyttstädningen i Sundbyberg?",
+        "a": "Ja, komplett fönsterputsning av alla åtkomliga fönster ingår som standard i flyttstädningsuppdrag hos de granskade firmorna."
+      }
+    ]
+  },
+  "hemstadning/sundbyberg": {
+    "title": "Hemstädning i Sundbyberg – Jämför regelbunden städhjälp",
+    "description": "Hemstädning i Sundbyberg: jämför [ANTAL FÖRETAG] granskade städfirmor från Centrala Sundbyberg till Ursvik. Snittbetyg [BETYG] av 5, fast städare och RUT-avdrag.",
+    "introtext": "I Sundbyberg lever många ett aktivt stadsliv med snabba pendlingar och fullbokade scheman. För boende i såväl lägenheter vid Landsvägen som radhus i Ursvik och villor i Duvbo är återkommande hemstädning ett smidigt sätt att bibehålla ordning och fräschör i vardagen. Ett populärt upplägg är städning varannan vecka med samma återkommande lokalvårdare. På Städtorget hjälper vi dig att hitta [ANTAL FÖRETAG] kvalitetssäkrade städfirmor som erbjuder flexibel hemstädning i Sundbyberg, med ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Sundbyberg",
+      "text": "När du anlitar hemstädning i Sundbyberg dras 50 % av arbetskostnaden av direkt på fakturan via RUT-avdraget (upp till 75 000 kr per person och år). RUT-avdraget kan även användas för flyttstädning, storstädning och fönsterputs, men omfattar inte kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Hur ofta bokar man vanligtvis hemstädning i Sundbyberg?",
+        "a": "Städning varannan vecka är det vanligaste valet för lägenheter och mindre hushåll, medan större familjer i radhus och villor ofta väljer veckostädning."
+      },
+      {
+        "q": "Är städfirmans personal ansvarsförsäkrad i Sundbyberg?",
+        "a": "Ja, alla städfirmor som listas på Städtorget är kontrollerade och har giltig ansvarsförsäkring samt F-skatt för din trygghet."
+      }
+    ]
+  },
+  "flyttstadning/danderyd": {
+    "title": "Flyttstädning i Danderyd – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning i Danderyd: jämför [ANTAL FÖRETAG] städfirmor för villor i Djursholm, Stocksund och Enebyberg. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Danderyds kommun med Djursholm, Stocksund, Enebyberg och Danderyd har ett av Sveriges mest representativa villabestånd. Fastigheterna har ofta stora boarean, källarplan, flera badrum och eleganta materialval som parkett, kalksten och stuckaturer. Att flyttstäda en villa i Danderyd kräver därför städfirmor med stor kapacitet, rätt städutrustning och erfarenhet av omsorgsfull materialvård. Med en fast besiktningsgaranti säkerställer du att inflyttande köpare blir helt nöjda vid tillträdet. På Städtorget hittar du [ANTAL FÖRETAG] granskade städfirmor som utför flyttstädning i Danderyd med snittbetyg [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Danderyd",
+      "text": "Flyttstädning i din bostad i Danderyd ger 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (max 75 000 kr per person och år). RUT-avdraget gäller även hemstädning, storstädning och fönsterputs i privatbostad, men omfattar inte kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Hur prissätts flyttstädning av stora villor i Danderyd?",
+        "a": "Priset baseras huvudsakligen på bostadens boyta och antal våningsplan. Extra biytor som garage, gästhus och poolhus specificeras separat som tillval."
+      },
+      {
+        "q": "Hur snabbt åtgärdas eventuella anmärkningar vid besiktning i Danderyd?",
+        "a": "Med städfirmans besiktningsgaranti åtgärdas eventuella synpunkter kostnadsfritt och skyndsamt, normalt inom 24 till 48 timmar efter besiktningstillfället."
+      }
+    ]
+  },
+  "hemstadning/danderyd": {
+    "title": "Hemstädning i Danderyd – Jämför regelbunden städhjälp",
+    "description": "Hemstädning i Danderyd: jämför [ANTAL FÖRETAG] granskade städfirmor för villor i Stocksund och Djursholm. Snittbetyg [BETYG] av 5, fast städare och RUT-avdrag.",
+    "introtext": "I Danderyd värdesätter många boende ett skinande rent och välvårdat hem utan att dyrbar fritid går förlorad. Stora villor i Djursholm och Stocksund samt radhus och lägenheter i Enebyberg kräver regelbundet underhåll för att bevara material och ytskikt. Med ett återkommande städabonnemang får du en fast städdag och en dedikerad städare som lär känna ditt hem och dina önskemål. På Städtorget listar vi [ANTAL FÖRETAG] kontrollerade städfirmor med hemstädning i Danderyd, med ett genomsnittligt kundbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Danderyd",
+      "text": "Som privatperson i Danderyd nyttjar du 50 % RUT-avdrag på arbetskostnaden för hemstädning i din bostad (tak 75 000 kr per person och år). RUT gäller även för flyttstädning, storstädning och fönsterputs, men gäller inte för kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Kan städfirman hantera känsliga material som marmor och oljad parkett?",
+        "a": "Ja, de etablerade firmorna i Danderyd anpassar metoder och rengöringsprodukter efter hemmets ytskikt och instruktioner för att undvika slitage."
+      },
+      {
+        "q": "Går det att boka hemstädning varje vecka i Danderyd?",
+        "a": "Absolut, för större villor med barn och husdjur är veckostädning mycket populärt och erbjuds av samtliga listade aktörer."
+      }
+    ]
+  },
+  "flyttstadning/jarfalla": {
+    "title": "Flyttstädning i Järfälla – Jämför städfirmor med garanti",
+    "description": "Flyttstädning i Järfälla: jämför [ANTAL FÖRETAG] städfirmor för bostäder i Jakobsberg, Barkarby och Viksjö. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Järfälla är en expansiv kommun i nordvästra Storstockholm med en mix av moderna lägenheter i Barkarbystaden och Jakobsberg samt etablerade villa- och radhusområden i Viksjö och Kallhäll. En flyttstädning ställer höga krav på noggrannhet — ugn, köksfläkt, vitvaror och badrum ska rengöras enligt Mäklarsamfundets riktlinjer för att garantera ett problemfritt godkännande. Genom att anlita en städfirma med full besiktningsgaranti slipper du oron och kan fokusera på ditt nya hem. På Städtorget hittar du [ANTAL FÖRETAG] granskade flyttstädfirmor i Järfälla med snittbetyget [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Järfälla",
+      "text": "Vid flyttstädning av privatbostad i Järfälla halveras arbetskostnaden genom 50 % RUT-avdrag direkt på fakturan (upp till 75 000 kr per person och år). RUT gäller även hemstädning, storstädning och fönsterputs, men omfattar inte kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad händer om flyttstädningen inte godkänns vid besiktning i Järfälla?",
+        "a": "De granskade firmorna lämnar besiktningsgaranti. Om köpare eller hyresvärd anmärker på något åtgärdar firman punkterna utan extra kostnad."
+      },
+      {
+        "q": "Ingår rengöring av ugn och kylskåp i flyttstädningen?",
+        "a": "Ja, grundlig invändig och utvändig rengöring av spis, ugn, plåtar, kyl och frys ingår alltid i en standardiserad flyttstädning."
+      }
+    ]
+  },
+  "hemstadning/jarfalla": {
+    "title": "Hemstädning i Järfälla – Jämför regelbunden städhjälp",
+    "description": "Hemstädning i Järfälla: jämför [ANTAL FÖRETAG] granskade städfirmor i Jakobsberg, Barkarby och Viksjö. Snittbetyg [BETYG] av 5, fast städare och RUT-avdrag.",
+    "introtext": "I Järfälla bor många barnfamiljer och yrkesverksamma som vill frigöra tid och slippa städhets under helgerna. Oavsett om du bor i en villa i Viksjö, ett radhus i Kallhäll eller en modern bostadsrätt i Barkarbystaden ger regelbunden hemstädning ett skinande rent hem vecka efter vecka. Med samma återkommande städare och fasta rutiner blir städningen en trygg och smidig avlastning. På Städtorget samlar vi [ANTAL FÖRETAG] granskade städfirmor som erbjuder hemstädning i Järfälla, med ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Järfälla",
+      "text": "Hemstädning i din bostad i Järfälla ger rätt till 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (tak 75 000 kr per person och år). RUT omfattar även flyttstädning, storstädning och fönsterputs i bostaden, men gäller inte för kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Hur fungerar abonnemang på hemstädning i Järfälla?",
+        "a": "Du väljer städfrekvens (oftast varje eller varannan vecka) och får en fast tid med samma städare. Uppsägningstid och ombokningsvillkor är vanligtvis mycket flexibla."
+      },
+      {
+        "q": "Måste jag vara hemma när städfirman städar i Järfälla?",
+        "a": "Nej, de flesta kunder lämnar en nyckel eller använder kodlås så att städningen kan genomföras under tiden du är på jobbet eller i skolan."
+      }
+    ]
+  },
+  "flyttstadning/huddinge": {
+    "title": "Flyttstädning i Huddinge – Jämför städfirmor med besiktningsgaranti",
+    "description": "Flyttstädning i Huddinge: jämför [ANTAL FÖRETAG] städfirmor för bostäder i Stuvsta, Segeltorp och Sjödalen. Snittbetyg [BETYG] av 5, garanti och 50 % RUT-avdrag.",
+    "introtext": "Huddinge söder om Stockholm rymmer allt från villaidyller i Stuvsta, Snättringe och Segeltorp till flerbostadshus i Sjödalen, Skogås och Flemingsberg. Vid en avflyttning är en godkänd flyttstädning en grundförutsättning för ett smidigt tillträde för nästa boende. Fastighetsägare och besiktningsmän kontrollerar allt från vitvaror och golvbrunnar till fönster och lister. Genom att anlita en professionell städfirma med besiktningsgaranti i Huddinge slipper du kostsamma omstädningar och diskussioner. På Städtorget jämför du [ANTAL FÖRETAG] granskade flyttstädfirmor i Huddinge med snittbetyget [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid flyttstädning i Huddinge",
+      "text": "Flyttstädning i din privatbostad i Huddinge ger 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (upp till 75 000 kr per person och år). RUT gäller även hemstädning, storstädning och fönsterputs, men omfattar inte kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad ingår i en godkänd flyttstädning i Huddinge?",
+        "a": "Samtliga rum rengörs från golv till tak inklusive ugnsrengöring, avfrostning och rengöring av kyl/frys, avkalkning av badrum samt putsning av alla fönster."
+      },
+      {
+        "q": "Hur lång är besiktningsgarantin för flyttstädning i Huddinge?",
+        "a": "De flesta etablerade städfirmorna i Huddinge erbjuder en garanti på mellan 7 och 14 dagar så att besiktningen hinner genomföras i lugn och ro."
+      }
+    ]
+  },
+  "hemstadning/huddinge": {
+    "title": "Hemstädning i Huddinge – Jämför regelbunden städhjälp",
+    "description": "Hemstädning i Huddinge: jämför [ANTAL FÖRETAG] granskade städfirmor i Stuvsta, Segeltorp och Skogås. Snittbetyg [BETYG] av 5, fast städare och 50 % RUT-avdrag.",
+    "introtext": "Huddinge är en av Stockholms största kommuner med ett aktivt familje- och föreningsliv. För många boende i villor i Stuvsta och Segeltorp eller lägenheter i Trångsund och Sjödalen är regelbunden hemstädning den bästa investeringen för att minska vardagsstressen. Ett städabonnemang med fast städerska innebär att du alltid kommer hem till ett nystädat, väldoftande hem. På Städtorget samlar vi [ANTAL FÖRETAG] granskade städfirmor som erbjuder pålitlig och flexibel hemstädning i Huddinge, med ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för hemstädning i Huddinge",
+      "text": "Hemstädning i din bostad i Huddinge ger rätt till 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (max 75 000 kr per person och år). RUT-avdraget omfattar även flyttstädning, storstädning och fönsterputs i bostaden, men gäller inte kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Hur fungerar provstädning vid hemstädning i Huddinge?",
+        "a": "Många städfirmor i Huddinge erbjuder en provstädning till reducerat pris eller utan bindningstid, så att ni kan gå igenom hemmets behov tillsammans."
+      },
+      {
+        "q": "Är RUT-avdraget färdigavdraget på städfakturan i Huddinge?",
+        "a": "Ja, städfirman administrerar RUT-avdraget direkt med Skatteverket och du betalar endast 50 % av arbetskostnaden på fakturan."
+      }
+    ]
   }
 }

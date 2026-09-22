@@ -161,5 +161,120 @@
         "a": "Ja, vid flyttstädning erbjuder de flesta firmorna i Sollentuna full besiktningsgaranti som garanterar godkännande vid avflyttning."
       }
     ]
+  },
+  "lidingo": {
+    "title": "Städfirmor på Lidingö – Jämför lokala städföretag",
+    "description": "Jämför städfirma på Lidingö. Se [ANTAL FÖRETAG] granskade städbolag från Torsvik till Gåshaga med snittbetyg [BETYG] av 5. Boka trygg städhjälp med 50 % RUT-avdrag.",
+    "introtext": "Letar du efter en pålitlig städfirma på Lidingö? Här jämför du [ANTAL FÖRETAG] granskade städföretag med lokal förankring på ön — från Torsvik, Baggeby och Hersby till Käppala, Brevik och Gåshaga. Oavsett om du söker veckostädning i villan, flyttstädning med besiktningsgaranti eller professionell fönsterputsning av spröjsade fönster med havsutsikt, hittar du rätt städhjälp här med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för städhjälp på Lidingö",
+      "text": "När du anlitar en städfirma för hemstädning, flyttstädning, storstädning eller fönsterputs i din bostad på Lidingö har du rätt till 50 % RUT-avdrag på arbetskostnaden upp till 75 000 kr per person och år. Avdraget dras direkt på fakturan. RUT gäller inte för kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar hemstädning på Lidingö?",
+        "a": "Ett vanligt timpris för regelbunden hemstädning på Lidingö är cirka 230–330 kr per timme efter RUT-avdrag vid löpande städabonnemang."
+      },
+      {
+        "q": "Har städfirmorna på Lidingö erfarenhet av stora villor?",
+        "a": "Ja, de flesta lokala firmorna på Lidingö är vana vid villor med flera våningsplan, trägolv och stora fönsterpartier."
+      },
+      {
+        "q": "Erbjuder städfirmorna på Lidingö städning med samma personal?",
+        "a": "Ja, de flesta etablerade städföretagen prioriterar att du får samma återkommande städare vid varje städtillfälle för ökad trygghet."
+      }
+    ]
+  },
+  "sundbyberg": {
+    "title": "Städfirmor i Sundbyberg – Jämför lokala städbolag",
+    "description": "Hitta städfirma i Sundbyberg. Jämför [ANTAL FÖRETAG] lokala städbolag i Centrala Sumpan och Ursvik med snittbetyg [BETYG]/5. Hemstäd, flyttstäd och RUT-rabatt.",
+    "introtext": "Söker du städfirma i Sundbyberg? Vi listar [ANTAL FÖRETAG] kontrollerade städföretag som servar bostäder och kontor över hela Sveriges mest tätbefolkade kommun — från Centrala Sundbyberg och Lilla Alby till Duvbo, Ursvik, Rissne och Hallonbergen. Här hittar du städbolag med kollektivavtal, nöjd-kund-garanti och höga kundomdömen med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid städning i Sundbyberg",
+      "text": "Privatpersoner som anlitar städfirma i Sundbyberg för hemstädning, flyttstädning, storstädning eller fönsterputs får 50 % RUT-avdrag på arbetskostnaden direkt på fakturan (max 75 000 kr per person och år). RUT gäller inte för kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar det att anlita städhjälp i Sundbyberg?",
+        "a": "Priset för hemstädning i Sundbyberg ligger normalt mellan 220 och 310 kr per timme efter RUT-avdrag. Flyttstädning debiteras oftast som fast kvadratmeterpris."
+      },
+      {
+        "q": "Har städföretagen i Sundbyberg kollektivavtal?",
+        "a": "Flera av de ledande städfirmorna i Sundbyberg, som Clean Casa, har kollektivavtal och schyssta arbetsvillkor för sin personal."
+      },
+      {
+        "q": "Ingår nöjd-kund-garanti vid flyttstädning i Sundbyberg?",
+        "a": "Ja, de seriösa flyttstädfirmorna i Sundbyberg lämnar full besiktningsgaranti som täcker eventuella anmärkningar vid överlåtelsen."
+      }
+    ]
+  },
+  "danderyd": {
+    "title": "Städfirmor i Danderyd – Jämför städbolag för villa och hem",
+    "description": "Söker du städfirma i Danderyd? Jämför [ANTAL FÖRETAG] städbolag för villa i Djursholm och Stocksund med snittbetyg [BETYG] av 5. Boka städhjälp med RUT-avdrag.",
+    "introtext": "Hitta rätt städfirma i Danderyd. Här jämför du [ANTAL FÖRETAG] granskade städföretag verksamma i Djursholm, Stocksund, Enebyberg och Danderyd/Mörby. Områdets unika karaktär med äldre sekelskiftesvillor, generösa boendeytor och exklusiva materialval kräver städföretag med hög diskretion, noggrannhet och vana vid ömtåliga underlag. Firmorna i Danderyd har ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för städtjänster i Danderyd",
+      "text": "När du anlitar städfirma för hemstädning, flyttstädning, storstädning eller fönsterputs i din bostad i Danderyds kommun dras 50 % RUT-avdrag direkt på fakturan (tak 75 000 kr per person och år). RUT gäller inte för kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar hemstädning för villa i Djursholm och Danderyd?",
+        "a": "Timpriset ligger vanligen mellan 230 och 340 kr per timme efter RUT-avdrag. För större villor rekommenderas ofta ett kostnadsfritt hembesök för fast offert."
+      },
+      {
+        "q": "Hur hanteras fönsterputsning av spröjsade fönster i äldre villor?",
+        "a": "Professionella städfirmor i Danderyd har specialutrustning och vana vid kopplade fönsterbågar, spröjs och höga takhöjder."
+      },
+      {
+        "q": "Erbjuder städfirmorna i Danderyd diskretion och fast personal?",
+        "a": "Ja, integritet och diskretion är standard bland firmorna i Danderyd, och fast städpersonal garanteras vid löpande städabonnemang."
+      }
+    ]
+  },
+  "jarfalla": {
+    "title": "Städfirmor i Järfälla – Jämför städföretag i Jakobsberg och Barkarby",
+    "description": "Jämför städfirma i Järfälla. Se [ANTAL FÖRETAG] kontrollerade städbolag i Jakobsberg och Barkarby med snittbetyg [BETYG] av 5. Boka hemstäd och flyttstäd med RUT.",
+    "introtext": "Letar du efter en rekommenderad städfirma i Järfälla? Vi samlar [ANTAL FÖRETAG] granskade städföretag som utför uppdrag i Jakobsberg, Barkarby, Viksjö, Kallhäll och Skälby. Oavsett om du bor i nybyggd lägenhet i Barkarbystaden, radhus i Viksjö eller villa i Kallhäll hittar du prisvärda och pålitliga städlösningar med ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid städhjälp i Järfälla",
+      "text": "Som privatperson får du 50 % RUT-avdrag på arbetskostnaden för hemstädning, flyttstädning, storstädning och fönsterputs i privatbostad i Järfälla (upp till 75 000 kr/person/år). Gäller inte kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar flyttstädning i Järfälla?",
+        "a": "Flyttstädning i Järfälla kostar vanligen från ca 30–45 kr/kvm efter RUT-avdrag, oftast med fast pris baserat på bostadens boyta."
+      },
+      {
+        "q": "Ingår fönsterputsning i flyttstädningen i Järfälla?",
+        "a": "Ja, invändig och utvändig fönsterputsning av åtkomliga glasytor ingår alltid i standardbeskrivningen för flyttstädning."
+      },
+      {
+        "q": "Hur snabbt kan jag få städhjälp i Järfälla?",
+        "a": "De flesta firmorna kan erbjuda provstädning inom en vecka och akuta flyttstädningar med några dagars varsel."
+      }
+    ]
+  },
+  "huddinge": {
+    "title": "Städfirmor i Huddinge – Jämför granskade städbolag",
+    "description": "Hitta städfirma i Huddinge. Jämför [ANTAL FÖRETAG] granskade städföretag från Stuvsta till Kungens Kurva med snittbetyg [BETYG] av 5. Boka städhjälp med RUT-avdrag.",
+    "introtext": "Behöver du anlita en professionell städfirma i Huddinge? På Städtorget jämför du [ANTAL FÖRETAG] granskade städbolag verksamma i Huddinge Centrum, Stuvsta, Snättringe, Segeltorp, Flemingsberg, Trångsund och Skogås. Här hittar du städexperter för både regelbunden hemstädning, storstädning och flyttstädning med godkänd-garanti och ett starkt snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för städning i Huddinge",
+      "text": "RUT-avdraget ger 50 % skattereduktion på arbetskostnaden för hemstädning, flyttstädning, storstädning och fönsterputs i din bostad i Huddinge, upp till 75 000 kr per person och år. Gäller ej kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad är ett normalt pris för hemstädning i Huddinge?",
+        "a": "Priset för hemstädning i Huddinge ligger i regel på 220–315 kr per timme efter RUT-avdrag för abonnemangskunder."
+      },
+      {
+        "q": "Vad händer om jag inte är nöjd med städningen i Huddinge?",
+        "a": "Seriösa städfirmor tillämpar nöjd-kund-garanti: anmäl eventuella anmärkningar inom 24–48 timmar så åtgärdas bristerna utan extra kostnad."
+      },
+      {
+        "q": "Måste jag vara hemma när städfirman städar i Huddinge?",
+        "a": "Nej, det är vanligt att lämna nyckel eller använda nyckelgömma. Vid första städtillfället rekommenderas dock att du är hemma för att gå igenom bostaden."
+      }
+    ]
   }
 }
