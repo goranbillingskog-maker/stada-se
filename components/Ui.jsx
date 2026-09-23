@@ -70,11 +70,20 @@ export function CompanyCard({ company, headingLevel = "h3", hideRut = false }) {
         </H>
         <div className="company-meta">
           <span>{formatCompanyLocation(company)}</span>
+          {company.phone ? (
+            <span> · <a href={`tel:${company.phone.replace(/[^+\d]/g, "")}`} style={{ color: "inherit", textDecoration: "none" }}>{company.phone}</a></span>
+          ) : null}
+          {company.website && company.hasOwnWebsite !== false ? (
+            <span> · <a href={company.website} target="_blank" rel="noopener nofollow" style={{ color: "var(--primary)", textDecoration: "none" }}>Hemsida ↗</a></span>
+          ) : null}
           {company.coverageNote ? (
             <span style={{ color: "var(--primary)", fontWeight: 500 }}> · {company.coverageNote}</span>
           ) : null}
         </div>
         <div className="badges">
+          {company.rutAvdrag === "Ja" && !hideRut ? (
+            <span className="badge badge-rut" style={{ background: "rgba(16, 185, 129, 0.1)", color: "#059669", borderColor: "rgba(16, 185, 129, 0.2)" }}>RUT-avdrag</span>
+          ) : null}
           {company.services.map((s) => (
             <span className="badge" key={s}>{s}</span>
           ))}

@@ -391,5 +391,119 @@
         "a": "Nej, de flesta städfirmor har korta uppsägningstider (ofta 14 till 30 dagar) och erbjuder ett provstädningstillfälle innan du bestämmer dig."
       }
     ]
+  },
+  "borlange": {
+    "title": "Städfirmor i Borlänge – Jämför lokala städbolag med omdömen",
+    "description": "Hitta städfirma i Borlänge. Jämför [ANTAL FÖRETAG] granskade städföretag från Kvarnsveden till Domnarvet med snittbetyg [BETYG] av 5. Boka städhjälp med RUT-avdrag.",
+    "introtext": "Letar du efter en erfaren och pålitlig städfirma i Borlänge? På Städtorget jämför du [ANTAL FÖRETAG] granskade städföretag som utför uppdrag i Centrum, Domnarvet, Kvarnsveden, Tjärna Ängar, Romme och närliggande orter i Dalarna. Hitta rätt hjälp för hemstädning, flyttstädning med besiktningsgaranti eller kontorsstädning med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för städtjänster i Borlänge",
+      "text": "När du anlitar en städfirma för hemstädning, flyttstädning, storstädning eller fönsterputs i din bostad i Borlänge har du rätt till 50 % RUT-avdrag på arbetskostnaden. Avdraget dras direkt på fakturan upp till 75 000 kr per person och år. Gäller ej kontorsstädning, byggstädning eller trappstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar det att anlita en städfirma i Borlänge?",
+        "a": "Priset för hemstädning i Borlänge ligger vanligtvis mellan 210 och 300 kr per timme efter 50 % RUT-avdrag. Flyttstädning debiteras oftast som fast kvadratmeterpris."
+      },
+      {
+        "q": "Erbjuder städfirmorna i Borlänge flyttstädning med garanti?",
+        "a": "Ja, de etablerade städbolagen lämnar nöjd-kund-garanti som innebär att eventuella anmärkningar vid avflyttningsbesiktningen åtgärdas utan extra kostnad."
+      }
+    ]
+  },
+  "falun": {
+    "title": "Städfirmor i Falun – Jämför lokala städbolag med omdömen",
+    "description": "Söker du städfirma i Falun? Jämför [ANTAL FÖRETAG] granskade städbolag från Elsborg till Slätta med snittbetyg [BETYG] av 5. Hemstäd, flyttstäd och RUT-rabatt.",
+    "introtext": "Hitta rätt städfirma i Falun. Vi listar [ANTAL FÖRETAG] kontrollerade städföretag verksamma i Centrum, Slätta, Kvarnberget, Hälsingberg, Grycksbo och kringliggande delar av Falu kommun. Vare sig du bor i en villa eller lägenhet kan du snabbt jämföra priser, tjänster och omdömen för professionell hemstädning och flyttstädning (snittbetyg [BETYG] av 5).",
+    "faktaruta": {
+      "title": "RUT-avdrag vid städning i Falun",
+      "text": "Privatpersoner som anlitar städfirma för hemstädning, flyttstädning eller fönsterputs i Falun får 50 % skattereduktion via RUT-avdraget direkt på fakturan (max 75 000 kr per person och år). RUT gäller inte för företagsstäd eller byggstädning."
+    },
+    "faq": [
+      {
+        "q": "Vad är timpriset för hemstädning i Falun?",
+        "a": "Ett vanligt timpris för hemstädning i Falun är cirka 220–310 kr per timme efter RUT-avdrag vid löpande städabonnemang."
+      },
+      {
+        "q": "Kan man boka fönsterputs och storstädning separat i Falun?",
+        "a": "Ja, de flesta städfirmor i Falun erbjuder flexibla engångstjänster som fönsterputsning och storstädning med RUT-avdrag."
+      }
+    ]
+  },
+  "trollhattan": {
+    "title": "Städfirmor i Trollhättan – Jämför granskade städföretag",
+    "description": "Jämför städfirma i Trollhättan. Se [ANTAL FÖRETAG] lokala städbolag i Trestad med snittbetyg [BETYG] av 5. Hemstädning, flyttstäd och RUT-avdrag direkt på fakturan.",
+    "introtext": "Söker du en pålitlig städfirma i Trollhättan? På Städtorget jämför du [ANTAL FÖRETAG] granskade städbolag med lokal förankring i Trollhättan, Stavre, Hjortmossen, Dannebacken och Trestadsområdet. Hitta professionell hemstädning, flyttstädning med godkänd besiktningsgaranti eller företagsstädning med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för städning i Trollhättan",
+      "text": "RUT-avdraget ger dig 50 % avdrag på arbetskostnaden för hemstäd, flyttstäd och fönsterputs i din bostad i Trollhättan upp till 75 000 kr per vuxen och år. Företagsstädning och byggstädning omfattas ej."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar flyttstädning i Trollhättan?",
+        "a": "Flyttstädning i Trollhättan prissätts vanligen per kvadratmeter och landar ofta mellan 30 och 45 kr per kvm efter 50 % RUT-avdrag."
+      },
+      {
+        "q": "Utför firmorna i Trollhättan uppdrag i Vänersborg och Uddevalla?",
+        "a": "Ja, flertalet aktörer i Trollhättan täcker hela Trestadsregionen inklusive Vänersborg, Uddevalla och Lilla Edet."
+      }
+    ]
+  },
+  "skovde": {
+    "title": "Städfirmor i Skövde – Jämför lokala städbolag med omdömen",
+    "description": "Hitta städfirma i Skövde. Jämför [ANTAL FÖRETAG] granskade städbolag från Norrmalm till Södra Ryd med snittbetyg [BETYG] av 5. Boka städhjälp med RUT-avdrag.",
+    "introtext": "Behöver du städhjälp i Skövde? På Städtorget jämför du [ANTAL FÖRETAG] granskade städföretag verksamma i Centrum, Norrmalm, Hentorp, Södra Ryd och övriga Skaraborg. Välj bland kontrollerade företag för återkommande hemstädning med samma städare, komplett flyttstädning eller kontorsvård med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för städtjänster i Skövde",
+      "text": "Vid köp av hemstädning, flyttstädning eller fönsterputs i Skövde har du rätt till 50 % RUT-avdrag på arbetskostnaden. Avdraget administreras av städfirman direkt på fakturan."
+    },
+    "faq": [
+      {
+        "q": "Vad är ett vanligt timpris för hemstädning i Skövde?",
+        "a": "Timpriset för regelbunden hemstädning i Skövde ligger vanligtvis runt 220–300 kr per timme efter RUT-avdrag."
+      },
+      {
+        "q": "Har städföretagen i Skövde kollektivavtal?",
+        "a": "Flera etablerade städfirmor i Skövde är anslutna till Almega och har kollektivavtal för sina medarbetare."
+      }
+    ]
+  },
+  "kalmar": {
+    "title": "Städfirmor i Kalmar – Jämför lokala städföretag med omdömen",
+    "description": "Söker du städfirma i Kalmar? Jämför [ANTAL FÖRETAG] granskade städfirmor från Kvarnholmen till Berga med snittbetyg [BETYG] av 5. Hemstäd, flyttstäd och RUT-rabatt.",
+    "introtext": "Hitta en pålitlig städfirma i Kalmar. Vi jämför [ANTAL FÖRETAG] kontrollerade städföretag med verksamhet i Kvarnholmen, Berga, Lindsdal, Smedby och på Öland. Hitta städhjälp med personlig service, schyssta villkor och garanti vid flyttstädning med ett genomsnittligt betyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag vid städning i Kalmar",
+      "text": "RUT-avdraget ger privatpersoner 50 % skattereduktion på arbetskostnaden för hushållsnära städtjänster i Kalmar upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Vad kostar det att anlita städfirma i Kalmar?",
+        "a": "Hemstädning i Kalmar kostar i snitt 220–310 kr per timme efter RUT-avdrag vid regelbundet abonnemang."
+      },
+      {
+        "q": "Städar firmorna i Kalmar även på Öland?",
+        "a": "Ja, flera av de lokala städföretagen i Kalmar åtar sig regelbundet uppdrag i Färjestaden och övriga Öland."
+      }
+    ]
+  },
+  "kristianstad": {
+    "title": "Städfirmor i Kristianstad – Jämför lokala städbolag",
+    "description": "Hitta städfirma i Kristianstad. Jämför [ANTAL FÖRETAG] granskade städföretag från Centrum till Åhus med snittbetyg [BETYG] av 5. Boka städhjälp med RUT-avdrag.",
+    "introtext": "Letar du efter en trygg städfirma i Kristianstad? På Städtorget jämför du [ANTAL FÖRETAG] granskade städföretag som utför uppdrag i Kristianstad, Åhus, Vä, Hammar och närliggande orter i nordöstra Skåne. Hitta rätt aktör för hemstädning, flyttstädning med besiktningsgaranti eller fönsterputs med ett snittbetyg på [BETYG] av 5.",
+    "faktaruta": {
+      "title": "RUT-avdrag för städtjänster i Kristianstad",
+      "text": "RUT-avdraget ger dig 50 % skattereduktion på arbetskostnaden för hemstäd, flyttstäd, storstäd och fönsterputs i din bostad i Kristianstads kommun upp till 75 000 kr per person och år."
+    },
+    "faq": [
+      {
+        "q": "Vad är timpriset för hemstädning i Kristianstad?",
+        "a": "I Kristianstad ligger timpriset för hemstädning normalt mellan 215 och 305 kr per timme efter 50 % RUT-avdrag."
+      },
+      {
+        "q": "Ingår fönsterputsning vid flyttstädning i Kristianstad?",
+        "a": "Ja, fönsterputsning invändigt och utvändigt (där det är åtkomligt) ingår normalt i komplett flyttstädning."
+      }
+    ]
   }
 }
