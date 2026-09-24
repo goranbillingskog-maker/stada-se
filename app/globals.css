@@ -518,11 +518,14 @@ img { max-width: 100%; }
   background: var(--bloom-mint) !important;
 }
 
-.theme-pilot .nav-cta,
-.theme-pilot .search-input:focus {
+.theme-pilot .nav-cta {
   background: var(--bloom-mint) !important;
   color: white !important;
   border-color: var(--bloom-mint) !important;
+}
+
+.theme-pilot .search-input:focus {
+  border-color: var(--mint-dark) !important;
 }
 
 .theme-pilot .nav-cta:hover {
