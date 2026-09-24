@@ -673,7 +673,7 @@
     "postal_code": "752 16",
     "city": "Uppsala",
     "area": "Luthagen",
-    "phone": "",
+    "phone": "018-36 49 51",
     "email": "",
     "website": "",
     "logo_url": "",
@@ -700,7 +700,7 @@
     "place_id": "ChIJi0C1DnfMX0YRvhKEYNv6wk4",
     "data_confidence": "Low - website unconfirmed. Ingen egen webbplats kunde hittas för företaget trots omfattande sökning; endast tredjeparts kataloger (t.ex. stadningguiden.se, infoisinfo.se) och registersidor (hitta.se, krafman.se) listar bolaget. Bolagets registrerade adress (S:t Persgatan 26A) skiljer sig från den Uppsala-adress (Seminarieg. 29) som anges i Google-data. Org.nr, telefon, e-post, grundandeår och grundare kunde inte verifieras.",
     "sources": "https://www.hitta.se/|https://www.krafman.se/",
-    "last_verified": "2026-07-03"
+    "last_verified": "2026-09-24"
   },
   {
     "company_name": "Rent Hela Tiden AB",
@@ -2069,7 +2069,8 @@
     "place_id": "ChIJkZIbxeKjU0YRvhXF01QSS5Y",
     "data_confidence": "Low — KRITISK FLAGGA: bolagsregistret (SYNA) visar status 'Försatt i konkurs' (bankruptcy), vilket står i konflikt med en till synes aktiv Google Places-listning; inkluderad endast som varningsexempel — rekommenderas EJ för bokning/publicering utan färsk verifiering av aktuell status",
     "sources": "SYNA registerdata (konkursstatus identifierad under enrichment, specifik URL ej sparad)",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-07-04",
+    "hidden": true
   },
   {
     "company_name": "Arisa Städ AB",
@@ -2772,7 +2773,8 @@
     "place_id": "ChIJm0sIwZt5X0YRYdleRRhQUi4",
     "data_confidence": "Low",
     "sources": "Google Places|merinfo.se",
-    "last_verified": "2026-07-04"
+    "last_verified": "2026-07-04",
+    "hidden": true
   },
   {
     "company_name": "HomeMaid",
@@ -6611,7 +6613,8 @@
     "place_id": "ChIJu-IWrcNtWkYR-IIV6SW4du4",
     "data_confidence": "Medium – local listing confirmed, no separate website found",
     "sources": "Städtorget directory",
-    "last_verified": "2026-08-18"
+    "last_verified": "2026-08-18",
+    "hidden": true
   },
   {
     "company_name": "dags fönsterputs",
@@ -7710,7 +7713,7 @@
     "postal_code": "222 24",
     "city": "Lund",
     "area": "Centrum",
-    "phone": "",
+    "phone": "073-088 40 10",
     "email": "",
     "website": "",
     "logo_url": "https://www.google.com/s2/favicons?domain=google.com&sz=128",
@@ -7737,7 +7740,7 @@
     "place_id": "ChIJa1WYA_SXU0YROlYBXJ42kgM",
     "data_confidence": "Low – Google Maps listing only, no official website confirmed",
     "sources": "Google Maps",
-    "last_verified": "2026-08-18"
+    "last_verified": "2026-09-24"
   },
   {
     "company_name": "Svenska Städssällskapet AB",
@@ -8857,9 +8860,9 @@
     "postal_code": "901 30",
     "city": "Umeå",
     "area": "Ersboda",
-    "phone": "",
+    "phone": "072-045 04 14",
     "email": "",
-    "website": "",
+    "website": "https://umeastad.com",
     "logo_url": "https://www.google.com/s2/favicons?domain=umeastad.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJCymVdkBbfEYRlPND7seLNis/photos/AaVGc3ljvbLoUiJNWHLwqXCgWlV1CMcEZV9SsEDoZAuAsqA3-jbKzmdBE36zeN7iUs2bHPIzNHSQH0ji7dZ1ySvgbZjqS82Z4NssK9cJHHSMtBNhuMBqXhdNCqcGrCapuuCWxru76I23Dw0jH-Ebx9oYNqUqqmpQl_43mKidFZLJx138339mpj8u_jfvlh25GFUNhyZNlPCndkt4WWe3l-2C_1zsfy1klbiaO8j0vdqkEB_ijBRt4yisfRxSsN0RV8jwI5e-mCaZUDiXjtVmP8x2BgR714omY4AIPshF2qBrQ4SjE2tczFrb3DePSGxGK5C-jCPMMqw54SKqGZ_oQYT-pIt2olNvrtqTLUKLvv5H5Uh_H0BW8zd8QKgqF5PU4XPIZCAaUJ2Q9rJhG6SRnLPUhu2XIe5BE9ZOmNxCfXnFXKLonRan7_QiwtT7db4WHw/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Städning",
@@ -8884,7 +8887,9 @@
     "place_id": "ChIJCymVdkBbfEYRlPND7seLNis",
     "data_confidence": "Low – only Google Maps backbone; no website, registry or contact data found via search",
     "sources": "Google Maps Places API",
-    "last_verified": "2026-07-24"
+    "last_verified": "2026-09-24",
+    "has_own_website": "Ja",
+    "website_opportunity": "Nej"
   },
   {
     "company_name": "Städfirma Almirent AB",
@@ -9338,9 +9343,9 @@
     "postal_code": "804 26",
     "city": "Gävle",
     "area": "Valbo",
-    "phone": "",
+    "phone": "026-280 12 13",
     "email": "",
-    "website": "",
+    "website": "https://hustomtarna-gavleborg.se",
     "logo_url": "https://www.google.com/s2/favicons?domain=allabolag.se&sz=128",
     "image_urls": "https://places.googleapis.com/v1/places/ChIJE_QK0_zHYEYRiwtz52oihng/photos/AaVGc3m77bc3yFFYVfDUSqUVVRBpDySXijQW5D1S3hFpoZdXknP0Lily89dBb9uwLxeFZhU3wkF_UPEtrCddXtlQGYJrh6Ng0URRM46orqe3uZKxsMAm1grKCef-nPx8IIao4Ac9pu40q7V1it9VeyLuRPxfIZ0Qb-ZFPZIhRzYqhBr-u-5PduQgQrZGyeSdyb0Wzn3WguEAWMzLxQbvaMzaL82OxY0RxU17O0UOLXD898Y3VGZtuKe9ENJG4kSjCvpeHe0lWY1GhxPY_tBDlBysJbM6XCQjsJTKxLEjRWIkdprlKgCTlCs_1Za1m8rvgTgq03y1bYwcESfxx-NC8yRaA3yXQ75Xf-WFI9LGvxhZnh1arLWNMI7Dp6uQZrC0-d0WOvYYoddN5a9v5NWlu1m6nEYLYt88Nk6VwnEBGtFIP1wyDxyP30Eiq9ks5IfHvhRZ/media?maxWidthPx=400&key=AIzaSyAgucJSAxcE0tpOe1l47Xy0Rw4QehRSg94",
     "services": "Hemstädning|Städservice",
@@ -9365,7 +9370,9 @@
     "place_id": "ChIJE_QK0_zHYEYRiwtz52oihng",
     "data_confidence": "Low – no website found; registry data partial (org nr masked); address/owner confirmed via Allabolag",
     "sources": "allabolag.se (Hustomtarna Gavleborg)|Google Places",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-24",
+    "has_own_website": "Ja",
+    "website_opportunity": "Nej"
   },
   {
     "company_name": "Hamrånge Fönsterputs",
@@ -10402,7 +10409,8 @@
     "place_id": "ChIJR5rS_uILUEYR9uDjzKtGX1M",
     "data_confidence": "Low – endast dorunner.se-profil hittad; ingen egen webbplats eller officiell registrering bekräftad; org.nr och legal form okänd",
     "sources": "dorunner.se/foretag/lotus-cleaning-55998",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-07-25",
+    "hidden": true
   },
   {
     "company_name": "LTMA Group AB",
@@ -10772,7 +10780,8 @@
     "place_id": "ChIJh0OPXGuhWkYRvTa6dIJnle0",
     "data_confidence": "Medium — registerdata bekräftad via bolagsfakta/syna; mycket nystartat bolag (dec 2025), ingen webbplats hittad; gatuadress avviker från backbone (Druveforsvägen vs ingen angiven)",
     "sources": "https://www.bolagsfakta.se/5595594614-Abelia_Hemtjanst_AB|https://upplysningar.syna.se/foretag/5595594614/abelia-hemtjanst-ab",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-07-25",
+    "hidden": true
   },
   {
     "company_name": "Fissa & Feja",
@@ -11522,7 +11531,7 @@
     "postal_code": "151 51",
     "city": "Södertälje",
     "area": "Södertälje Väst",
-    "phone": "",
+    "phone": "072-300 21 29",
     "email": "",
     "website": "",
     "logo_url": "https://www.google.com/s2/favicons?domain=google.com&sz=128",
@@ -11549,7 +11558,7 @@
     "place_id": "ChIJn_jdfa8TX0YRQc2xMCrwLtI",
     "data_confidence": "Low — org.nr delvis dold (personnummer-baserat), ingen webbsida, ingen kontaktinfo; registerdata från datreal.com; gap: telefon, email, fullständigt org.nr",
     "sources": "https://datreal.com/en/se/company/12c6662beab131d4",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-24"
   },
   {
     "company_name": "Städpulsen AB",
@@ -11623,7 +11632,8 @@
     "place_id": "ChIJpYxGW24TX0YRXyzC04D3imo",
     "data_confidence": "Low — enbart Google Maps-data; ingen webbsida, org.nr, telefon eller email hittad; Vyra AB (559526-5850) i Göteborg är ett annat bolag; gap: alla kontakt- och registreringsuppgifter",
     "sources": "Google Maps (place_id ChIJpYxGW24TX0YRXyzC04D3imo)",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-07-25",
+    "hidden": true
   },
   {
     "company_name": "Kontorstädning Eskilstuna Städfirma Eskilstuna",
@@ -11660,7 +11670,8 @@
     "place_id": "ChIJaaXh1s7zXkYRQLtRNnQkH2w",
     "data_confidence": "Low — ingen webbplats eller registreringsdata hittad; Google Places-post saknar ytterligare info",
     "sources": "Google Places|hitta.se (ej funnen)|allabolag.se (ej funnen)",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-07-25",
+    "hidden": true
   },
   {
     "company_name": "Pigan - Din underlättare i vardagen",
@@ -11707,7 +11718,7 @@
     "postal_code": "632 31",
     "city": "Eskilstuna",
     "area": "Fröslunda",
-    "phone": "",
+    "phone": "076-866 08 42",
     "email": "",
     "website": "",
     "logo_url": "https://www.google.com/s2/favicons?domain=venus-service.se&sz=128",
@@ -11734,7 +11745,7 @@
     "place_id": "ChIJMyp64KvyXkYR6b3IhdIbSA8",
     "data_confidence": "Low — ingen webbplats, inget org.nummer hittad i register; uppgifter från LinkedIn och öppettider.nu",
     "sources": "LinkedIn (Luiza/Venus Service)|öppettider.nu|Google Places",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-24"
   },
   {
     "company_name": "Tuna Sanering AB",
@@ -11808,7 +11819,8 @@
     "place_id": "ChIJlaIrYSjzXkYRu74Q4rBYNoc",
     "data_confidence": "Medium — Ratsit bekräftar registreringsuppgifter; ingen webbplats hittad; org.nummer delvis maskerat i register",
     "sources": "ratsit.se (BILNAD, uppdaterad 2026-07-25)",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-07-25",
+    "hidden": true
   },
   {
     "company_name": "4Y Flytt & städ Sverige AB",
@@ -12928,7 +12940,7 @@
     "postal_code": "302 32",
     "city": "Halmstad",
     "area": "Centrum",
-    "phone": "",
+    "phone": "073-387 56 58",
     "email": "",
     "website": "",
     "logo_url": "https://www.google.com/s2/favicons?domain=sanitoclean.se&sz=128",
@@ -12955,7 +12967,7 @@
     "place_id": "ChIJBcjEMDmjUUYRORZQEbGKHj4",
     "data_confidence": "Low – only address and opening hours found; no website, phone, email, or registry match confirmed",
     "sources": "xn--ppettider-z7a.nu/sanito-clean-halmstad",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-24"
   },
   {
     "company_name": "Städpulsen AB",
@@ -13251,7 +13263,8 @@
     "place_id": "ChIJ7_2phPfBUEYRGNjh5ydfSuE",
     "data_confidence": "Medium — registry data confirmed via Syna/Näringslivsregistret; no website found; low turnover suggests limited current activity",
     "sources": "upplysningar.syna.se|xn--nringslivsregistret-gwb.se|Google Maps Places API",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-07-25",
+    "hidden": true
   },
   {
     "company_name": "Mellansvenska Städ AB",
@@ -13380,7 +13393,7 @@
     "postal_code": "352 33",
     "city": "Växjö",
     "area": "Väster",
-    "phone": "",
+    "phone": "073-893 56 74",
     "email": "",
     "website": "",
     "logo_url": "https://www.google.com/s2/favicons?domain=bolagsfakta.se&sz=128",
@@ -13407,7 +13420,7 @@
     "place_id": "ChIJdcnnhd0jV0YRdUs6NpIvIYA",
     "data_confidence": "Medium — registry data bekräftad via bolagsfakta.se; infoisinfo.se anger tjänster; ingen webbplats hittad; org-nummer delvis maskerat (enskild firma)",
     "sources": "bolagsfakta.se/900424NHSF00001|infoisinfo.se/bast-stad-bs|kundernas.se/kapitalstadning",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-24"
   },
   {
     "company_name": "Kapitalstädning",
@@ -14389,7 +14402,8 @@
     "place_id": "ChIJF6SE3SizXEYRwiOube8JHco",
     "data_confidence": "Low — no website found; no registry match found; backbone address only",
     "sources": "Google Places backbone only",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-07-25",
+    "hidden": true
   },
   {
     "company_name": "Riks Städpartner i Värmland AB",
@@ -14666,7 +14680,7 @@
     "postal_code": "654 67",
     "city": "Karlstad",
     "area": "Nordsidan",
-    "phone": "",
+    "phone": "072-042 85 50",
     "email": "",
     "website": "",
     "logo_url": "https://www.google.com/s2/favicons?domain=goclean.se&sz=128",
@@ -14693,7 +14707,7 @@
     "place_id": "ChIJQ5rzKv2zXEYRywFUXhkMOKE",
     "data_confidence": "Low – ingen webbplats hittad; org-nummer ej verifierat; Google Places enda källa; bolagsform (HB) bekräftad via namn",
     "sources": "Google Places API | https://www.xn--nringslivsregistret-gwb.se/tema/stadsforetag/karlstad/",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-09-24"
   },
   {
     "company_name": "Städkompaniet i Karlstad AB",
@@ -15174,7 +15188,8 @@
     "place_id": "ChIJD3FjBQZdZEYRo9g1xsVwtak",
     "data_confidence": "Medium — registry confirmed (hitta.se, näringslivsregistret.se); registered address is Marinvägen 3 (not Grönborgsgatan); no website or phone found; newly registered 2025",
     "sources": "hitta.se|näringslivsregistret.se|syna.se",
-    "last_verified": "2026-07-25"
+    "last_verified": "2026-07-25",
+    "hidden": true
   },
   {
     "company_name": "Cleanshine Sundsvall",
@@ -21612,7 +21627,8 @@
     "has_own_website": "Nej",
     "website_opportunity": "Ja",
     "website_type": "Saknas",
-    "website_notes": ""
+    "website_notes": "",
+    "hidden": true
   },
   {
     "company_name": "Sembush Rent",
@@ -22435,47 +22451,6 @@
     "website_notes": ""
   },
   {
-    "company_name": "Swippit Städ",
-    "legal_name": "Swippit Städ AB",
-    "org_number": "559395-9512",
-    "street_address": "Vallgatan 8",
-    "postal_code": "352 34",
-    "city": "Växjö",
-    "area": "Växjö",
-    "phone": "",
-    "email": "",
-    "website": "",
-    "logo_url": "",
-    "image_urls": "",
-    "services": "Hemstädning|Kontorsstädning",
-    "service_descriptions": "Lokalvård och städning.",
-    "service_areas": "Växjö",
-    "about": "Aktivt AB sedan 2022. F-skatt. VD Alona Myronova. 1 anställd, omsättning ca 0,3 mkr (2024). Ingen egen webbplats.",
-    "founded_year": 2022,
-    "founder": "",
-    "employees": "1-4",
-    "legal_form": "Aktiebolag",
-    "rut_avdrag": "Ja",
-    "google_rating": "",
-    "google_reviews": "",
-    "review_snippets": "",
-    "other_ratings": "",
-    "certifications": "",
-    "booking_method": "",
-    "pricing_info": "",
-    "languages": "Svenska",
-    "social_links": "",
-    "google_maps_url": "",
-    "place_id": "",
-    "data_confidence": "High",
-    "sources": "merinfo.se|hitta.se",
-    "last_verified": "2026-09-23",
-    "has_own_website": "Nej",
-    "website_opportunity": "Ja",
-    "website_type": "Saknas",
-    "website_notes": ""
-  },
-  {
     "company_name": "Besas Städ",
     "legal_name": "Besas Medicinska Fotvård Och Städ AB",
     "org_number": "559398-4775",
@@ -22555,7 +22530,8 @@
     "has_own_website": "Nej",
     "website_opportunity": "Ja",
     "website_type": "Saknas",
-    "website_notes": ""
+    "website_notes": "",
+    "hidden": true
   },
   {
     "company_name": "Zita Kvalitet",

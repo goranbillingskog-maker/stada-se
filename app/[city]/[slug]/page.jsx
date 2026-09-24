@@ -240,21 +240,6 @@ export default async function CompanyPage({ params }) {
                     Besök webbplats
                   </a>
                 ) : null}
-                {c.mapsUrl || c.address ? (
-                  <a
-                    className="btn btn-outline"
-                    href={
-                      c.mapsUrl ||
-                      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                        `${c.name}, ${c.address}, ${c.postalCode ? c.postalCode + " " : ""}${c.city}`
-                      )}`
-                    }
-                    target="_blank"
-                    rel="noopener nofollow"
-                  >
-                    Visa på Google Maps
-                  </a>
-                ) : null}
               </div>
               <p className="small-print">
                 Du kontaktar företaget direkt – Städtorget är en oberoende katalog
