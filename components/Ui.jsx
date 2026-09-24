@@ -88,6 +88,11 @@ export function CompanyCard({ company, headingLevel = "h3", hideRut = false }) {
             <span className="badge" key={s}>{s}</span>
           ))}
         </div>
+        {company.notice ? (
+          <div style={{ marginTop: 8, padding: "6px 10px", background: "rgba(245, 158, 11, 0.1)", border: "1px solid rgba(245, 158, 11, 0.3)", borderRadius: 6, fontSize: "0.85rem", color: "#92400e" }}>
+            ℹ️ {company.notice}
+          </div>
+        ) : null}
       </div>
       <Rating company={company} />
     </article>

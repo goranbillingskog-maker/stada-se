@@ -7,9 +7,9 @@ import Search from "../components/Search.jsx";
 import GeoBanner from "../components/GeoBanner.jsx";
 
 export const metadata = {
-  title: "Hitta städfirma i din stad – jämför 400+ städfirmor | Städtorget",
+  title: "Hitta städfirma i din stad – jämför 600+ städfirmor | Städtorget",
   description:
-    "Jämför städfirmor i Sveriges 20 största städer. Se Google-omdömen, tjänster, priser och RUT-avdrag. Hitta rätt städhjälp – hemstädning, flyttstädning och kontorsstädning.",
+    "Jämför städfirmor i 45 städer och områden i Sverige. Se Google-omdömen, tjänster, priser och RUT-avdrag. Hitta rätt städhjälp – hemstädning, flyttstädning och kontorsstädning.",
   alternates: { canonical: "/" },
 };
 

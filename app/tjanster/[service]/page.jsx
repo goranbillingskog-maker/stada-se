@@ -21,12 +21,13 @@ export async function generateMetadata({ params }) {
   const s = getService(service);
   if (!s) return {};
   const total = companiesForService(s.slug).length;
+  const numCities = citiesForService(s.slug).length;
   const isB2B = ["kontorsstadning", "byggstadning", "trappstadning"].includes(service);
   const description = isB2B
-    ? `${s.name}: jämför ${total} städfirmor med omdömen i Sveriges största städer. ${s.intro}`
-    : `${s.name}: jämför ${total} städfirmor med omdömen och RUT-avdrag i Sveriges största städer. ${s.intro}`;
+    ? `${s.name}: jämför ${total} städfirmor med omdömen i ${numCities} städer och områden. ${s.intro}`
+    : `${s.name}: jämför ${total} städfirmor med omdömen och RUT-avdrag i ${numCities} städer och områden. ${s.intro}`;
   return {
-    title: `${s.name} – jämför ${total} städfirmor i 20 städer`,
+    title: `${s.name} – jämför ${total} städfirmor i ${numCities} städer`,
     description,
     alternates: { canonical: `/tjanster/${s.slug}/` },
   };
@@ -79,7 +80,7 @@ export default async function ServicePage({ params }) {
           </div>
           <p className="lead" style={{ marginBottom: 32 }}>
             {s.intro} Just nu listar vi {total} städfirmor som erbjuder{" "}
-            {s.name.toLowerCase()} i Sveriges största städer. Välj din stad nedan.
+            {s.name.toLowerCase()} i {cities.length} städer och områden. Välj din stad nedan.
           </p>
 
           {s.priceRange && (

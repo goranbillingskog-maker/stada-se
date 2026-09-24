@@ -11,8 +11,8 @@ export default function OmOssPage() {
       <div className="container" style={{ maxWidth: 760 }}>
         <h1>Om Städtorget</h1>
         <p>
-          Städtorget är en oberoende katalog över städfirmor i Sveriges 20 största
-          städer. Vårt mål är enkelt: att göra det lätt att hitta en seriös
+          Städtorget är en oberoende katalog över städfirmor i 45 städer och områden runt
+          om i Sverige. Vårt mål är enkelt: att göra det lätt att hitta en seriös
           städfirma där du bor – utan formulär, mellanhänder eller dolda avgifter.
         </p>
         <p>

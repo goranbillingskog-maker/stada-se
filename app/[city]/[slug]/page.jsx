@@ -128,6 +128,12 @@ export default async function CompanyPage({ params }) {
           />
         ) : null}
 
+        {c.notice ? (
+          <div style={{ padding: "14px 18px", background: "rgba(245, 158, 11, 0.1)", border: "1px solid rgba(245, 158, 11, 0.3)", borderRadius: 8, marginBottom: 24, color: "#92400e", fontSize: "0.95rem", lineHeight: 1.5 }}>
+            <strong>Viktig information:</strong> {c.notice}
+          </div>
+        ) : null}
+
         <div className="two-col">
           <div>
             {c.about ? (

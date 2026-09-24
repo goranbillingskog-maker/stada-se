@@ -10,7 +10,7 @@ export const metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Jämför städfirmor i Sveriges 20 största städer. Se omdömen, tjänster, RUT-avdrag och kontaktuppgifter – helt gratis.",
+    "Jämför städfirmor i 45 städer och områden i Sverige. Se omdömen, tjänster, RUT-avdrag och kontaktuppgifter – helt gratis.",
   openGraph: {
     siteName: SITE_NAME,
     type: "website",

@@ -507,7 +507,17 @@ img { max-width: 100%; }
 }
 
 /* Knappar */
-.theme-pilot .btn-primary,
+.theme-pilot .btn-primary {
+  background: var(--mint-dark) !important;
+  color: white !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.theme-pilot .btn-primary:hover {
+  background: var(--bloom-mint) !important;
+}
+
 .theme-pilot .nav-cta,
 .theme-pilot .search-input:focus {
   background: var(--bloom-mint) !important;
@@ -515,7 +525,6 @@ img { max-width: 100%; }
   border-color: var(--bloom-mint) !important;
 }
 
-.theme-pilot .btn-primary:hover,
 .theme-pilot .nav-cta:hover {
   background: var(--mint-dark) !important;
 }
