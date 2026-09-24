@@ -114,6 +114,7 @@ export default async function CompanyPage({ params }) {
             </div>
             <div className="company-meta" style={{ margin: 0 }}>
               Städfirma {placePreposition(c.citySlug)} {formatCompanyLocation(c)}
+              {c.address ? ` · ${c.address}${c.postalCode ? `, ${c.postalCode}` : ""}` : ""}
               {c.foundedYear ? ` · Grundad ${c.foundedYear}` : ""}
             </div>
           </div>
@@ -213,6 +214,11 @@ export default async function CompanyPage({ params }) {
           <aside>
             <section className="panel">
               <h2>Kontakta {c.name}</h2>
+              {c.address ? (
+                <p style={{ margin: "0 0 14px", fontSize: "0.95rem", color: "var(--ink-soft)" }}>
+                  📍 {c.address}, {c.postalCode ? `${c.postalCode} ` : ""}{c.city}
+                </p>
+              ) : null}
               <div className="contact-actions">
                 {c.phone ? (
                   <a className="btn btn-primary" href={`tel:${c.phone.replace(/[^+\d]/g, "")}`}>
@@ -234,10 +240,15 @@ export default async function CompanyPage({ params }) {
                     Besök webbplats
                   </a>
                 ) : null}
-                {c.mapsUrl ? (
+                {c.mapsUrl || c.address ? (
                   <a
                     className="btn btn-outline"
-                    href={c.mapsUrl}
+                    href={
+                      c.mapsUrl ||
+                      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                        `${c.name}, ${c.address}, ${c.postalCode ? c.postalCode + " " : ""}${c.city}`
+                      )}`
+                    }
                     target="_blank"
                     rel="noopener nofollow"
                   >

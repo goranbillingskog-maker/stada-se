@@ -69,7 +69,7 @@ export function CompanyCard({ company, headingLevel = "h3", hideRut = false }) {
           <Link href={href}>{company.name}</Link>
         </H>
         <div className="company-meta">
-          <span>{formatCompanyLocation(company)}</span>
+          <span>{company.address ? `${company.address}, ${formatCompanyLocation(company)}` : formatCompanyLocation(company)}</span>
           {company.phone ? (
             <span> · <a href={`tel:${company.phone.replace(/[^+\d]/g, "")}`} style={{ color: "inherit", textDecoration: "none" }}>{company.phone}</a></span>
           ) : null}
