@@ -10,8 +10,8 @@ export function Avatar({ company }) {
         src={src}
         alt={`${company.name} logotyp`}
         loading="lazy"
-        width="96"
-        height="96"
+        width="160"
+        height="90"
       />
     );
   }
@@ -26,8 +26,8 @@ export function CompanyVisual({ company }) {
         src={company.photo}
         alt={`${company.name} i ${company.city}`}
         loading="lazy"
-        width="96"
-        height="96"
+        width="160"
+        height="90"
       />
     );
   }

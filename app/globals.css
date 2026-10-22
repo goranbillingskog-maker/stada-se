@@ -238,31 +238,32 @@ img { max-width: 100%; }
 .company-list { display: grid; gap: 14px; }
 .company-card {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 18px; display: grid; grid-template-columns: 96px 1fr auto; gap: 18px;
+  padding: 18px; display: grid; grid-template-columns: 128px 1fr auto; gap: 18px;
   align-items: center; transition: box-shadow 0.15s;
 }
 .company-card:hover { box-shadow: var(--shadow); }
 @media (max-width: 640px) {
-  .company-card { grid-template-columns: 64px 1fr; }
+  .company-card { grid-template-columns: 96px 1fr; }
   .company-card .rating { grid-column: 2; text-align: left; }
   .company-card .rating .stars { font-size: 0.9rem; }
 }
-.company-visual { width: 96px; height: 96px; flex-shrink: 0; }
+.company-visual { width: 128px; height: 72px; aspect-ratio: 16 / 9; flex-shrink: 0; }
 .company-photo {
-  width: 96px; height: 96px; border-radius: 12px; object-fit: cover; border: 1px solid var(--line); flex-shrink: 0;
+  width: 128px; height: 72px; aspect-ratio: 16 / 9; border-radius: 12px; object-fit: cover; border: 1px solid var(--line); flex-shrink: 0;
 }
 .company-avatar {
-  width: 96px; height: 96px; border-radius: 12px; object-fit: contain;
-  background: #fff; border: 1px solid var(--line); padding: 10px; flex-shrink: 0;
+  width: 128px; height: 72px; aspect-ratio: 16 / 9; border-radius: 12px; object-fit: contain;
+  background: #fff; border: 1px solid var(--line); padding: 8px 12px; flex-shrink: 0;
 }
 .avatar-fallback {
-  width: 96px; height: 96px; border-radius: 12px;
+  width: 128px; height: 72px; aspect-ratio: 16 / 9; border-radius: 12px;
   background: var(--teal-light); color: var(--teal);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-serif); font-weight: 700; font-size: 1.6rem; flex-shrink: 0;
+  font-family: var(--font-serif); font-weight: 700; font-size: 1.4rem; flex-shrink: 0;
 }
 @media (max-width: 640px) {
-  .company-visual, .company-photo, .company-avatar, .avatar-fallback { width: 64px; height: 64px; }
+  .company-visual, .company-photo, .company-avatar, .avatar-fallback { width: 96px; height: 54px; }
+  .avatar-fallback { font-size: 1.15rem; }
 }
 .company-card h3, .company-card h2 { margin: 0 0 3px; font-size: 1.12rem; }
 .company-card h3 a, .company-card h2 a { color: var(--ink); }
@@ -313,9 +314,20 @@ img { max-width: 100%; }
 
 /* ===== Company page ===== */
 .company-header {
-  display: grid; grid-template-columns: 96px 1fr; gap: 22px; align-items: start; padding: 28px 0 8px;
+  display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center; padding: 28px 0 8px;
 }
 .company-header h1 { margin: 0 0 6px; font-size: clamp(1.6rem, 3.5vw, 2.3rem); }
+.company-header .company-avatar {
+  width: 160px; height: 90px; aspect-ratio: 16 / 9; padding: 10px 16px;
+}
+.company-header .avatar-fallback {
+  width: 160px; height: 90px; aspect-ratio: 16 / 9; font-size: 1.8rem;
+}
+@media (max-width: 640px) {
+  .company-header { grid-template-columns: 1fr; gap: 16px; }
+  .company-header .company-avatar,
+  .company-header .avatar-fallback { width: 140px; height: 79px; }
+}
 .two-col {
   display: grid; grid-template-columns: 1fr 340px; gap: 26px; align-items: start; padding: 26px 0 60px;
 }
