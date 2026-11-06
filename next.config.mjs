@@ -19,6 +19,8 @@ const nextConfig = {
       { source: "/stockholm/skinande-hem-i-stockholm-ab/", destination: "/taby/skinande-hem-i-stockholm-ab/", permanent: true },
       { source: "/stockholm/clean-choice/", destination: "/taby/clean-choice/", permanent: true },
       { source: "/stockholm/nytta-ab/", destination: "/taby/nytta-ab/", permanent: true },
+      { source: "/boras/ltma-group-ab/", destination: "/boras/boras-stadservice-en-del-av-ltma-group/", permanent: true },
+      { source: "/boras/boras-stadservice/", destination: "/boras/boras-stadservice-en-del-av-ltma-group/", permanent: true },
     ];
   },
 };
