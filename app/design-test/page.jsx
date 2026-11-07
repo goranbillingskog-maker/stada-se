@@ -1,5 +1,3 @@
-import Header from "../../components/Header.jsx";
-import Footer from "../../components/Footer.jsx";
 import Logo from "../../components/Logo.jsx";
 import Button from "../../components/Button.jsx";
 import Tile from "../../components/Tile.jsx";
@@ -64,8 +62,6 @@ export default function DesignTestPage() {
 
   return (
     <div style={{ background: "var(--paper)", minHeight: "100vh" }}>
-      <Header />
-
       <main style={{ maxWidth: "var(--maxw)", margin: "0 auto", padding: "40px var(--gutter) 80px" }}>
         <Breadcrumbs
           items={[
@@ -291,8 +287,6 @@ export default function DesignTestPage() {
           <Accordion items={sampleFaq} />
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }
