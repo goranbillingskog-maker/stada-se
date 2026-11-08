@@ -45,8 +45,14 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-archivo), system-ui, sans-serif;
@@ -253,6 +259,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   justify-content: space-between;
   gap: 16px;
   padding: 22px 28px;
+}
+
+.accordion-summary span {
+  min-width: 0;
 }
 
 .accordion-summary::-webkit-details-marker {
@@ -478,53 +488,6 @@ details[open] .accordion-summary .plus {
   color: var(--white) !important;
 }
 
-@media (max-width: 1180px) {
-  .hero2 {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 40px;
-  }
-  .profile {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 40px;
-  }
-}
-
-@media (max-width: 860px) {
-  .firm {
-    grid-template-columns: 72px minmax(0, 1fr);
-    gap: 16px;
-    padding: 16px;
-  }
-  .firm-aside {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .cities {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .facts {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .about {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 24px;
-  }
-  .svtiles {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .kv {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 4px;
-  }
-  .more {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 8px 16px;
-  }
-}
-
 /* Firmaprofil */
 .profile {
   display: grid;
@@ -651,4 +614,79 @@ details[open] .accordion-summary .plus {
 
 .contact-links a:hover {
   color: var(--sun);
+}
+
+/* Responsiva regler (placerade sist så att de alltid överrider grundstilarna) */
+@media (max-width: 1180px) {
+  .hero2 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+  .profile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .firm {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+  .firm-aside {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cities {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .about {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .svtiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .kv {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+  .more {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .accordion-summary {
+    padding: 16px 18px;
+    gap: 12px;
+  }
+  .accordion-content {
+    padding: 0 18px 18px;
+  }
+  .cities {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .facts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .svtiles {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .svtile--2 {
+    grid-column: span 1;
+  }
+  .score {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 }

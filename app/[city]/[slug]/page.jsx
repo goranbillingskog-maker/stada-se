@@ -196,7 +196,7 @@ export default async function CompanyPage({ params }) {
           {c.rating ? (
             <div className="wallbox">
               <div className="score">
-                <span className="d" style={{ fontSize: "clamp(130px, 15vw, 220px)", lineHeight: 0.8 }}>
+                <span className="d" style={{ fontSize: "clamp(88px, 15vw, 220px)", lineHeight: 0.8 }}>
                   {c.rating.toFixed(1).replace(".", ",")}
                 </span>
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>

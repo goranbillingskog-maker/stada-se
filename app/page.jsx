@@ -79,7 +79,7 @@ export default function HomePage() {
               className="d"
               style={{
                 margin: "0 0 32px",
-                fontSize: "clamp(60px, 7.8vw, 112px)",
+                fontSize: "clamp(44px, 7.8vw, 112px)",
                 lineHeight: 0.86,
                 letterSpacing: "-0.02em",
               }}
@@ -130,7 +130,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <div style={{ display: "flex", justifyContent: "flex-end", width: "100%", minWidth: 0, overflow: "hidden" }}>
             <HomeWall />
           </div>
         </div>

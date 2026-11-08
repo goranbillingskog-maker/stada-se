@@ -160,7 +160,59 @@ export default function HomeWall() {
         .wall-tile--l .wall-tile-bot { flex-direction: row; align-items: flex-end; gap: 12px; }
 
         @media (max-width: 640px) {
-          .wall { min-width: 560px; }
+          .wall-scroll {
+            overflow-x: visible;
+          }
+          .wall {
+            width: 100%;
+            min-width: 0;
+            gap: 4px;
+            padding: 4px;
+            border-radius: 8px;
+          }
+          .wall-tile {
+            padding: 4px 5px;
+            border-radius: 4px;
+            gap: 2px;
+          }
+          .wall-tile--s {
+            padding: 3px 4px;
+          }
+          .wall-tile--s .wall-tile-name {
+            font-size: clamp(10px, 3.2vw, 14px);
+          }
+          .wall-tile--s .wall-tile-num {
+            font-size: clamp(13px, 4.2vw, 22px);
+          }
+          .wall-tile--s .wall-tile-fine {
+            font-size: 8.5px;
+            line-height: 1.1;
+          }
+          .wall-tile--m {
+            padding: 6px 8px;
+          }
+          .wall-tile--m .wall-tile-name {
+            font-size: clamp(18px, 5.5vw, 32px);
+          }
+          .wall-tile--m .wall-tile-num {
+            font-size: clamp(22px, 6.8vw, 40px);
+          }
+          .wall-tile--m .wall-tile-best {
+            display: none;
+          }
+          .wall-tile--l {
+            padding: 8px 10px;
+          }
+          .wall-tile--l .wall-tile-name {
+            font-size: clamp(28px, 8.5vw, 56px);
+          }
+          .wall-tile--l .wall-tile-num {
+            font-size: clamp(24px, 7.5vw, 48px);
+          }
+          .wall-tile--l .wall-tile-best {
+            font-size: 10.5px;
+            gap: 1px;
+          }
         }
       `}</style>
     </div>
