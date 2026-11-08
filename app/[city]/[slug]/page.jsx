@@ -216,26 +216,26 @@ export default async function CompanyPage({ params }) {
           <div className="facts">
             {c.foundedYear ? (
               <div className="fact" style={{ background: "var(--mint)" }}>
+                <span className="w" style={{ fontSize: 15, fontWeight: 600 }}>Grundat</span>
                 <span className="fact-num d">{c.foundedYear}</span>
-                <span className="w" style={{ fontSize: 13 }}>grundat</span>
               </div>
             ) : null}
             {c.employees ? (
               <div className="fact" style={{ background: "var(--water)" }}>
+                <span className="w" style={{ fontSize: 15, fontWeight: 600 }}>Anställda</span>
                 <span className="fact-num d">{c.employees}</span>
-                <span className="w" style={{ fontSize: 13 }}>anställda</span>
               </div>
             ) : null}
             {c.pricingInfo ? (
               <div className="fact" style={{ background: "var(--white)" }}>
-                <span className="fact-num d" style={{ fontSize: "clamp(32px, 3.5vw, 52px)" }}>{c.pricingInfo}</span>
-                <span className="w" style={{ fontSize: 13 }}>prisinformation</span>
+                <span className="w" style={{ fontSize: 15, fontWeight: 600 }}>Prisinformation</span>
+                <span className="fact-num d" style={{ fontSize: "clamp(28px, 3vw, 44px)" }}>{c.pricingInfo}</span>
               </div>
             ) : null}
             {c.rutAvdrag && c.rutAvdrag !== "Okänt" ? (
               <div className="fact" style={{ background: "var(--pale)" }}>
+                <span className="w" style={{ fontSize: 15, fontWeight: 600 }}>Erbjuder RUT-avdrag</span>
                 <span className="fact-num d">{c.rutAvdrag}</span>
-                <span className="w" style={{ fontSize: 13 }}>erbjuder RUT-avdrag</span>
               </div>
             ) : null}
           </div>
