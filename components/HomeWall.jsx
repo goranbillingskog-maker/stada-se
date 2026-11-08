@@ -43,8 +43,8 @@ export default function HomeWall() {
                   <span className="wall-tile-best">
                     <span className="wall-tile-label">Högst betyg på Google</span>
                     {tile.topRated.slice(0, 3).map((c, i) => (
-                      <span key={c.slug} style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                        {c.name}, {c.rating ? c.rating.toFixed(1).replace(".", ",") : "5,0"} ({c.reviews}{i === 0 ? " omdömen" : ""})
+                      <span key={c.slug} className={`wall-tile-firm wall-tile-firm--${i}`}>
+                        <span className="firm-name-text">{c.name}</span>, {c.rating ? c.rating.toFixed(1).replace(".", ",") : "5,0"} <span className="firm-reviews-wrap">({c.reviews}<span className="firm-reviews-word">{i === 0 ? " omdömen" : ""}</span>)</span>
                       </span>
                     ))}
                   </span>
@@ -53,8 +53,8 @@ export default function HomeWall() {
                 {isMedium && tile.topRated.length > 0 && (
                   <span className="wall-tile-best">
                     <span className="wall-tile-label">Högst betyg</span>
-                    <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                      {tile.topRated[0].name}, {tile.topRated[0].rating ? tile.topRated[0].rating.toFixed(1).replace(".", ",") : "5,0"}
+                    <span className="wall-tile-firm">
+                      <span className="firm-name-text">{tile.topRated[0].name}</span>, {tile.topRated[0].rating ? tile.topRated[0].rating.toFixed(1).replace(".", ",") : "5,0"}
                     </span>
                   </span>
                 )}
@@ -63,8 +63,8 @@ export default function HomeWall() {
               <span className="wall-tile-bot">
                 <span className="wall-tile-num">{tile.count}</span>
                 <span className="wall-tile-fine">
-                  <span>firmor</span>
-                  <span>{tile.rutCount} med RUT</span>
+                  <span className="wall-tile-units">firmor</span>
+                  <span className="wall-tile-rut">{tile.rutCount} med RUT</span>
                 </span>
               </span>
             </Link>
@@ -139,6 +139,12 @@ export default function HomeWall() {
         .wall-tile-best { display: flex; flex-direction: column; gap: 3px; }
         .wall-tile-fine { display: flex; flex-direction: column; }
         .wall-tile-label { font-weight: 700; }
+        .wall-tile-firm {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: block;
+        }
 
         /* Small tiles */
         .wall-tile--s .wall-tile-name { font-size: 16px; font-size: 21cqw; }
@@ -174,44 +180,114 @@ export default function HomeWall() {
             padding: 4px 5px;
             border-radius: 4px;
             gap: 2px;
+            overflow: visible;
           }
+
+          /* Small tiles: visa bara stadens namn och antal firmor, dölj RUT och ev Högst betyg */
           .wall-tile--s {
-            padding: 3px 4px;
+            padding: 3px 3px;
           }
           .wall-tile--s .wall-tile-name {
-            font-size: clamp(10px, 3.2vw, 14px);
+            font-size: clamp(9.5px, 2.7vw, 13px);
+            white-space: nowrap;
+            overflow: visible;
+          }
+          .wall-tile--s .wall-tile-bot {
+            flex-direction: row;
+            align-items: baseline;
+            gap: 2px;
           }
           .wall-tile--s .wall-tile-num {
-            font-size: clamp(13px, 4.2vw, 22px);
+            font-size: clamp(12px, 3.6vw, 18px);
           }
           .wall-tile--s .wall-tile-fine {
-            font-size: 8.5px;
-            line-height: 1.1;
+            font-size: clamp(8px, 2.2vw, 9.5px);
+            line-height: 1;
           }
+          .wall-tile--s .wall-tile-rut,
+          .wall-tile--s .wall-tile-best {
+            display: none !important;
+          }
+
+          /* Medium tiles: Uppsala m.fl. */
           .wall-tile--m {
-            padding: 6px 8px;
+            padding: 6px 7px;
           }
           .wall-tile--m .wall-tile-name {
-            font-size: clamp(18px, 5.5vw, 32px);
+            font-size: clamp(18px, 5.2vw, 28px);
+          }
+          .wall-tile--m .wall-tile-bot {
+            flex-direction: row;
+            align-items: baseline;
+            gap: 4px;
           }
           .wall-tile--m .wall-tile-num {
-            font-size: clamp(22px, 6.8vw, 40px);
+            font-size: clamp(18px, 5.2vw, 28px);
+          }
+          .wall-tile--m .wall-tile-fine {
+            font-size: clamp(8.5px, 2.4vw, 11px);
+          }
+          .wall-tile--m .wall-tile-rut {
+            display: none !important;
           }
           .wall-tile--m .wall-tile-best {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            font-size: clamp(8.5px, 2.4vw, 10.5px);
+            line-height: 1.15;
           }
+          .wall-tile--m .wall-tile-best .wall-tile-label {
+            font-size: clamp(8px, 2.1vw, 9.5px);
+            opacity: 0.85;
+          }
+          .wall-tile--m .wall-tile-firm {
+            white-space: normal;
+            overflow: visible;
+            text-overflow: clip;
+            line-height: 1.15;
+          }
+
+          /* Large tile: Stockholm */
           .wall-tile--l {
             padding: 8px 10px;
           }
           .wall-tile--l .wall-tile-name {
-            font-size: clamp(28px, 8.5vw, 56px);
+            font-size: clamp(26px, 7.5vw, 44px);
           }
           .wall-tile--l .wall-tile-num {
-            font-size: clamp(24px, 7.5vw, 48px);
+            font-size: clamp(22px, 6.5vw, 36px);
+          }
+          .wall-tile--l .wall-tile-bot {
+            flex-direction: row;
+            align-items: baseline;
+            gap: 6px;
+          }
+          .wall-tile--l .wall-tile-fine {
+            font-size: clamp(9px, 2.6vw, 11.5px);
           }
           .wall-tile--l .wall-tile-best {
-            font-size: 10.5px;
-            gap: 1px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            font-size: clamp(9px, 2.5vw, 11px);
+            line-height: 1.2;
+          }
+          .wall-tile--l .wall-tile-best .wall-tile-label {
+            font-size: clamp(8.5px, 2.3vw, 10px);
+            opacity: 0.85;
+          }
+          .wall-tile--l .wall-tile-firm {
+            white-space: normal;
+            overflow: visible;
+            text-overflow: clip;
+            line-height: 1.2;
+          }
+          .wall-tile--l .wall-tile-firm--2 {
+            display: none !important;
+          }
+          .wall-tile--l .firm-reviews-word {
+            display: none;
           }
         }
       `}</style>

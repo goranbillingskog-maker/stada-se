@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getCities, getAllCompanies, getTopCompanies, formatCompanyLocation, SITE_URL } from "../lib/data.js";
-import { SERVICES } from "../lib/services.js";
+import { SERVICES, PRICE_ESTIMATES } from "../lib/services.js";
 import { JsonLd } from "../components/Ui.jsx";
 import Search from "../components/Search.jsx";
 import HomeWall from "../components/HomeWall.jsx";
@@ -17,7 +17,7 @@ export const metadata = {
 const FAQ = [
   {
     q: "Vad kostar en städfirma?",
-    a: "Priset varierar med tjänst och stad. Hemstädning kostar ofta 200–350 kr per timme efter RUT-avdrag, medan flyttstädning vanligen prissätts per kvadratmeter. Kontakta flera firmor och jämför offerter innan du bestämmer dig.",
+    a: `Priset varierar med tjänst och stad. Hemstädning kostar ofta ${PRICE_ESTIMATES.hemstadning.faqText}, medan flyttstädning vanligen prissätts per kvadratmeter. Kontakta flera firmor och jämför offerter innan du bestämmer dig.`,
   },
   {
     q: "Vad är RUT-avdrag och vem kan använda det?",
@@ -84,9 +84,9 @@ export default function HomePage() {
                 letterSpacing: "-0.02em",
               }}
             >
-              <span style={{ display: "block" }}>Hitta rätt</span>
-              <span style={{ display: "block" }}>städfirma –</span>
-              <span style={{ display: "block" }}>nära dig</span>
+              <span style={{ display: "block" }}>Hitta rätt</span>{" "}
+              <span style={{ display: "block" }}>städfirma –</span>{" "}
+              <span style={{ display: "block" }}>utan att leta</span>
             </h1>
 
             <p
