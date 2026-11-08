@@ -231,13 +231,13 @@ export default async function CityPage({ params }) {
           </h2>
           <div className="chips">
             <a className="chip chip--on" href={`/${cityInfo.slug}/`}>
-              <span className="d" style={{ fontSize: 28, lineHeight: 1 }}>Alla tjänster</span>
-              <span className="w" style={{ fontSize: 14, fontWeight: 600 }}>{companies.length}</span>
+              <span className="d chip-name">Alla tjänster</span>
+              <span className="w chip-count">{companies.length}</span>
             </a>
             {serviceChips.map((s) => (
               <Link key={s.slug} className="chip" href={`/tjanster/${s.slug}/${cityInfo.slug}/`}>
-                <span className="d" style={{ fontSize: 28, lineHeight: 1 }}>{s.name}</span>
-                <span className="w" style={{ fontSize: 14 }}>{s.count}</span>
+                <span className="d chip-name">{s.name}</span>
+                <span className="w chip-count">{s.count}</span>
               </Link>
             ))}
           </div>
