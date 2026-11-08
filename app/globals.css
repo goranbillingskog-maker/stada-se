@@ -645,6 +645,10 @@ details[open] .accordion-summary .plus {
   background: var(--ink);
 }
 
+.blog-row-link:hover {
+  background: var(--sun) !important;
+}
+
 .contact-links a:hover {
   color: var(--sun);
 }

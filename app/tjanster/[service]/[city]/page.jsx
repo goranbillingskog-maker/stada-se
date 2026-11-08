@@ -173,117 +173,103 @@ export default async function ServiceCityPage({ params }) {
   const isPilot = s.slug === "hemstadning" && cityInfo.slug === "stockholm";
 
   return (
-    <div className={isPilot ? "theme-pilot" : ""}>
+    <>
       <JsonLd data={jsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
-      <Breadcrumbs
-        items={[
-          { label: "Hem", href: "/" },
-          { label: s.name, href: `/tjanster/${s.slug}/` },
-          { label: cityInfo.name },
-        ]}
-      />
-      <section className="section" style={{ paddingTop: 24 }}>
-        <div className="container">
-          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 24 }}>
-            <div className="service-card" style={{ display: "inline-flex", padding: 12, margin: 0 }}>
-              <div className="icon" style={{ margin: 0 }}><ServiceIcon icon={s.icon} /></div>
-            </div>
-            <h1 style={{ margin: 0 }}>
-              {s.name} {prep} {cityInfo.name}
-            </h1>
-          </div>
 
-          {customContent ? (
-            <div className="two-col" style={{ padding: "16px 0" }}>
-              <div>
-                <p className="lead" style={{ marginBottom: 24 }}>
-                  {introText}
-                </p>
-
-                <div className="company-list" style={{ marginBottom: 32 }}>
-                  {companies.map((c) => (
-                    <CompanyCard key={c.slug} company={c} hideRut={isB2B} />
-                  ))}
-                </div>
-
-                {s.slug === "flyttstadning" && cityInfo.slug === "sodermalm" && (
-                  <p style={{ marginTop: -16, marginBottom: 32, fontSize: "0.95rem", color: "var(--muted)" }}>
-                    Fler städfirmor som utför flyttstädning på Södermalm tillkommer löpande. Se även alla{" "}
-                    <Link href="/sodermalm/">städfirmor på Södermalm</Link>.
-                  </p>
-                )}
-
-                {customContent.faq && customContent.faq.length > 0 && (
-                  <section className="faq" style={{ marginTop: 40, marginBottom: 32 }}>
-                    <h2>Vanliga frågor om {s.name.toLowerCase()} {prep} {cityInfo.name}</h2>
-                    {customContent.faq.map((f, index) => (
-                      <details key={index}>
-                        <summary>{f.q}</summary>
-                        <p>{f.a}</p>
-                      </details>
-                    ))}
-                  </section>
-                )}
-
-                <div className="panel" style={{ marginTop: 24, padding: "20px 24px" }}>
-                  <h3 style={{ fontSize: "1.15rem", margin: "0 0 10px" }}>Relaterade städtjänster</h3>
-                  <p style={{ margin: "0 0 10px", fontSize: "0.9rem" }}>
-                    Hitta även {s.name.toLowerCase()} i:{" "}
-                    {relatedCities.map((rc, idx) => (
-                      <span key={rc.slug}>
-                        {idx > 0 ? ", " : ""}
-                        <Link href={`/tjanster/${s.slug}/${rc.slug}/`}>{rc.name}</Link>
-                      </span>
-                    ))}
-                  </p>
-                  {relatedService ? (
-                    <p style={{ margin: 0, fontSize: "0.9rem" }}>
-                      Behöver du andra städtjänster {prep} {cityInfo.name}? Jämför även{" "}
-                      <Link href={`/tjanster/${relatedService.slug}/${cityInfo.slug}/`}>
-                        {relatedService.name.toLowerCase()} {prep} {cityInfo.name}
-                      </Link>.
-                    </p>
-                  ) : null}
-                </div>
-              </div>
-
-              <aside style={{ marginTop: 0 }}>
-                {customContent.faktaruta && (
-                  <section className="panel" style={{ background: "var(--card)" }}>
-                    <h2>{customContent.faktaruta.title}</h2>
-                    <p style={{ fontSize: "0.95rem", lineHeight: "1.5" }}>{customContent.faktaruta.text}</p>
-                  </section>
-                )}
-              </aside>
-            </div>
-          ) : (
-            <>
-              <p className="lead">
-                {introText}
-              </p>
-              <div className="company-list">
-                {companies.map((c) => (
-                  <CompanyCard key={c.slug} company={c} hideRut={isB2B} />
-                ))}
-              </div>
-              {s.slug === "flyttstadning" && cityInfo.slug === "sodermalm" && (
-                <p style={{ marginTop: 12, marginBottom: 24, fontSize: "0.95rem", color: "var(--muted)" }}>
-                  Fler städfirmor som utför flyttstädning på Södermalm tillkommer löpande. Se även alla{" "}
-                  <Link href="/sodermalm/">städfirmor på Södermalm</Link>.
-                </p>
-              )}
-              <p className="small-print">
-                Se även{" "}
-                <Link href={`/${cityInfo.slug}/`}>alla städfirmor {prep} {cityInfo.name}</Link>{" "}
-                eller <Link href={`/tjanster/${s.slug}/`}>{s.name.toLowerCase()} i andra städer</Link>.
-              </p>
-            </>
-          )}
+      <section style={{ maxWidth: 1280, margin: "0 auto", padding: "8px clamp(16px, 4vw, 32px) 80px" }}>
+        <Breadcrumbs
+          items={[
+            { label: "Hem", href: "/" },
+            { label: s.name, href: `/tjanster/${s.slug}/` },
+            { label: cityInfo.name },
+          ]}
+        />
+        <div style={{ maxWidth: "800px", marginBottom: 32 }}>
+          <h1
+            className="d"
+            style={{
+              margin: "0 0 20px",
+              fontSize: "clamp(56px, 8vw, 110px)",
+              lineHeight: 0.88,
+              letterSpacing: "-0.02em",
+            }}
+          >
+            {s.name} {prep} {cityInfo.name}
+          </h1>
+          <p style={{ margin: 0, fontSize: 19, color: "var(--text-2)" }}>
+            {introText}
+          </p>
         </div>
+
+        <p className="w" style={{ margin: "0 0 16px", fontSize: 14, color: "var(--text-3)" }}>
+          Listan sorteras efter Google-betyg.
+        </p>
+        <div style={{ background: "var(--grout)", padding: 6, borderRadius: 12, display: "flex", flexDirection: "column", gap: 6, marginBottom: 40 }}>
+          {companies.map((c) => (
+            <CompanyCard key={c.slug} company={c} hideRut={isB2B} />
+          ))}
+        </div>
+
+        {s.slug === "flyttstadning" && cityInfo.slug === "sodermalm" && (
+          <p style={{ marginTop: -16, marginBottom: 32, fontSize: "0.95rem", color: "var(--text-3)" }}>
+            Fler städfirmor som utför flyttstädning på Södermalm tillkommer löpande. Se även alla{" "}
+            <Link href="/sodermalm/" style={{ textDecoration: "underline" }}>städfirmor på Södermalm</Link>.
+          </p>
+        )}
+
+        {customContent?.faq && customContent.faq.length > 0 && (
+          <div style={{ marginTop: 64, marginBottom: 40, display: "grid", gridTemplateColumns: "minmax(0, 4fr) minmax(0, 7fr)", gap: 48 }}>
+            <h2 className="d" style={{ margin: 0, fontSize: "clamp(36px, 4vw, 56px)", lineHeight: 0.95, letterSpacing: "-0.015em" }}>
+              Vanliga frågor om {s.name.toLowerCase()} {prep} {cityInfo.name}
+            </h2>
+            <div style={{ background: "var(--grout)", padding: 6, borderRadius: 12, display: "flex", flexDirection: "column", gap: 6 }}>
+              {customContent.faq.map((f, index) => (
+                <details key={index} style={{ background: "var(--white)", borderRadius: "var(--r-tile)", padding: "20px 24px" }}>
+                  <summary style={{ fontWeight: 700, cursor: "pointer", fontSize: 17 }}>{f.q}</summary>
+                  <p style={{ margin: "12px 0 0", color: "var(--text-2)", fontSize: 16, lineHeight: 1.6 }}>{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {customContent?.faktaruta && (
+          <div style={{ marginTop: 32, marginBottom: 40, background: "var(--mint)", borderRadius: "var(--r-box)", padding: "28px 32px", color: "var(--ink)" }}>
+            <h2 className="d" style={{ margin: "0 0 12px", fontSize: "clamp(28px, 3vw, 36px)" }}>{customContent.faktaruta.title}</h2>
+            <p className="w" style={{ margin: 0, fontSize: 16, lineHeight: 1.6 }}>{customContent.faktaruta.text}</p>
+          </div>
+        )}
+
+        <div style={{ marginTop: 40, background: "var(--white)", borderRadius: "var(--r-tile)", padding: "24px 28px", border: "1px solid var(--grout)" }}>
+          <h3 className="d" style={{ fontSize: 24, margin: "0 0 10px" }}>Relaterade städtjänster</h3>
+          <p className="w" style={{ margin: "0 0 14px", fontSize: 15, color: "var(--text-2)" }}>
+            Hitta även {s.name.toLowerCase()} i:{" "}
+            {relatedCities.map((rc, idx) => (
+              <span key={rc.slug}>
+                {idx > 0 ? ", " : ""}
+                <Link href={`/tjanster/${s.slug}/${rc.slug}/`} style={{ textDecoration: "underline" }}>{rc.name}</Link>
+              </span>
+            ))}
+          </p>
+          {relatedService ? (
+            <p className="w" style={{ margin: 0, fontSize: 15, color: "var(--text-2)" }}>
+              Behöver du andra städtjänster {prep} {cityInfo.name}? Jämför även{" "}
+              <Link href={`/tjanster/${relatedService.slug}/${cityInfo.slug}/`} style={{ textDecoration: "underline" }}>
+                {relatedService.name.toLowerCase()} {prep} {cityInfo.name}
+              </Link>.
+            </p>
+          ) : null}
+        </div>
+
+        <p className="w" style={{ margin: "32px 0 0", fontSize: 14, color: "var(--text-3)" }}>
+          Se även{" "}
+          <Link href={`/${cityInfo.slug}/`} style={{ textDecoration: "underline" }}>alla städfirmor {prep} {cityInfo.name}</Link>{" "}
+          eller <Link href={`/tjanster/${s.slug}/`} style={{ textDecoration: "underline" }}>{s.name.toLowerCase()} i andra städer</Link>.
+        </p>
       </section>
-    </div>
+    </>
   );
 }
 
