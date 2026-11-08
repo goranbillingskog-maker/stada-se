@@ -86,7 +86,7 @@ export default function HomePage() {
             >
               <span style={{ display: "block" }}>Hitta rätt</span>
               <span style={{ display: "block" }}>städfirma –</span>
-              <span style={{ display: "block" }}>utan att leta</span>
+              <span style={{ display: "block" }}>nära dig</span>
             </h1>
 
             <p
