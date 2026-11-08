@@ -2,15 +2,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ARTICLES } from "../../../data/articles.js";
 import { SITE_URL, SITE_NAME } from "../../../lib/data.js";
+import Breadcrumbs from "../../../components/Breadcrumbs.jsx";
+import { JsonLd } from "../../../components/Ui.jsx";
 
-// Generera statiska parametrar för Next.js
 export async function generateStaticParams() {
   return ARTICLES.map((article) => ({
     slug: article.slug,
   }));
 }
 
-// Dynamisk metadata per artikel
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const article = ARTICLES.find((a) => a.slug === slug);
@@ -50,69 +50,65 @@ export default async function ArticlePage({ params }) {
     notFound();
   }
 
-  // JSON-LD strukturerad data för sökmotorer (Article / BlogPosting)
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": article.title,
-    "description": article.description,
-    "image": `${SITE_URL}${article.image || "/stada.png"}`,
-    "datePublished": article.publishedAt,
-    "author": {
+    headline: article.title,
+    description: article.description,
+    image: `${SITE_URL}${article.image || "/stada.png"}`,
+    datePublished: article.publishedAt,
+    author: {
       "@type": "Organization",
-      "name": SITE_NAME,
-      "url": SITE_URL,
+      name: SITE_NAME,
+      url: SITE_URL,
     },
-    "publisher": {
+    publisher: {
       "@type": "Organization",
-      "name": SITE_NAME,
-      "logo": {
+      name: SITE_NAME,
+      logo: {
         "@type": "ImageObject",
-        "url": `${SITE_URL}/logo.png`,
+        url: `${SITE_URL}/logo.png`,
       },
     },
-    "mainEntityOfPage": {
+    mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${SITE_URL}/blogg/${article.slug}/`,
     },
   };
 
   return (
-    <section className="section">
-      {/* Skjut in strukturerad data i headen */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    <>
+      <JsonLd data={jsonLd} />
 
-      <div className="container" style={{ maxWidth: 740 }}>
-        {/* Brödsmulor (Breadcrumbs) */}
-        <nav
-          aria-label="Brödsmulor"
-          style={{ fontSize: "0.85rem", color: "var(--ink-soft)", marginBottom: "24px" }}
-        >
-          <Link href="/">Hem</Link> &raquo;{" "}
-          <Link href="/blogg/">Blogg</Link> &raquo;{" "}
-          <span style={{ color: "var(--ink)" }}>{article.title}</span>
-        </nav>
+      <section style={{ maxWidth: 1280, margin: "0 auto", padding: "8px clamp(16px, 4vw, 32px) 112px" }}>
+        <Breadcrumbs
+          items={[
+            { label: "Hem", href: "/" },
+            { label: "Blogg", href: "/blogg/" },
+            { label: article.title },
+          ]}
+        />
 
-        <article>
-          <header style={{ marginBottom: "32px" }}>
+        <article style={{ maxWidth: "68ch" }}>
+          <header style={{ marginBottom: "40px" }}>
             <h1
+              className="d"
               style={{
-                fontSize: "clamp(2rem, 5vw, 2.75rem)",
-                lineHeight: "1.15",
-                marginBottom: "16px",
-                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(38px, 5vw, 64px)",
+                lineHeight: "0.95",
+                marginBottom: "20px",
+                letterSpacing: "-0.015em",
               }}
             >
               {article.title}
             </h1>
             <div
+              className="w"
               style={{
-                fontSize: "0.88rem",
-                color: "var(--ink-soft)",
+                fontSize: "14px",
+                color: "var(--text-3)",
                 display: "flex",
+                flexWrap: "wrap",
                 gap: "12px",
               }}
             >
@@ -124,34 +120,27 @@ export default async function ArticlePage({ params }) {
             </div>
           </header>
 
-          {article.image && (
-            <div style={{ marginBottom: "32px" }}>
-              <img
-                src={article.image}
-                alt={article.title}
-                style={{
-                  width: "100%",
-                  maxHeight: "400px",
-                  objectFit: "cover",
-                  borderRadius: "var(--radius)",
-                  border: "1px solid var(--line)",
-                }}
-              />
-            </div>
-          )}
-
-          {/* Brödtexten med stilar för rubriker, listor etc. */}
           <div
             className="article-body"
-            style={{
-              fontSize: "1.06rem",
-              lineHeight: "1.75",
-              color: "var(--ink)",
-            }}
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
+
+          <div style={{ marginTop: 64, paddingTop: 32, borderTop: "1px solid var(--grout)" }}>
+            <Link
+              href="/blogg/"
+              className="w"
+              style={{
+                fontSize: "15px",
+                fontWeight: 600,
+                color: "var(--ink)",
+                textDecoration: "underline",
+              }}
+            >
+              ← Tillbaka till alla artiklar
+            </Link>
+          </div>
         </article>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
