@@ -18,6 +18,9 @@ export const metadata = {
   },
 };
 
+// Anti-klonskydd: Skickar automatiskt besökare till den officiella sajten om någon speglar eller kopierar koden till en obehörig domän
+const domainLockScript = `(function(){try{var h=window.location.hostname;if(h==='stadtorget.se'||h==='www.stadtorget.se'||h==='localhost'||h==='127.0.0.1'||h.endsWith('.vercel.app')||h.endsWith('.local')){return;}window.location.replace('https://stadtorget.se'+window.location.pathname+window.location.search);}catch(e){}})();`;
+
 export default function RootLayout({ children }) {
   return (
     <html lang="sv">
@@ -26,6 +29,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
         <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <script dangerouslySetInnerHTML={{ __html: domainLockScript }} />
       </head>
       <body>
         <Header />
